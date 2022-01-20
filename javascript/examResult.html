@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body leftmargin="120px">
+    <center>
+    <h1>Exam Result</h1>
+    <form name="myForm">
+        
+        <div>
+            <label for="c">Turbo  C</label>
+            <input type="number" name="c" id="c" required placeholder="Enter Turbo C mark"><br><br>
+        </div>
+        <div>
+            <label for="java">J a v a</label>
+            <input type="number" name="java" id="java" required placeholder="Enter Java mark"><br><br>
+        </div>
+        <div>
+            <label  for="js">JavaScript</label>
+            <input type="number" name="js" id="js" required placeholder="Enter JavaScript mark"><br><br>
+        </div>
+        
+            <div>
+                <button  type="button" onclick="result()">Result</button>
+            </div> <hr>
+    </center>
+        
+    </form>
+    <script>
+        function result()
+        {
+            let c=document.myForm.c.value;
+            console.log(c);
+            let java = document.myForm.java.value;
+            console.log(java);
+            let js = document.myForm.js.value;
+            console.log(js);
+            if(c>=1 && c<=100 && java>=1&&java<=100 && js>=1&&js<=100)
+            {
+                if(c<50 && c>=1 || java<50 && java>=1 || js<50 && js>=1)
+                {
+                    document.write("<h3>Fail!</h3>");
+                }
+                else if(c>=50 && c<=80 && java>=50 && java <=80 && js>=50 && js<=80)
+                {
+                    document.write("<h3>Pass!</h3>");
+                }
+                else if(c>=80&& c<=100 || java>80 && java<=100 || js>80 && js <=100)
+                {
+                    document.write("<h3>Congradulation! You are Distinction!</h3>");
+                }
+            }
+           else 
+            {
+               document.write("<h3>Invalid mark input! Please check your mark input!</h3>")
+            }
+        }
+    </script>
+</body>
+</html>
