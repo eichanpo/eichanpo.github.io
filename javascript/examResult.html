@@ -45,20 +45,24 @@
             {
                 if(c<50 && c>=1 || java<50 && java>=1 || js<50 && js>=1)
                 {
-                    document.write("<h3>Fail!</h3>");
+                    //document.write("<h3>Fail!</h3>");
+                    alert("Sorry, this student has failed!");
                 }
                 else if(c>=50 && c<=80 && java>=50 && java <=80 && js>=50 && js<=80)
                 {
-                    document.write("<h3>Pass!</h3>");
+                    //document.write("<h3>Pass!</h3>");
+                    alert("It is Pass! Congratulations!");
                 }
                 else if(c>=80&& c<=100 || java>80 && java<=100 || js>80 && js <=100)
                 {
-                    document.write("<h3>Congradulation! You are Distinction!</h3>");
+                    //document.write("<h3>Congratulation! You are Distinction!</h3>");
+                    alert("Congratulation! You are Distinction!");
                 }
             }
            else 
             {
-               document.write("<h3>Invalid mark input! Please check your mark input!</h3>")
+               //document.write("<h3>Invalid mark input! Please check your mark input!</h3>");
+               alert("Invalid mark input! Please check your mark input!");
             }
         }
     </script>
