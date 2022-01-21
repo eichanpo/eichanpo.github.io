@@ -8,11 +8,13 @@
 </head>
 <body leftmargin="100px" rightmargin="100px">
     <a href="../HTML/link/pages/assignments/index.html">Go to assignments page</a>
-    <h3>Multiply by numbers</h3>
+    
     <script>
         let n;
         let num = prompt("Enter the number that you want to count: ");
         console.log(num);
+        document.write(`<h1>Multiply by \"${num}\"</h1>`);
+        document.write("<h6></h6>");
         for(n = 1; n<=12; n++)
         {
             document.write(`<h5>${num} * ${n} = ${num*n}</h5>`);
