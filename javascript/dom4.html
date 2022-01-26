@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">CSS DOM</h1>
+    <img src="images/js1.jpg" alt="Javascript" id="img" width="500px" height="250px">
+    
+    <br><br>
+    <button type="button" onclick="changeSize()">Click</button>
+    <br><br>
+
+    <img src="images/js.jpg" alt="" id="image" width="500px" height="250px" onmouseover="big()" onmouseout="normal()" >
+
+    <script>
+        function changeSize()
+        {
+             document.querySelector('#h1').style.backgroundColor = 'blue';  //css use poe
+             document.querySelector('#h1').style.color = 'white';
+             let img = document.querySelector('#img');
+             img.style.width = '600px';
+             img.style.height = '450px';
+        }
+
+        function big()
+        {
+            let image = document.querySelector('#image');
+            image.style.width = '700px';
+            img.style.height = '610px';
+        }
+        function normal()
+        {
+            let image = document.querySelector('#image');
+            image.style.width = "500px";
+            image.style.height = "250px";
+        }
+    </script>
+</body>
+</html>
