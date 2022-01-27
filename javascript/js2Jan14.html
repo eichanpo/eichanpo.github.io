@@ -30,21 +30,34 @@
         console.log(div2); //0.2
 
         //remainder opreator
-        let re = 9%2;
-        console.log(re);//1
-        let re1 = 11%11;
-        console.log(re1);//0
-        let re2 = 2%0;
-        console.log(re2);//NaN
+        // let re = 9%2;
+        // console.log(re);//1
+        // let re1 = 11%11;
+        // console.log(re1);//0
+        // let re2 = 2%0;
+        // console.log(re2);//NaN
+        let rem = 20%5;
+        console.log(rem);//0
+        let rem1 = 20%7;
+        console.log(rem1);//6
+        let rem2=1%0;
+        console.log(rem2);//Nan not a number
+        
+        //multiplication
+        let mul = 12*12;
+        console.log(mul);//144
+        let mul1 =-12*12;
+        console.log(mul1);//-144
 
-        //exponentitation opreator(htat kain)
-        let exp = 2**2; 
-        console.log(exp);//4
-        let exp1 = 2**8;
+        //exponentitation opreator(htat kain satoe kain)
+        let exp = 2**2; //2 power 2
+        console.log(exp);//4(output)
+        let exp1 = 2**8;// 2 power 8
         console.log(exp1); //256
-        //precedence
-        let total= 1*2 + 5/2 %2;
-        console.log(total); //0.2
+
+        //precedence (*/%+-= Oo sar pay system)
+        let total= 1*2 + 5 / 2 % 2;
+        console.log(total); //2.5 (= 2 + 2.5%2= 2+0.5=2.5)
 
         //comprasions
         let n = 12; let m = "12";
@@ -53,9 +66,6 @@
         console.log(10<12 && 13>9 && 45>5); //
 
         console.log(10<13 || 13<9 || 45<5); // true
-
-
-
     </script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body leftmargin="150px" rightmargin="150px">
+    <h1>Calculator</h1>
+    <form action="" name="myres">
+    <label for="num1">Number One:</label>
+    <input type="number" name="num1" id="num1"><br><br>
+    <label for="num2">Number Two:</label>
+    <input type="number" name="num2" id="num2"><br><br>
+    <label for="result">Result</label>
+    <input type="number" name="result" id="result"><br><br>
+    <button type="button" onclick="add()">Add</button>
+
+    </form>
+    <script>
+        function formValidation()
+        {
+            let number1 = document.querySelector('#num1').value;
+            let number2 = document.querySelector('#num2').value;
+            console.log(number1, number2);
+            if(number1 == '' || number2 =='')
+            {
+                if(number1 == '')
+                {
+                    alert("Number one is Required! Please fill it in!");
+                }
+                if(number2 == '')
+                {
+                    alert("Number two is Required! Please fill it in!");
+                }
+            }
+            else
+            {
+                return{number1, number2}; //data sent yin use te. obj or array or vars send 
+            }
+        }
+        
+        function add()
+        {
+            let numbers = formValidation();
+            console.log(numbers);
+            if(numbers)
+            {
+                let result = Number(numbers.number1)+Number(numbers.number2); //changed to number type
+                console.log(result);
+                document.querySelector('#result').value = result;
+            }
+           // let number1 = document.querySelector('#num1').value;
+           // let number2 = document.querySelector('#num2').value;
+           // console.log(typeof(number1)); //string type
+           // let result = Number(number1)+Number(number2); //changed to number type
+            //console.log(result);
+           // document.querySelector('#result').value = result;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let numArr = [1,2,3,4,'g',5,99];
+        console.log(numArr);//Array(7)
+        console.log(numArr.length);//7
+        console.log(numArr[2]);//3
+        console.log(numArr[4]);//g
+
+        //value of different type
+        let myAr=['h','i',1,2,3,['x','y',222]];
+        console.log(myAr);//Array(6)
+        console.log(myAr[5]);//'x','y',222(5 nay yar ka [])
+        console.log(myAr[5][2]);//222
+
+        //multidimational array
+        let multiAr= [[1,'p',3],['a','b','c'],['x',123]];
+        multiAr[0];
+        console.log(multiAr[0]);//1,2,3
+        console.log(multiAr[0],[1]);//p
+        console.log(multiAr[1][0]);//a
+        console.log(multiAr[2][1]);//123
+
+        let fruits = []; //array built tar
+        fruits[0] = 'Apple';// insert Apple to room Zero(fruits[0])
+        fruits[1] = 'Orange';// insert Orange to room Zero(fruits[1])
+        fruits[2] = 'Banana';// insert Banana to room Zero(fruits[2])
+        console.log(fruits);//'Apple','Orange','Banana'
+        console.log(fruits[2]);//Banana
+        console.log(fruits.length);//3
+
+        fruits.push('Mango');// added from the last place
+        console.log(fruits);//'Apple','Orange','Banana','Mango'
+        fruits.unshift('Cherry')//added from the first place
+        console.log(fruits);//'Cherry', 'Apple','Orange','Banana','Mango'
+        fruits.pop();//remove the room
+        console.log(fruits);//Mango ko remove lote lite te. removed the last room of array
+        fruits.shift();
+        console.log(fruits);//Cherry ko removed lite te. Removed the first room of array
+        fruits.sort();// a to z sorting
+        console.log(fruits);// 'Apple', 'Banana', 'Orange'
+        fruits.reverse();//z to a sorting
+        console.log(fruits);//'Orange', 'Banana', 'Apple'
+
+        let fruits_str = fruits.toString();//to change String arry to Existing arry
+        console.log(fruits_str);//'Orange, Banana, Apple' (String to changed a pee)
+
+        let fruits_arr = fruits_str.split(",");// to change aray
+        console.log(fruits_arr);//['Orange','Banana','Apple']
+
+        //to change array from string 
+        let str = "Hello World";
+        console.log(str.split(''));//['h','e','l',....,'r','l','d']
+        console.log(str.split(' '));// got 2 room by space ['hello','World']
+        console.log(str.split());//if noting in (), array will be only one room ['Hello World']
+
+        //concat adding 2 arrays
+        let aArr = [1,2,3];
+        let bArr = ['a','b','c'];
+        let cArr = aArr + bArr;
+        console.log(cArr);//as a tring only added('1,2,3a,b,c')<--//better dontuse it
+        cArr = aArr.concat(bArr);
+        console.log(cArr);//[1,2,3,'a','b','c'](6 rooms)
+        let dArr = [...aArr,...bArr]; //smae with concat
+        console.log(dArr);//[1,2,3,'a','b','c'](6 rooms)
+
+
+    </script>
+</body>
+</html>
