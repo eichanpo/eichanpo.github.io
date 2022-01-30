@@ -8,7 +8,40 @@
     
 </head>
 <body leftmargin="150px"> 
-    <h1>Exam Result</h1>
+    <script>
+      function add(n1, n2){
+        let sum = n1 + n2;
+        document.write(`<h1>The sun of n1 and n2 is ${sum}.</h1>`);
+      }add(100,24);
+
+      function sub(n1, n2)
+      {
+          let sub = n1- n2;
+          document.write(`<h1>Ans is ${sub}.</h1>`);
+      }sub(50,49);
+
+      function sub1(n1 = 56, n2 = 40)
+      {
+          let sub1 = n1-n2;
+          document.write(`<h1>The sub result is ${sub1}.</h1>`);
+      }sub1();
+      sub1(100,90);
+      sub1(50,25);
+      sub1();
+
+      //object
+      let laptop = {brand:'Apple',
+                    type:'M1',
+                    price:250000
+                };
+                console.log(laptop);
+                console.log(laptop.brand);
+                console.log(laptop["type"]);
+                console.log(laptop["price"]);
+    </script>
+
+    
+    <!-- <h1>Exam Result</h1>{
     <p>
         <ul>
             <li>Fail (mark between 0 to 49)</li>
@@ -64,7 +97,7 @@
                 document.write('<h1>The marks should be between 1 to 100! Please try again.</h1>');
             }
         }
-    </script>
+    </script>} -->
 
 </body>
 </html>

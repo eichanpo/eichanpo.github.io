@@ -9,18 +9,18 @@
 <body>
     <script>
         let secretNo = 7;
-        let guessNo = prompt('Guess a correct number: ');
-        console.log = guessNo;
+        let guessNo = prompt('Guess a correct one digit number! ');
+        console.log(guessNo);
         while(secretNo != guessNo)
         {
             if(guessNo > secretNo)
             {
-                alert('Higher, pls try again!');
+                alert('It is Higher, pls pick the lower one!');
             }else
             {
-                alert('Lower, pls try again!');
-            } 
-            guess = prompt('Guess a number');
+                alert('It is Lower, pls pick the highter one!');
+            }
+           guess = prompt('Guess a correct one!');
         }alert('Wao! great, it is correct answer!');
     </script>
 </body>

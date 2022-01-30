@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        #bg{
+            height: 214px;
+            background-image: url('images/kawa.jpg');
+            background-repeat: repeat;
+            background-position: center;
+        }
+        #train{
+            position: relative; /*relative ka Position ko move chin lo*/
+            margin-top: -125px;
+        }
+        .button{
+            text-align: center;
+            width: 100px;
+            height: auto;
+            color: rgb(253, 6, 101);
+            
+            stroke: rgb(170, 247, 243);
+        }
+    </style>
+</head>
+<body>
+    <a href="../HTML/link/pages/assignments/index.html">Go to Assignment page</a>
+    <center>
+        <h1>Train amimation Clip</h1>
+        <br>
+    </center>
+    <div id="bg"></div>
+    <img src="images/train.gif" alt="" width="250" height="110" id="train">
+    <br><br><br>
+    <center>
+        <button class="button" type="button" onclick="startTrain()">Start</button>
+    </center>
+    
+
+    <script>
+        function startTrain()
+        {
+            let train = document.querySelector('#train');
+
+            let start  = Date.now();
+            console.log(start);
+
+            let timer = setInterval(function(){
+                let timePass = Date.now() - start;
+                console.log("Time Passed"+timePass);
+
+                train.style.left = timePass/5 + 'px'; /*style ka css code par*/
+                console.log(timePass);
+                if(timePass > 5000) clearInterval(timer);
+
+            }, 20) /*nameless functio(), setInterval(function,millisecond)*/
+        }
+    </script>
+</body>
+</html>

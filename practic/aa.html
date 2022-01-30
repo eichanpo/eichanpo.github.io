@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <h1>DOM Selector</h1>
+    <h3 id="lg">Languages html, css, js</h3>
+    <p class="lang">html</p>
+    <p class="lang">js</p>
+    <p class="lang">css</p>
+    <h2 id="add"></h2>
+    <h2 id="add1"></h2>
+    <button type="button" onclick="language()">click</button>
+
+    <script>
+        function language()        
+        {
+            let lg = document.getElementById('lg');
+            console.log(document.getElementById('lg').innerHTML);//Languages html, css, js
+            console.log(lg.innerText);//Languages html, css, js
+
+            let add = document.getElementById('add');
+            let add1 = document.getElementById('add1');
+            console.log(add);
+            console.log(add1);
+            add.innerHTML = '<i>This is italic text.</i>';
+            add1.innerText = '<i>This is italic text.</i>';
+
+        }
+    </script>
+</body>
+</html>
