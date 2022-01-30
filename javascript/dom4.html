@@ -6,31 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1 id="h1">CSS DOM</h1>
-    <img src="images/js1.jpg" alt="Javascript" id="img" width="500px" height="250px">
+<body leftmargin="150px" rightmargin="100px">
+    <a href="../HTML/link/pages/assignments/index.html">Go to assignments page</a>
+    <center>
+        <h1 id="h1">CSS DOM</h1>
     
-    <br><br>
-    <button type="button" onclick="changeSize()">Click</button>
-    <br><br>
+    
+        <img src="images/js.jpg" alt="Javascript" id="img" width="480px" height="270px">
+    
+        <br><br>
+   
+        <button type="button" onclick="changeSize()">Click</button>
+  
+    
+        <br><br>
 
-    <img src="images/js.jpg" alt="" id="image" width="500px" height="250px" onmouseover="big()" onmouseout="normal()" >
-
+        <img src="images/js1.jpg" alt="" id="image" width="500px" height="250px" onmouseover="big()" onmouseout="normal()" ><!--onmouseout event-->
+    </center>
     <script>
         function changeSize()
         {
-             document.querySelector('#h1').style.backgroundColor = 'blue';  //css use poe
+             document.querySelector('#h1').style.backgroundColor = 'blue';  //style ka css use poe
              document.querySelector('#h1').style.color = 'white';
              let img = document.querySelector('#img');
              img.style.width = '600px';
-             img.style.height = '450px';
+             img.style.height = '330px';
+             
         }
 
         function big()
         {
-            let image = document.querySelector('#image');
+            let image = document.querySelector('#image');//image ko select pay
             image.style.width = '700px';
-            img.style.height = '610px';
+            image.style.height = '610px';
         }
         function normal()
         {
