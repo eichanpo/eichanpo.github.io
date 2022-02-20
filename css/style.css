@@ -1,0 +1,216 @@
+h2{
+    /* color: blueviolet; */
+    /* color: #f0f; */
+    color: rgb(rgb(219, 66, 91), green, blue); /*0 to 255*/
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Universal selector, that effective on all of tag on html files */
+*{
+    /* color: rgb(219, 66, 91);  */
+    margin: 0px;
+    padding: 0px;
+
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 10px;
+    color:brown;
+}
+a[target="_blank"]{
+    color: green;
+    text-decoration: none;
+}
+#idselector{
+    color:green;
+    text-indent: 50px;
+
+}
+
+.classst{
+    color:purple;
+    text-indent: 50px;
+    line-height: 20px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+}
+/* decendent selector where do want to effect */
+.decs a{
+    color: saddlebrown;
+}
+/* child selector (only select on connection tag */
+.child > a{
+    color: hotpink;
+}
+
+/* Pesudo selector */
+a:link{
+    color: rgb(252, 0, 0);
+    letter-spacing: 10px;
+}
+a:hover{
+    color:lightseagreen
+}
+a:active{
+    color:yellow;
+    letter-spacing: 20px;
+}
+a:visited{
+     color:lightskyblue;
+}
+
+p:target{
+    border: 1px solid black;
+    text-indent: 50px;
+    word-spacing: 20px;
+    line-height: 30px;
+}
+
+/* Border 07th Feb 2022 for border.html */
+
+.border1{
+    border: 2px dotted black;
+}
+
+/* just one side border */
+.border2{
+    border-top: 2px solid darkslateblue;
+    border-bottom: 2px solid palevioletred;
+}
+
+/* 2 layers border style */
+.borderstyle{
+    border-style: double;
+}
+
+.stylemix{
+    /* border-style: dashed solid double dotted; T/ R/ B/ L */
+    /* border-style: dashed solid double; T/ L&r / B* */
+    border-style: double dashed; /*T&B/ L&R */
+
+}
+
+.borderWidth{
+    border-width: thin; /*nothing appear with thin only add with solid(border-style) or*/
+    /* border-width: 10px 50px 20x 30px; */
+    border-style: solid;
+    border-color: red;
+}
+ /* Margin (distance from doc to letter) */
+.margin{
+    /* margin: 100px; */
+    /* margin: 40px 100px 150px; */
+    margin-top: 100px; /* take space on top for 100pixel*/
+    border: 1px solid coral;
+}
+
+/* Padding (distance from border to letter) */
+.padding{
+    /* padding: 50px; */
+    padding-left: 30px;
+    border: 1px solid black;
+}
+.inline{
+    width: 400px;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.block{
+    width: 400px;
+    border: 1px solid green;
+    display: inline-block;
+}
+
+/* .floatleft img{
+      
+}
+
+.floatright{
+
+}
+.floatright img{
+    float: right;
+    width: 40%;
+} */
+/* grid.html */
+.gridone div, .gridtwo div, .gridthree div, .gridfour div, .gridfive div, .gridsix div{
+    color: wheat;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.gridone, .gridtwo, .gridthree, .gridfour, .gridfive, .gridsix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridtwo{
+    grid-row-gap: 40px;
+}
+.gridthree{
+    grid-column-gap: 40px ;
+}
+
+.gridfour{
+    grid-gap: 50px;
+    /* grid-row-gab:  grid-column-gab: */
+}
+.colAdd{
+    grid-column-start: 1; /*it is going to count the column*/
+    grid-column-end: 3;
+}
+.rowAdd{
+    grid-row-start: 1; /* default start at one1*/
+    grid-row-end: 3;
+}
+
+.relativeParent{
+    width: 1000px;
+    height: 600px;
+    border: 1px solid darkred;
+}
+.relative{
+    width: 500px;
+    height: 200px;
+    border: 1px solid rgb(62, 157, 247);
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.absoluteParent{
+    border: 1px solid rgb(216, 75, 75);
+    width: 900px;
+    height: 600px;
+    position: relative;
+}
+.absolute{
+    border: 1px solid rgb(194, 141, 196);
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+.fixed{
+    position: fixed;
+    top: 100px;
+    left: 1100px;
+}
+
+/* fonts */
+.online{
+    font-family: a;
+
+}
+
+@font-face{
+    src:url(../Shizuru/Shizuru-Regular.ttf);
+    font-family: a;
+}
+.offlinefont{
+    font-family: a;
+}
