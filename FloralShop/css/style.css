@@ -416,13 +416,15 @@
     src: url(../Roboto/RobotoCondensed-Light.ttf);
 }
 .titleShop{
-    margin-top: 50px;
+
+    margin-top: 15px;
     margin-bottom: 30px;
     margin-left: 70px;
 }
 .titleShop h5{
     font-family: roman;
     color:#6e6e6e;
+    /* padding-bottom: 10px; */
 
 }
 .titleShop p{
@@ -463,10 +465,11 @@
 }
 
 .fade-in-fade-out {
-    font-size: 5em;
+    font-size: 4em;
     opacity: 1;
     text-align: center;
    /* -webkit-animation: fadeInOut 3s; */
    animation: fadeInOut 3s infinite alternate;
+   padding-bottom: 20px;
 }
 /* fade inout ending */
