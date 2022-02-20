@@ -231,10 +231,11 @@
 }
 .bg{
     background-color: rgb(241, 238, 238);
+    padding-top: 10px;
 }
 
 .map{
-    
+    /* margin-right: -30px; */
     display: inline;
     /* border-style: double dashed; */
 }
@@ -444,3 +445,28 @@
 .shopSection{
     margin-bottom: 50px;
 }
+.garden img{
+    padding-top: 20px;
+}
+/* fade inout start */
+.fade-in-fade-out{
+    background-color: #f2f6f8;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+       opacity: 0;
+    }
+}
+
+.fade-in-fade-out {
+    font-size: 5em;
+    opacity: 1;
+    text-align: center;
+   /* -webkit-animation: fadeInOut 3s; */
+   animation: fadeInOut 3s infinite alternate;
+}
+/* fade inout ending */
