@@ -138,13 +138,22 @@
 
 .btnShop{
     color: #3c9ac1;
-    padding: 10px 20px;/*w, h changing button size with padding(top bottom 10px left right 20px*/
+    padding: 5px 11px;/*w, h changing button size with padding(top bottom 10px left right 20px*/
     /* position: relative;/*take space btn with p tag*/
    /* top: 20px; */
+    font-size: x-small;
     border: 1px solid #3c9ac1;
-    margin-top: 20px;
-    border-radius: 5px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    border-radius: 11px;
 }
+
+.btnShop:hover{
+    color: wheat;
+    background-color: #286a96;
+    cursor: pointer;/*change pointer icon*/
+}
+
 
 .about div{
     margin: auto;
