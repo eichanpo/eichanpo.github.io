@@ -136,6 +136,16 @@
     /* color: rgb(255, 49, 13); */
 }
 
+.btnShop{
+    color: #3c9ac1;
+    padding: 10px 20px;/*w, h changing button size with padding(top bottom 10px left right 20px*/
+    /* position: relative;/*take space btn with p tag*/
+   /* top: 20px; */
+    border: 1px solid #3c9ac1;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
 .about div{
     margin: auto;
     /* margin-top:6px; */
