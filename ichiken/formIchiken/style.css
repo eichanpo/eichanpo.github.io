@@ -82,3 +82,13 @@ textarea:valid~label {
 .row .input-group {
     flex-basis: 48%;
 }
+
+
+p.ridge {
+    border-style: ridge;
+}
+
+#my-form-status {
+    color: #fff;
+    font-size: large;
+}
