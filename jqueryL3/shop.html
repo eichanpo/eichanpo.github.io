@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .products {
+            display: flex;
+            gap: 25px;
+            align-content: space-between;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Popular product</h2>
+        <div class="products">
+            <div class="item">
+                <img src="../imagesCss/khin.jpg" width="50%" alt="item one">
+                <h4>Item One</h4>
+                <p>1500 ks</p>
+                <button class = "actbtn" class = "actbtn" data-id = "1" data-price = "1500" data-name = "item one ">Add to cart</button>
+            </div>
+            <div class="item">
+                <img src="../imagesCss/khin.jpg" width="50%" alt="item one">
+                <h4>Item Two</h4>
+                <p>1340 ks</p>
+                <button class = "actbtn" class = "actbtn" data-id = "2" data-price = "1340" data-name = "item two">Add to cart</button>
+            </div>
+            <div class="item">
+                <img src="../imagesCss/khin.jpg" width="50%" alt="item one">
+                <h4>Item Three</h4>
+                <p>4400 ks</p>
+                <button class = "actbtn" data-id = "3" data-price = "4400" data-name = "item three">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+</html>

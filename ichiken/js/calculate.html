@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Enter first number</td>
+            <td><input type="number" name="num1" id="num1" value=""></td>
+        </tr>
+        <tr>
+            <td>Enter second number</td>
+            <td><input type="number" name="num2" id="num2" value=""></td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td><input type="number" name="result" id="result" value=""></td>
+        </tr>
+        <tr>
+            <td><button onclick="add()">Addition</button>
+                <button>Substration</button></td>
+            <td><button>Multiplication</button>
+                <button>Division</button></td>
+           
+        </tr>
+    </table>
+    <script>
+        var num1 = prompt("Enter 1st number: ");
+        var num2 = prompt("Enter 2nd number: ");
+        function add() {
+            result = num1 + num2;
+            return result;
+        }
+
+        parseInt(document.getElementById('result').value = add());
+        function sub() {
+
+        }
+        function div() {
+    
+        }
+        function mul() {
+
+        }
+    </script>
+</body>
+</html>

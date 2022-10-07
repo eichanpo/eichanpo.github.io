@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            var teachers = new Array();
+            var yasu = {
+                name: 'Toyoda',
+                age: 35,
+            }
+            teachers.push(yasu);
+            localStorage.setItem('user',JSON.stringify(teachers));
+    
+
+            var name = localStorage.getItem('user');
+            var userArr = JSON.parse(name);
+            console.log(userArr);
+        });
+    </script>
+</body>
+</html>

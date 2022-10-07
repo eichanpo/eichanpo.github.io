@@ -1,0 +1,49 @@
+* {
+    font-family: quatt-regular;
+    /* font-family: barlow-medium; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: oswald;
+}
+.customnav-color {
+    background-color: #2f333a;
+}
+
+.main-color {
+    color: #eb3e32;
+}
+
+.mainbgColor {
+    background-color: #eb3e32;
+}
+
+.logo-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
+.sticky-top a{
+    text-decoration: none; 
+    color: #fff;
+}
+.sticky-top a:hover {
+    color: #c0c0c0;
+}
+
+.navbar-brand img {
+    margin-left: 25px;
+}
+
+
+/* menu hover */
+.collapse ul li .nav-link {
+    text-transform: uppercase;
+}
+/* carosal img height and center */
+.carousel-item {
+    height: 87vh;
+    object-fit: cover;
+}
