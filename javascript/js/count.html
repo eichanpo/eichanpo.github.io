@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let secrectNum = 9; let i = 1;
+        let inputNum = prompt ("Enter any number between 1 to 15.");
+        while(secrectNum != inputNum) {
+            if(secrectNum < inputNum) {
+            alert("The number you enter is greater than secret number.");
+        }else {
+            alert("Ther number you enter is less than secret number.");
+        }
+        inputNum = prompt("Enter guess number again!");
+        i++;
+        }
+        alert("Correct! you have count " + i + " times to get correct answer.");
+        
+    </script>
+</body>
+</html>

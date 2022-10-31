@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <script>
+        let stdArray = new Array('Su Su', 'Hla Ha', 'Ko Ko', 'li li');
+        console.log(stdArray);
+        console.log(typeof(stdArray));
+        console.log(stdArray[2]);
+
+        let arr1 = ["Yasu", "Miko", "Sakumi", "Toyoda"];
+        console.log(arr1);
+        console.log(arr1[3]);
+
+        let multiArr = ['a', 'b', 'c', 'd',['3','2','1']];
+        console.log(multiArr);
+        console.log(typeof(multiArr));
+        console.log(multiArr[4][0]);
+
+        //object
+        let car = {
+            name : 'Honda Fit',
+            color : 'black',
+            price : 1000000,
+            qty : 2
+        }
+        console.log(car);
+        console.log(typeof(car));
+        console.log(car.color);//black
+        console.log(car.name);//Honda fit
+        console.log(car.price);//1000000
+        console.log(car.qty);//2
+        //aray in obj
+        let car1 = {
+            name : 'Honda Fit',
+            color : ['white', 'black'],
+            price : 1000000,
+            qty : 2
+        }
+        console.log(car1);
+        console.log(typeof(car1));//obj
+        console.log(car1.color);//(2) ['white', 'black']
+        console.log(car1.color[0]);//white
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>
