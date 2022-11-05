@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: grey;
+        }
+        h2 {
+            text-align: center;
+            color: red;
+        }
+    </style>
 </head>
 <body>
     
     <script>
         
         let n = prompt("Enter any number to show multiplication");
-        document.write(`<h1>Multiply by \"${n}\"</h1>`);
-        document.write("<h6></h6>");
+        document.write(`<h1>Multiply of \"${n}\"</h1>`);
+        
         for(let i = 1; i <= 12; i ++) {
             document.write(`<h2>${n} * ${i} = ${n * i}</h2>`);
         }
