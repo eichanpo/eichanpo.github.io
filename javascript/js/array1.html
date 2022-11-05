@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <script>
+        //array
+        let stdList = ['Mg Mg', 'Kyaw Kyaw', 'Ag Ag'];
+        console.log(stdList);
+        stdList.push('Yupar');//enter from the last
+        console.log(stdList);
+        //put with function
+        stdList.unshift('Thiha');//from the first
+        console.log(stdList);
+        stdList.pop();
+        console.log(stdList);//remove from the last
+        stdList.shift();
+        console.log(stdList);//remove from the first
+
+        //sorting
+        stdList.sort();//a to z
+        console.log(stdList);
+        stdList.reverse();// z to a
+        console.log(stdList);
+
+        //to change string from array
+        let tostring = stdList.toString();
+        console.log(tostring);
+
+        //to change string to array
+        let toarray = tostring.split(' ');
+        console.log(toarray);
+        console.log(toarray.length);//length of array
+
+        //adding array stdList and stdList1
+        let stdList2 = ['Moe Moe', 'Hla Hla'];
+        let res = stdList.concat(stdList2);//want to add var to put in concact
+        console.log(res);
+
+        let stdList3 = ['Maw Maw', 'Wai Yan'];
+        let res1 = stdList.concat(stdList3);//stdList.concat(stdList2, stdList3);
+        console.log(res1);
+
+        let multiArray = [...stdList, ...stdList2, ...stdList3];//adding all array room(muli)
+        console.log(multiArray);
+
+        let arrayConcat = res.concat(stdList3);
+        console.log(arrayConcat);
+
+    </script>
+</body>
+</html>
