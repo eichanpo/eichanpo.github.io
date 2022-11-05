@@ -22,3 +22,7 @@
     font-family: roboto;
     src: url(../../fonts/Roboto/RobotoCondensed-Light.ttf);
 }
+@font-face {
+    font-family: barlow-italic;
+    src: url(../../fonts/Barlow/Barlow-BlackItalic.ttf);
+}
