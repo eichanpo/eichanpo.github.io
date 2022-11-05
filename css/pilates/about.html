@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste</title>
     <link rel="icon" href="image/logo-pilates.png">
-    <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../fontawesome/css/all.min.css">
     <script src="../fontawesome/js/all.min.js"></script>
     <style>
@@ -34,6 +34,11 @@
             font-size: 45px;
             margin-bottom: -5px;
         }
+        .h1{
+            font-family:roboto-bold;
+            font-size:3rem;
+            color:rgb(248, 195, 179);;
+        }
         table tr {
             width:500px;
         }
@@ -50,6 +55,73 @@
         hr {
             border: 1px solid grey;
         }
+        .banner-img {
+            background-image: linear-gradient(rgba(0,0,0,0.3),#356ab5),url(image/pilates/pilates-stand-group.jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 79vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .two-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 58% 42%;
+        }
+        .two-grid div {
+            margin: 11px;
+            justify-content: center;
+        }
+        .two-grid .two-grid-content {
+            background-color:rgb(248, 195, 179);
+        }
+       .two-grid .two-grid-div img{
+        width:100%;
+        height: auto;
+       }
+       .two-grid .two-grid-content h1{
+            padding: 25px;
+       }
+       .two-grid .two-grid-content p {
+        padding:0px 25px 0px 25px;
+        font-family: h1;
+       }
+       .content {
+        width:70%;
+       }
+       .content p {
+        text-align: justify;
+        font-family: h1;
+       }
+       .content-img {
+        display: grid;
+        grid-template-columns: auto auto auto ;
+       }
+       .content-img p {
+        font-family: h1;
+        font-size: 1rem;
+       }
+       .content-img div {
+        margin: 11px;
+        background-color: rgb(241, 240, 238);
+       }
+       .content-img div img {
+        width:100%;
+       }
+       .content-last {
+        display: grid;
+        grid-template-columns: 50% 50%;
+       }
+       .content-last p {
+        padding:25px;
+        font-size:18px;
+        font-family: h1;
+        text-align: justify;
+        line-height: 25px;
+        word-spacing: 3px;
+       }
     </style>
 </head>
 <body>
@@ -69,8 +141,59 @@
         </nav>
         <!-- end nav -->
 
+        <!-- start banner -->
+        <div class="banner-img">
+            <p class="h1">About Namaste</p>
+            <p style="color:rgb(248, 195, 179); padding:10px 0px 0px 25px;font-weight: bolder;">Pratice Pilates with the best Industry's Teachers</p>
+        </div>
+        <!-- end banner -->
 
+        <!-- start about grid -->
+        <div class="two-grid">
+            <div class="two-grid-div">
+                <img src="image/pilates/pilates-ring3-group.jpg" alt="">
+            </div>
+            <div class="two-grid-content">
+                <h1>Welcome to Pilates anytime!</h1>
+                <p> In 1996, we created Pilates Anytime so you can access world-class Pilates instruction anywhere and on your schedule. Our purpose is to help you experience the joy of movement through Pilates and as a result, bring more joy and ease into your life. We have over 3,700 high-quality, fun, and effective Pilates workouts guided by 200+ of the industry's best teachers. <br><br> Discover the benefits of a regular Pilates practice with the help of our programs and challenges featuring different themes, teachers, and Pilates styles. Whether you are just beginning, an advanced practitioner, a Pilates teacher, or looking for classes with specific equipment, we hope you will experience a warm welcome here.</p>
+            </div>
+        </div>
 
+        <center>
+            <div class="content">
+                <h1>Discover the Benefits of Pilates with Pilates Anytime</h1>
+                <p>Pilates is a system of exercise and movement created by Joseph Pilates that is designed to increase strength, flexibility, and balance. It integrates breath and movement within proper body mechanics to increase awareness, and use all of the muscles of the body as they were designed. Most of the exercises focus on the pelvis and trunk, utilizing both stability and mobility to train the body. It can be practiced on a Mat using your own body and sometimes small props, or on specialized Pilates Apparatus or Pilates machines (the Pilates Reformer is the most common). Part of the beauty of the method is that it can be modified to fit the needs and abilities of each individual practitioner.</p>
+            </div>
+            <div class="content-img">
+                <div>
+                    <img style="height:282px;" src="image/pilates/pilates-ball.jpg" alt="">
+                    <p>Pilates of balancing on Pilates ball</p>
+                </div>
+                <div>
+                    <img src="image/pilates/pilates-bosu-group.jpg" alt="">
+                    <p>Booty workout on Bosu ball</p>
+                </div>
+                <div>
+                    <img src="image/pilates/pilates-ball1.jpg" alt="">
+                    <p>Core strength with Pilates ball</p>
+                </div>
+            </div>
+            <div class="content-last">
+                <div>
+                    <h1>Our Membership</h1>
+                    <p>
+                        With new videos added weekly, you will have unlimited access to 3,700+ high-quality, fun, and effective Pilates workouts, so you can practice anywhere, on your schedule. See Plans and Pricing.
+                    </p>
+                </div>
+                <div>
+                    <h1>For Pilates Teachers</h1>
+                    <p>
+                        We have the most comprehensive online learning available with workshops, Pilates history, discussions, tutorials, business advice and more to enrich your practice and teachings.
+                    </p>
+                </div>
+            </div>
+        </center>
+        <!-- end about grid -->
 
         <!-- start footer -->
         <footer style="background-color: rgb(156, 156, 156);">
