@@ -44,7 +44,7 @@
 }
 /* start index */
 .banner-bg-img {
-    background-image:url(../pilates/image/yoga/yoga-group.jpg);
+    background-image:url(../image/yoga/yoga-group.jpg);
     background-size: cover;
     background-position: center center;
     width:100%;
@@ -110,7 +110,7 @@
     margin:25px;
 }
 .banner .img {
-    background: url(../pilates/image/pilates/pilates-machine.jpg) center center no-repeat;
+    background: url(../image/pilates/pilates-machine.jpg) center center no-repeat;
     background-size: cover;
     justify-content: center;
 }
