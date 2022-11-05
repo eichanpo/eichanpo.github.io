@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/fontawesome/css/">
     <title>Document</title>
     <style>
-        h1 {
+        #time {
             width:300px;
             height:70px;
             text-align: center;
@@ -14,16 +15,16 @@
             color:#fff;
             padding-top: 34px;
         }
-        p {
+        .h1 {
             font-size:3rem;
-            margin-left: 550px;
-            font-weight: bold;
+            text-align: center;
             color: rgb(253, 85, 47);
+            font-family: roboto-bold;
         }
     </style>
 </head>
 <body>
-    <p>Digital Clock</p>
+    <h1 class="h1">Digital Clock</h1>
     <center>
         <h1 id="time"></h1>
     </center>
@@ -36,7 +37,7 @@
             
             h = hr > 12 ? hr-12 : hr;
             m = hr > 12 ? min : min;
-            s = hr >12 ? sec +'PM': sec+'AM';
+            s = hr >12 ? sec +' PM': sec+' AM';
             document.getElementById('time').innerHTML = `${h} : ${m} : ${s}`;
             
         }
