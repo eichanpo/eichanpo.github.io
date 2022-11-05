@@ -1,0 +1,170 @@
+.main-logo {
+    width: 81px;
+    height: 72px;
+    padding-left: 100px;
+
+}
+.logo-name {
+    position: absolute;
+    top: 20px;
+    left: 27px;
+    font-family: lobster;
+    font-size: 21px;
+}
+.nav-bar ul{
+    float: right;
+}
+/* To change inline  */
+.navBrand {
+    display: inline-block;
+}
+/* decendent selector(to change inline block in nav, in ul, in li ) */
+.nav-bar ul li{
+    display: inline-block;
+    margin-right: 40px;/*set the space 40px between menu tag*/
+    margin-top:20px;/*to get the space from top*/
+}
+/*Select to it has ul, li and a in navbar  */
+.nav-bar ul li a{
+    text-decoration: none; /*to remove underline*/
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    text-transform: uppercase;/*change uppercase to menu(ul li a)*/
+}
+/*(select pseudo) to hover menu list */
+.nav-bar ul li a:hover{
+    color: #6d6f6f;
+    /* letter-spacing: 4px;To change the letter space when the pointer onto menu. */
+    /* transition-duration: 0.5s;speed to slow down the menu in 0.5 sec. */
+    
+    /* padding-left: 10px; */
+}
+.logo-name {
+    font-family: title;
+}
+/* start index */
+.banner-bg-img {
+    background-image:url(../pilates/image/yoga/yoga-group.jpg);
+    background-size: cover;
+    background-position: center center;
+    width:100%;
+    height: 86vh;
+    margin-top: -63px;
+    filter: brightness(0.9);
+}
+.banner-bg-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #130f40;
+    opacity: .7;
+    z-index: -1;
+}
+.banner-bg-img h2 {
+    padding-top: 8%;
+    font-size: 70px;
+    color: #fff;
+    margin-left: 300px;
+}
+.banner-bg-img p {
+   padding-left: 0px;
+   text-align: center;
+   color: #fff;
+   font-size: 2rem;
+}
+.banner-bg-img button {
+    margin-left: 550px;
+    text-align: center;
+    background-color: rgb(253, 100, 83);
+    width: 200px;
+    height: 36px;
+    border-radius: 25px;
+    border:none;
+}
+.banner-bg-img button a {
+    font-family: roboto-bold;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+.banner-bg-img button a:hover {
+    color: rgb(253, 100, 83);
+    transition-duration: .3s;
+}
+.banner-bg-img button:hover {
+    background-color: #fff;
+    transition-duration: .3s;
+}
+.banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:80%;
+    margin: auto;
+}
+.banner .banner-div {
+    width: 90%;
+    margin:25px;
+}
+.banner .img {
+    background: url(../pilates/image/pilates/pilates-machine.jpg) center center no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+.banner button {
+    width: 50%;
+    height: 34px;
+    background-color: #666;
+    border: none;
+    border-radius: 11px;
+}
+.banner button a {
+    text-decoration: none;
+    color: #fff;
+}
+.banner button:hover {
+    cursor: pointer;
+    background-color: rgb(250, 131, 131);
+    transition-duration: .5s;
+}
+/* end index */
+
+/* start contact */
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5px 0px 45px 30px;
+    width: 90%;
+    place-items: left;
+    
+}
+.inside-grid {
+    padding: 25px;
+}
+/* end contact */
+
+/* footer start */
+.ft {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: -25px;
+}
+footer {
+    padding-top:45px;
+    padding-bottom: 20px;
+}
+.ft div {
+    display: inline-block;
+    margin-left: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: footer;
+}
+.ft .ft-div p {
+    margin-top: 25px;
+}
+
+/* footer end */
