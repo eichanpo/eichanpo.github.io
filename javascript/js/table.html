@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Table by JavaScript</h2>
+    <table border="1" cellpadding = "10">
+        <tbody id = "table">
+
+        </tbody>
+    </table>
+    <button onclick="show()">Show Table</button>
+    <script>
+        function show() {
+            let html = '';
+            html += ` <tr>`;//open tr tag
+            for(let i = 1; i <= 10; i ++) {
+                html += `<td> ${i} </td>`;
+            }
+            html += `</tr> `;
+            document.getElementById("table").innerHTML = html;
+        }
+    </script>
+</body>
+</html>
