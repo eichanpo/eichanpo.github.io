@@ -161,11 +161,11 @@ footer {
     display: inline-block;
     margin-left: 25px;
     text-align: center;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-family: footer;
 }
 .ft .ft-div p {
-    margin-top: 25px;
+    margin-top: 16px;
 }
 
 /* footer end */
