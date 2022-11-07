@@ -23,7 +23,7 @@
 .nav-bar ul li{
     display: inline-block;
     margin-right: 40px;/*set the space 40px between menu tag*/
-    margin-top:20px;/*to get the space from top*/
+    margin-top:14px;/*to get the space from top*/
 }
 /*Select to it has ul, li and a in navbar  */
 .nav-bar ul li a{
