@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1 style=" margin: auto;text-align: center;">Intro</h1>
-
+    <button type="button" onclick="loc()">go</button>
     <script>
         // alert("Hello:");
         console.log("Yasu");//to look at console
@@ -35,6 +35,18 @@
         }
         console.log(`num2 is: ` + num2);
         console.log(`num3 is: ` + num3);
+
+        //
+        
+        function loc() {
+            let ans = confirm("Go to Youtube");
+            if(ans) {
+                document.location.href = "clock.html";
+            }
+            else {
+                document.location.href = "date.html";
+            }
+        }
     </script>
 </body>
 </html>

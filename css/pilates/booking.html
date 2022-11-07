@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste</title>
+    <link rel="icon" href="image/logo-pilates.png">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <script src="../fontawesome/js/all.min.js"></script>
+    <style>
+        h3 {
+            padding-top: 20px;
+            padding-bottom: 16px;
+        }
+        .icon-ft a{
+            display: inline-block;
+            color:rgb(253, 172, 172);
+            padding: 25px 7px 5px 0px;
+        }
+        hr {
+            border: 1px solid grey;
+        }
+       /* start form */
+       .containerForm {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 100%;
+        padding: 20px 100px;
+       }
+       .containerForm::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background:url(image/class/signup-bg.jpg) no-repeat center;
+        background-size: cover;
+        z-index: -1;
+        filter: blur(50px);
+       }
+       .content-box {
+        max-width: 850px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.2);
+       }
+       .left {
+        height: 100%;
+        background: url(image/class/signup-img.jpg) no-repeat center;
+        background-size: cover;
+       }
+       .right {
+        padding: 21px 36px;
+       }
+       .right h2 {
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        font-family: footer;
+        color: #878988;
+       }
+       h2::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 50px;
+        border-radius: 2px;
+        background-color:#de2b03;
+       }
+       .field {
+        width: 90%;
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: 2px solid rgba(0, 0, 0, 0);
+        background-color:#adadad;
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        box-sizing: border-box;
+        transition: 0.3s;
+       }
+       .field:focus {
+        color:#fff;
+       }
+       .field:hover {
+        background-color: rgba(0,0,0,0.1);
+       }
+       .field:focus {
+        background-color: rgb(253, 202, 202);
+        border: 2px solid rgba(3, 85, 250 9.47);
+       }
+       .area {
+        min-height: 150px;
+       }
+       .send {
+        width: 90%;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+        background-color: #878988;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        transition: 0.4s;
+       }
+       .send:hover {
+        background-color: rgb(254, 218, 218);
+        color:#878988;
+       }
+       @media screen and (max-width:768px) {
+        .content-box {
+            grid-template-columns: 1fr;
+        }
+        .left {
+            height: 200px;
+        }
+       }
+       /* end public form */
+       /* start private form */
+       .body {
+        padding: 0;
+        margin: 34px 500px;
+        background:#d8dedb;
+       }
+       .form-wrap {
+        width: 320px;
+        height:410px;
+        background-color: #3e3d3d;
+        padding: 34px 20px;
+        /* box-sizing: border-box; */
+        /* position: fixed; */
+        /* left: 50%; */
+        /* top: 50%; */
+        transform: translate( -7%);
+       }
+       .private:hover {
+        background-color: rgba(0,0,0,0.3);
+       }
+       .h1 {
+        text-align: center;
+        color:#fff;
+        font-family: footer;
+        margin-bottom: 20px;
+       }
+       .private {
+        width: 100%;
+        background: none;
+        border: 1px solid #fff;
+        border-radius: 3px; 
+        padding: 7px 16px;
+        box-sizing: border-box;/* length for all input*/
+        margin-bottom: 20px;
+        font-size: 16px;
+       }
+
+       .btn-book {
+        background:#bac675;
+        border:0; 
+        cursor: pointer;
+        width: 100%;
+        padding: 7px 16px;
+        font-size: 16px;
+        color: #3e3d3d;
+        margin-top: 25px;
+       }
+       .btn-book:hover {
+        background-color: #a4b15c;
+        transition: .4s;
+        color: #fff;
+       }
+       ::placeholder {
+        color: #fff;
+       }
+       select {
+        color:#fff;
+       }
+       .private:focus {
+        color:#fff;
+        background:#3e3d3d;
+       }
+       .txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: antiquewhite;
+        margin:25px 340px;
+       }
+    </style>
+</head>
+<body>
+        <!-- Start Nav -->
+        <nav class="nav-bar" style="background-color:rgb(248, 195, 179);">
+            <div class="navBrand">
+                <a href="index.html"><img class="main-logo" src="image/logo.png" alt=""></a>
+                <p class="logo-name">Namaste</p>
+            </div>
+            <ul>
+                <li><a href="index.html">Studio</a></li>
+                <li><a href="class.html">Class</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- end nav -->
+
+        <!-- start form -->
+        <h1 style="text-align: center; color:rgb(99, 90, 90);font-family:footer;">Book for Namaste Group class</h1>
+        <div class="containerForm">
+            <div class="content-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Group Class</h2>
+                    <input type="text" class="field" placeholder="Enter Your name..">
+                    <input type="phone" class="field" placeholder="Enter your contact number..">
+                    <select class="field" name="class" id="class">
+                        <option value="1">Group Class</option>
+                        <option value="1">Mat Pilates - 7:30-9:00am</option>
+                        <option value="2">Spinal Freedom - 9:30-11:00am</option>
+                        <option value="3">Sexy booty - 11am-12:00pm</option>
+                        <option value="4">Fly Pilates - 1:30-3:00pm</option>
+                        <option value="5">Arial Yoga - 3:30-5:00pm</option>
+                        <option value="6">Yin Yoga 5:30-7:00pm(Only Sat and Sunday)</option>
+                      </select>
+                      <input type="number" class="field" placeholder="How many slots..">
+                      <textarea class="field area" placeholder="Your message here.."></textarea>
+                      <button class="send">Book</button>
+                </div>
+            </div>
+        </div>
+
+        <h1 style=" margin-top:70px;text-align: center; color:rgb(99, 90, 90);font-family:footer;">Book for Namaste Private class</h1>
+        <div class="body">
+            <div class="form-wrap">
+                <form action="">
+                    <h1 class="h1">Private Class</h1>
+                    <input class="private" type="text" placeholder="Enter your name..">
+                    <input class="private" type="number" placeholder="Enter your number..">
+                    <input class="private" type="email" placeholder="Enter your mail..">
+                    <input class="private" type="text" placeholder="Enter private time..">
+                    <select class="private" class="" name="class" id="class">
+                        <option class="tr" value="1">Teachers</option>
+                        <option value="1">AerynChong Wang Jin</option>
+                        <option value="2">Jason Wong</option>
+                        <option value="3">Michelle Wong</option>
+                        <option value="4">Sarah Low Wei</option>
+                        <option value="5">Christina</option>
+                      </select>
+                      <button class="btn-book" type="button">Book</button>
+                </form>
+            </div>
+        </div>
+        <!-- end form -->
+        <!-- content  -->
+        <div class="txt">
+            <div style="width: 90%; ">
+                <h1 style="color:#de2b03;text-align: center; font-family:h1;"><i class="fa-solid fa-star"></i> &nbsp; Just for PRIVATE class</h1>
+                <p style="font-family:barlow; color:#878988;">
+                    Thanks for visiting here! Our business hours are Monday to Friday 9 a.m. - 6 p.m. and Saturday and Sunday 7 a.m. - 7 p.m. If the slot isn't available for private class, We will reply to messages within business hours. 
+                </p>
+            </div>
+        </div>
+        <!-- end content -->
+        <!-- start footer -->
+        <footer style="background-color: rgb(156, 156, 156);">
+            <div class="ft">
+                <div class="">
+                    <img src="image/logo.png" style="width:70px; height:70px;margin-top: 20px;" alt="">
+                    <p><i class="fa-regular fa-envelope"></i>&nbsp; namaste@pilates.com</p>
+                    <p><i class="fa-solid fa-phone"></i>&nbsp; +1619-964-2347</p>
+                    <p><i class="fa-brands fa-skype"></i>&nbsp; namaste.pilates.instatute</p>
+                    <br><small style="color:rgb(210, 4, 4);font-family: h1;">get the latest news from namaste</small> <br>
+                    <div style="margin: 10px 0px 0px 0px;"><input style="height: 25px;" type="text" placeholder="your email address"><button style="height: 29px; color:rgb(97, 95, 95); border: none;">I'M IN</button></div>
+                </div>
+                <div class="ft-div">
+                    <p><h3> We are based on</h3></p>
+                    <p><big>-</big> Namaste Yoga Institute, <br> 86-90 Paul Street,<br> London EC2A 4NE,<br> UK</p>
+                    <p> <big>-</big>
+                        5B Guillemard Rd,<br> level 3 Wint Fort Building, <br> Los 399685
+                    </p>
+                </div>
+                <div class="icon-ft ft-div">
+                    <p><h3>Social Media</h3></p>
+                    <p>Follow us on</p>
+                    <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter fa-2x"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope fa-2x"></i></a>
+                    <p>Corporate association <br>
+                        <a href="" style="text-decoration:none;">Community Team and condotion</a> <br> 
+                    </p>
+                    
+                </div>
+                <div class="ft-div">
+                    <p><h3>Operating Hours(except public holiday)</h3></p>
+                    <p>Monday - Friday</p>
+                    <p>9:00AM - 6:00PM</p>
+                    <p>Saturday - Sunday</p>
+                    <p>7am - 7pm</p>
+                </div>
+            </div>
+            <center>
+                <div >
+                    <hr>
+                    <p style="padding-top: 9px;color: rgb(80, 80, 80);">Copyright © namaste, since 1994.</p>
+                </div>
+        </center>
+        </footer>
+        <!-- end footer -->
+</body>
+</html>

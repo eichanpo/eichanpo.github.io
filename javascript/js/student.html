@@ -29,13 +29,39 @@
         </tbody>
     </table>
         <script>
+            let studentListArr = [];
             function showData() {
+                //get data
                 let name = document.myForm.name.value;
                 let age = document.myForm.age.value;
                 let city = document.getElementById('city').value;
                 console.log(name);
                 console.log(age);
                 console.log(city);
+                //create obj 
+                let std = {
+                    stdName : name,
+                    stdAge : age,
+                    stdCity : city 
+                }
+                // console.log(std);
+                studentListArr.push(std);//add data to array by push
+
+                //show data
+                console.log(studentListArr);
+                let data = '';
+                for(let i = 0; i < studentListArr.length; i ++) {
+                    let stdList = studentListArr[i];
+                    data += `
+                        <tr>
+                            <td>${i + 1}</td>    
+                            <td>${stdList.stdName}</td>
+                            <td>${stdList.stdAge}</td>
+                            <td>${stdList.stdCity}</td>
+                        </tr>
+                    `;
+                }
+                document.getElementById('myData').innerHTML = data;
             }
         </script>
     
