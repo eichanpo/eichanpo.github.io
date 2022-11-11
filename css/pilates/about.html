@@ -130,7 +130,43 @@
             .ft-div a:hover {
             color:rgb(47, 47, 47);
         }
- 
+        .bg {
+            background: url(image/class/group.png)no-repeat center center;
+            background-size:cover;
+            height: 70vh;   
+        }
+        .bg div {
+            /* margin:300px; */
+            margin:0px 300px;
+            padding-top: 200px;
+            height: 100px;
+
+        }
+        .bg table {
+            width:700px;
+            align-items: center;
+        }
+        .bg table input {
+            width: 73%;
+            height: 34px;
+            background-color: rgba(0,0,0,0.3);
+            outline: none;
+            border: 1px solid gainsboro;
+            padding:5px;
+            font-size:18px;
+        }
+        
+        .bg table button {
+            width:20%;
+            height: 45px;
+            margin-left:-5px;
+            cursor: pointer;
+            border: none;
+        }
+       .bg ::placeholder {
+            color:#fff;
+        }
+        
     </style>
 </head>
 <body>
@@ -143,6 +179,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="class.html">Class</a></li>
+                <li><a href="booking.html">Book</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -204,11 +241,26 @@
         </center>
         <!-- end about grid -->
 
+        <!-- start subscribe -->
+        <div class="bg">
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <input class="subscribe" type="text" placeholder="email">
+                            <button style="font-family:h1; font-weight:bolder;"> <i style="color:red;" class="fa-brands fa-youtube"></i>&nbsp; SUBSCRIBE US</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- end subscribe -->
+
         <!-- start footer -->
         <footer style="background-color: rgb(156, 156, 156);">
             <div class="ft">
                 <div class="">
-                    <img src="image/logo.png" style="width:70px; height:70px;margin-top: 20px;" alt="">
+                    <a href="index.html"><img src="image/logo.png" style="width:70px; height:70px;margin-top: 20px;" alt=""></a>
                     <p><i class="fa-regular fa-envelope"></i>&nbsp; namaste@pilates.com</p>
                     <p><i class="fa-solid fa-phone"></i>&nbsp; +1619-964-2347</p>
                     <p><i class="fa-brands fa-skype"></i>&nbsp; namaste.pilates.instatute</p>
@@ -243,6 +295,7 @@
 
                     <a href="index.html">studio</a>
                     <a href="class.html">class</a>
+                    <a href="booking.html">Book</a>
                     <a href="blog.html">blog</a>
                     <a href="about.html">about</a>
                     <a href="contact.html">contact</a>

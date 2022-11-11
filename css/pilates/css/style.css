@@ -80,7 +80,7 @@
 .banner-bg-img button {
     margin-left: 550px;
     text-align: center;
-    background-color: rgb(253, 100, 83);
+    background-color: rgb(251, 131, 118);
     width: 200px;
     height: 36px;
     border-radius: 25px;
@@ -93,12 +93,13 @@
     color: #fff;
 }
 .banner-bg-img button a:hover {
-    color: rgb(253, 100, 83);
+    /* color: rgb(253, 100, 83); */
     transition-duration: .3s;
 }
 .banner-bg-img button:hover {
-    background-color: #fff;
+    background-color: rgb(253, 100, 83);
     transition-duration: .3s;
+    cursor: pointer;
 }
 .banner {
     display: grid;
@@ -128,7 +129,7 @@
 }
 .banner button:hover {
     cursor: pointer;
-    background-color: rgb(250, 131, 131);
+    background-color: #444;
     transition-duration: .5s;
 }
 /* end index */
