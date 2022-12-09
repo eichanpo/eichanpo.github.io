@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hideHeader">jQuery is Awesome</h1>
+    <button id="click" class="click">hide</button>
+    <button id="show">show</button>
+    <p class="pTag">This is p tag 1</p>
+    <p class="pTag">This is p tag 2</p>
+    <p class="pTag">This is p tag 3</p>
+    
+
+    <p id="pSelf">Seft selector</p>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#click').click(function(e) {
+                $('#hideHeader').hide('slow');
+                $('.pTag').hide('fast');
+                e.preventDefault();
+            });
+            $('#show').click(function() {
+                $('#hideHeader').show('slow');
+                $('.pTag').show('fast');
+            });
+            $('#pSelf').click(function() {
+                $(this).hide(3000, function() {
+                    alert('hiding');
+                    $(this).show('slow');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

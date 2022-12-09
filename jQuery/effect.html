@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis debitis atque quis nobis.lorem200 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error nisi tempora fugiat quae consequuntur reiciendis illum eos maxime doloremque ut incidunt ducimus commodi temporibus harum illo tenetur voluptates, corporis deserunt laborum unde nulla aspernatur eveniet. Voluptate repellendus saepe facere, error aliquam incidunt tempore labore inventore repellat, veritatis, eligendi libero dolore. Eveniet sit fugit quaerat earum eaque soluta minima perferendis est in doloribus, autem et esse blanditiis, ea velit. Quia possimus sed mollitia deserunt architecto iusto earum vitae quidem necessitatibus eligendi molestias fuga unde odio minima, provident natus! Sapiente voluptatibus quo pariatur natus, ipsam itaque corrupti blanditiis minima perspiciatis necessitatibus officia iure inventore facilis cupiditate sequi nobis, magni iste, adipisci doloremque beatae? Quidem exercitationem laudantium dolore corrupti debitis id, tempore at dolorum est veritatis? Facilis laudantium corporis tenetur, exercitationem quidem, enim et quas unde nesciunt ipsa obcaecati numquam quo, excepturi laborum dignissimos earum omnis ratione? Sequi molestiae recusandae asperiores placeat? Aperiam, repellendus a. Animi consectetur nobis, necessitatibus obcaecati aliquid debitis fugit minima sunt iusto culpa suscipit sequi voluptatum, eos quisquam doloribus deleniti! Suscipit non doloribus quam, culpa nostrum deserunt molestiae laborum earum quaerat totam odio fuga nemo doloremque beatae accusamus fugit sunt consectetur, ipsum impedit porro repudiandae repellendus architecto id? Maiores molestiae voluptates tempore doloremque error neque voluptatum aspernatur facere alias.</p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fIn">fade in</button>
+    <button id="fOut">fade out</button>
+    <button id="fadeToggle">Fade toggle</button>
+    <button id="fadeTo">fade to</button>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#hide').click(function() {
+                $('p').hide(1000);
+            });
+            $('#show').click(function() {
+                $('p').show(1000);
+            });
+            $('#toggle').click(function() {
+                $('p').toggle('slow');
+            });
+            $('#fIn').click(function() {
+                $('p').fadeIn('slow');
+            });
+            $('#fOut').click(function() {
+                $('p').fadeOut('slow');
+            });
+            $('#fadeToggle').click(function() {
+                $('p').fadeToggle('slow');
+            });
+            $('#fadeTo').click(function() {
+                $('p').fadeTo(1000, 0.2);
+            });
+        });
+    </script>
+</body>
+</html>

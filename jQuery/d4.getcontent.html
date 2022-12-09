@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Today is  <i>TGIF</i>. Go to the coffee bar.</h1>
+    <p id="content1"></p>
+    <p id="content2"></p>
+    <h2></h2>
+    Name:
+    <input type="text" id="name" class="name">
+    <button id="btn_click">Click</button>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn_click").click(function(e) {
+                e.preventDefault();
+                let getText = $("h1").text();
+                // alert(getText);
+                let get_HTML = $("h1").html();
+                // alert(getHTML);
+                $("#content1").text(getText);
+                $("#content2").text(get_HTML);
+
+                let name = $("#name").val();
+                $('h2').text(name);
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clickSlide {
+            max-width: 150px;
+            background-color: #000;
+            color:wheat;
+            text-align:center;
+            padding: 5px 0;
+            cursor: pointer;
+            box-shadow: -3px 0px 59px 1px black;
+        }
+        #panel {
+            max-width: 150px;
+            background-color: #1f2421;
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            border-radius: 7px;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="clickSlide">Click Me</p>
+    <p id="panel">Slider</p>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#clickSlide').click(function() {
+                // $('#panel').slideUp();
+                // $('#panel').slideDown();
+                $('#panel').slideToggle(1000);
+            });
+        });
+    </script>
+</body>
+</html>
