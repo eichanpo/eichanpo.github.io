@@ -1,5 +1,5 @@
 .txt {
-    color: rgb(46, 130, 127);
+    color: rgb(39, 100, 98);
     font-weight: bolder;
     font-family: fantasy;
 }
@@ -9,15 +9,15 @@
 }
 
 .btn {
-    background-color: rgb(46, 130, 127);
+    background-color: rgb(39, 100, 98);
     color: #fff;
 }
 .btn:hover {
-    background-color: rgb(159, 212, 210);
-    color: rgb(29, 93, 90);
+    background-color: rgb(31, 69, 68);
+    color: #fff;
 }
 i {
-    color: rgb(46, 130, 127);
+    color: rgb(47, 123, 120);
 }
 
 

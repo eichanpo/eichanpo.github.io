@@ -17,3 +17,7 @@
     font-family: nato-med;
     src: url(Noto_Sans_JP/NotoSansJP-Medium.otf);
 }
+@font-face {
+    font-family: roboto;
+    src: url(Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
