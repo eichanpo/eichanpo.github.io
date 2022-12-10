@@ -1,0 +1,19 @@
+@font-face {
+    font-family: title;
+    src: url(Quattrocento_Sans/QuattrocentoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: shi;
+    src: url(Shizuru/Shizuru-Regular.ttf);
+}
+
+@font-face {
+    font-family: nato-black;
+    src: url(Noto_Sans_JP/NotoSansJP-Black.otf);
+}
+
+@font-face {
+    font-family: nato-med;
+    src: url(Noto_Sans_JP/NotoSansJP-Medium.otf);
+}

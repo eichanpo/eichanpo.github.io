@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .style {
+            max-width: 200px;
+            background-color: aquamarine;
+            color: white;
+            text-align: center;
+            padding: 50px 0px;
+        }
+    </style>
+</head>
+<body>
+    <p>I want to go travel.</p>
+    <button id="addClass">Add class</button>
+    <button id="removeClass">Remove Class</button>
+    <button id="toggleClass">Toggle Class</button>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#addClass").click(function(e) {
+                $('p').addClass('style');
+            });
+            $("#removeClass").click(function(e) {
+                $('p').removeClass('style');
+            });
+            $("#toggleClass").click(function() {
+                $('p').toggleClass('style');
+            });
+        });
+    </script>
+</body>
+</html>
