@@ -4,6 +4,13 @@
 * {
     font-family: roboto;
 }
+.sticky {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+ }
 .carousel-item img {
     height: 73vh;
     display: cover;
