@@ -1,0 +1,123 @@
+.active .nav-link {
+    color: red;
+}
+* {
+    font-family: roboto;
+}
+.carousel-item img {
+    height: 79vh;
+    display: cover;
+}
+.carousel-text {
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    background-color: rgba(0,0,0,0.35);
+    padding: 25px;
+    color:#fff;
+    width:450px;
+    text-align: justify;
+}
+@media(max-width:991.98px) {
+    .carousel-text {
+        position: absolute;
+        top: 90px;
+        left: 110px;
+        background-color: rgba(0,0,0,0.35);
+        padding: 25px;
+        color:#fff;
+    }
+}
+
+
+/* slider */
+
+
+/* new arrival */
+.divided {
+    width: 100px;
+    border: 2px solid royalblue;
+    
+}
+.hr-1st {
+    display: inline-block;
+    border: 2px solid red;
+    width: 50%;
+}
+.hr-2nd {
+    display: inline-block;
+    border: 2px solid green;
+    width: 50%;
+}
+.detail {
+    position: absolute;
+    top:50%;
+    left: 40%;
+    display: none;
+}
+.img_hover_new {
+    position: relative;
+}
+.img_hover_new:hover .detail{
+    display: block;
+}
+.img_hover_new:hover .imgs {
+    opacity: 0.7;
+}
+
+/* subscribe */
+.subscribe {
+    color:white;
+    /* text-decoration: none; */
+}
+.subscribe:hover {
+    color:rgb(51, 241, 178);
+}
+.logo {
+    width:90%;
+    padding: 100px;
+    padding-left:180px;
+}
+@media (max-width:768px) and (min-width:426px) {
+    .logo {
+        width:100%;
+        padding: 140px 90px;
+    }
+}
+@media(max-width:425px) and (min-width:320px) {
+    .logo {
+        width:100%;
+        padding:20%;
+        margin-top:-100px;
+    }
+    .p-sub {
+        font-size:11px;
+    }
+}
+
+/* latest news */
+.newcard {
+    width:100%;
+    /* border:1px solid rgb(230, 229, 229); */
+    border-radius: 7px 7px 0px 0px;
+}
+.newcard img {
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+    transition-duration: .7s;
+}
+.newcard img:hover {
+    transform: scale(1.2);
+}
+.readmore {
+    display: inline-block;
+    padding-bottom: 18px;
+}
+.img-position {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 7px 7px 0px 0px;
+}
+

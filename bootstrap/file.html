@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../bootstrap/"> -->
+</head>
+<body>
+    <h1 class="text-center text-danger">Form</h1>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="offset-md-3 col-md-6">
+                    <div class="mb-4">
+                    <label class="form-label" for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                <div class="mb-4">
+                    <label for="ph" for="ph">Phone</label>
+                    <input type="number" class="form-control" name="ph" id="ph">
+                </div>
+                
+                    <label for="" class="form-label d-block">Gender</label>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female">
+                        <label class="form-check-label" for="female">Feale</label>
+                    </div>
+                    <label for="" class="d-block mt-3 form-label">Knowledge</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="html" id="html">
+                            <label class="form-check-label" for="html">html</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="java" id="java">
+                            <label class="form-check-label" for="html">java</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="php" id="php">
+                            <label class="form-check-label" for="html">php</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="sql" id="sql">
+                            <label class="form-check-label" for="html">sql</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="figma" id="figma">
+                            <label class="form-check-label" for="figma">figma</label>
+                        </div>
+                    <label for="" class="mt-3">Graduate</label>
+                    <select class="form-select form-select-md w-50 mb-3" name="graduate" id="graduate">
+                        <option value="1">first year</option>
+                        <option value="2">second year</option>
+                        <option value="3">third year</option>
+                        <option value="4">fourth year</option>
+                    </select>
+
+                    <div>
+                        <label class="form-label" for="address">Address</label>
+                        <textarea name="address" id="address" class="form-control"></textarea>
+                    </div>
+                    <button class="float-end btn btn-primary my-3">Submit</button>
+            </div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -30,15 +30,15 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm mt-3">
+    <nav class="navbar navbar-expand-sm mt-3 sticky-top">
         <div class="container-fluid">
             <ul class="navbar-nav">           
               <li class="nav-item">
                 <a class="nav-link" href="#">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i>
-                  <span class="position-absolute  translate-middle p-2 bg-danger border border-light rounded-circle">
+                <a class="nav-link" id="cart" href="checkout.html"><i class="fa-solid fa-cart-shopping fa-2x"></i>
+                  <span id="count_number" class="position-absolute badge translate-middle px-2 bg-danger border border-light rounded-pill">
                     <span class="visually-hidden">New alerts</span>
                   </span></a>
               </li>     
@@ -48,7 +48,7 @@
 
     <h1 class="text-center txt mt-5">Desktop PCs</h1>
 
-    <div class="container my-5">
+    <div class="container my-5"> 
         <div class="row justify-content-center g-3">
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 p-3">
               <div class="card h-100 shadow">
@@ -58,7 +58,7 @@
                   <p>Gaming desktop(core i7)</p>
                   <p class="card-text">$2200.00</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="1" data-name="pc1" data-price="2200">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@
                   <p>DP1902(core i5)</p>
                   <p class="card-text">$1350.00</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="2" data-name="pc2" data-price="1350">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -84,7 +84,7 @@
                   <p>Business desktop(core i7)</p>
                   <p class="card-text">$1800.00</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="3" data-name="pc3" data-price="1800">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@
                   <p>Assemble desktop(core i7)</p>
                   <p class="card-text">$2100.00</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="4" data-name="pc4" data-price="2100">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@
                   <p>M910t 10MM(core i7)</p>
                   <p class="card-text">$1139.46</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="5" data-name="pc5" data-price="1139.46">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@
                   <p>Business desktop(core i7)</p>
                   <p class="card-text">$2200.00</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="6" data-name="pc6" data-price="2200">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -136,7 +136,7 @@
                   <p>All in one PC(core-i3)</p>
                   <p class="card-text">$1200.00</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="7" data-name="pc7" data-price="1200">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -149,7 +149,7 @@
                   <p>All in one desktop(core i5)</p>
                   <p class="card-text">$1400.00</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="8" data-name="pc-8" data-price="1400">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -162,7 +162,7 @@
                   <p>All in one Intel Core i5-10500</p>
                   <p class="card-text">$1800.00</p>
                   <div class="d-grid gap-2 mx-auto">
-                    <a href="#" class="btn">add to cart</a>
+                    <a href="#" class="btn addToCart" data-id="9" data-name="pc-9" data-price="1800">add to cart</a>
                   </div>
                 </div>
               </div>
@@ -170,10 +170,125 @@
             
         </div>
     </div>
+    <!-- ------------------- -->
+
+    <div class="container mt-5">
+      <div class="row">
+          <div class="offset-md-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+              <table class="table table-success table-striped" border="1" cellpadding="10" cellspacing="0">
+                  <thead>
+                      <th>No</th>
+                      <th>Item Name</th>
+                      <th>Price</th>
+                      <th>Qty</th>
+                      <th>Sub Total</th>
+                  </thead>
+                  <tbody id="items">
+
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+
+    <!-- -------------------- -->
+
+
 
     <script src="../js/jquery.min.js"></script>
     <script>
+      $(document).ready(function() {
+        $(".table").hide();
+        count();
+        $(".addToCart").click(function (e) {
+          e.preventDefault();
+          let id = $(this).data('id');
+          let name =$(this).data('name');
+          let price = $(this).data('price');
+          console.log(id, name, price);
 
+          let items = {
+            item_id : id,
+            item_name : name, 
+            item_price : price,
+            qty : 1//for count
+          }
+          let itemString = localStorage.getItem('shops');//named
+          let itemArray;
+          if(itemString == null) {
+            itemArray = [];
+          }
+          else {
+            itemArray = JSON.parse(itemString);
+          }
+          //item adding if click more than one
+          var status = false;
+          $.each(itemArray, function(i, v) {
+            if(id == v.item_id) {
+              status = true;
+              v.qty++;
+            }
+          });
+          if(status == false) {
+            itemArray.push(items);
+          }
+          let itemData = JSON.stringify(itemArray);
+          localStorage.setItem('shops', itemData);
+          count();
+          });
+          function count() {
+            let itemString = localStorage.getItem('shops');
+            if(itemString) {
+              let itemArray = JSON.parse(itemString);
+
+              if(itemArray != 0) {
+                // let count = itemArray.length;
+                let count = 0 ;
+                $.each(itemArray, function(i,v) {
+                  count+=v.qty;
+                });
+                $("#count_number").text(count);
+              }
+            }
+          }
+          // $("#cart").click(function() {
+          //   $(".table").show();
+          //   var cartStr = localStorage.getItem('shops');
+          //   console.log(cartStr);
+     
+          //   if(cartStr) {
+          //     var body;
+          //     var cartArr = JSON.parse(cartStr);
+          //     var tot = 0;
+          //     $.each(cartArr, function(i,v) {
+          //       tot += v.qty * v.item_price;
+          //       console.log(tot);
+          //       let id = i + 1;
+          //       console.log(id);
+          //       body += `
+          //         <tr>
+          //           <td>${id}</td> 
+          //           <td>${v.item_name}</td> 
+          //           <td>${v.item_price}</td>
+          //           <td>
+          //             <button> - </button>
+          //             ${v.qty}
+          //             <button> + </button>
+          //           </td>
+          //           <td>${v.qty * v.item_price}</td>
+          //         </tr>
+          //       `;
+          //     });
+          //     body += `
+          //       <tr>
+          //         <td colspan = "4">Total</td>
+          //         <td>${tot}</td>
+          //       </tr>
+          //     `;
+          //     $("#items").html(body);
+          //   }
+          // });
+      });
     </script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
