@@ -2,3 +2,16 @@
     font-family: roboto;
     src: url(../font/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
+
+@font-face {
+    font-family: quatt;
+    src: url(../font/Quattrocento_Sans/QuattrocentoSans-Regular.ttf);
+}
+@font-face {
+    font-family: shi;
+    src: url(../font/Shizuru/Shizuru-Regular.ttf);
+}
+@font-face {
+    font-family: lobster;
+    src: url(../font/Lobster/Lobster-Regular.ttf);
+}
