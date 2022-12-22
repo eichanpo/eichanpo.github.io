@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan fashion</title>
+    <link rel="icon" href="image/logo2.png">
+    <link rel="apple-touch-icon" href="image/logo2.png">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<style>
+     .sticky {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 100;
+     }
+     .labeltot {
+        text-align: right;
+        font-size:25px;
+     }
+     .tot {
+        font-size:25px;
+        color: rgb(205, 102, 114);
+        padding-left: 16px;
+     }
+</style>
+<body>
+    <!-- nav start -->
+    
+    <nav class="bg-danger py-1">
+            <div class="container">
+            <div class="row text-white">
+                <div class="col-6">
+                    <small class="text-white">
+                        <span class="d-none d-inline-block d-md-inline"><i class=" fa-solid fa-envelope"></i>&nbsp; contact@iwatani.com</span>
+                        <span class="ps-3"><i class=" fa-solid fa-phone-volume"></i>&nbsp; 080-11838371</span>
+                    </small>
+                </div>
+            
+                <div class="col-6 text-end text-white">
+                    <small>
+                        Follow Us &nbsp; : &nbsp; <a href=""><i class="text-white fa-brands fa-facebook"></i></a>
+                        <a href="" class="px-1"><i class="text-white fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="text-white fa-brands fa-instagram"></i></a>
+                    </small>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm" id="stickyTop">
+        <div class="container">
+            <img src="image/logo2.png" width="150px" height="55px" alt="">
+        <a href="" class="navbar-brand me-auto"></a> <!--from start me-auto-->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-brand navbar-collapse" id="navBar">
+            <ul class="navbar-nav ms-auto"> <!-- from right ms-auto-->
+                <li class="nav-item me-1 nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <!-- <li class="nav-item me-1"><a href=""  class="nav-link">Product</a></li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catagory
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="men.html">Men</a></li>
+                      <li><a class="dropdown-item" href="women.html">Women</a></li>
+                      <li><a class="dropdown-item" href="kids.html">Kids</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item me-1"><a href="promo.html"  class="nav-link">Promotion</a></li>
+                 
+                  <li class="nav-item me-1"><a href="contact.html"  class="nav-link">Contact</a></li>
+                  <li class="nav-item me-1"><a href="signin.html"  class="nav-link">Login</a></li>
+                  <li class="nav-item me-1"><a href="register.html"  class="nav-link">Register</a></li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="cart" href="chkout.html"><i class="fa-solid fa-cart-shopping fa-1x"></i>
+                        <span id="count_number" class="position-absolute badge translate-middle px-2 bg-danger border border-light rounded-pill">
+                        </span></a>
+                    </li> 
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- start chkout -->
+   <div class="container my-5">
+        <div class="row">
+            <div class="offset-xl-2 col-xl-8">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Item name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Sub total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemData">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+   </div>
+   <div class="container my-5">
+    <div class="row">
+        <div class="offset-md-4 col-md-4">
+            <div class="d-grid gap-2">
+                <button class="btn btn-danger" type="button" id = "order">Check out</button>
+            </div>
+
+        </div>
+    </div>
+   </div>
+    <!-- end chkout -->
+
+
+    <!-- footer -->
+    <footer class="bg-dark text-white-50 f">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 pb-3">
+                    <h5 class="header ">Chan fashion</h5>
+                    <p align="justify" class="pe-5" style="line-height: 23px;">
+                        By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="#" class="text-white"> Privacy Policy</a>
+                    </p>
+                    <p>
+                        <img src="image/logo2w.png"  class="img-fluid w-50" alt="">
+                    </p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+                    <h5 class="header ">Information</h5>
+                    <a href="" class="nav-link ps-1 py-1">Home</a>
+                    <a href="" class="nav-link ps-1 py-1">Category</a>
+                    <a href="" class="nav-link ps-1 py-1">Promotion</a>
+                    <a href="" class="nav-link ps-1 py-1">Sign in</a>
+                    <a href="" class="nav-link ps-1 py-1">Register</a>
+                    <a href="" class="nav-link ps-1 py-1">Contact</a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 pb-3">
+                    <h5 class="header ">Check it out</h5>
+                    <a href="" class="nav-link ps-1 py-1">About Chan</a>
+                    <a href="" class="nav-link ps-1 py-1">Equilibrium</a>
+                    <a href="" class="nav-link ps-1 py-1">Code of ethics</a>
+                    <a href="" class="nav-link ps-1 py-1">Chan Garden</a>
+                    <a href="" class="nav-link ps-1 py-1">Pravicy & Cookies</a>
+                    <a href="" class="nav-link ps-1 py-1">Cooperate information</a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <h5 class="header ">Find us on</h5>
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="col-11 add">
+                            Officiel GUCCI®. 195 Broadway 12th Floor New York, NY 10007 USA        
+                        </div>
+                        <p class="py-1">
+                            <i class="fa-solid fa-phone pe-2"></i>&nbsp; +3456787890
+                        </p>
+                        <p class="py-1">
+                            <i class="fa-solid fa-envelope pe-2"></i>&nbsp; chan@fashion.com
+                        </p>
+                        <div class="container icon">
+                            <div class="row" style="margin-left: -35px;">
+                                <div class="col-1">
+                                    <a href="" class="text-decoration-none" style="color:rgb(7, 220, 88)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-whatsapp fa-stack-1x fa-inverse fa-1x"></i>  
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-1 ms-3">
+                                    <a href="" class="text-decoration-none" style="color:rgb(176, 5, 210)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-viber fa-stack-1x fa-inverse"></i>   
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-1 mx-3">
+                                    <a href="" class="text-decoration-none" style="color:rgba(36, 4, 243, 0.807)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i> 
+                                            
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-1 me-3">
+                                    <a href="" class="text-decoration-none" style="color:rgba(255, 142, 21, 0.807)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i> 
+                                            
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-1">
+                                    <a href="" class="text-decoration-none" style="color:rgba(57, 233, 253, 0.807)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-facebook-messenger fa-stack-1x fa-inverse"></i> 
+                                            
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-3">
+                <div class="container px-3">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="text-center">© 2016 - 2020 Guccio` Chan S.p.A. - All rights reserved. </p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="jsfile/slider.js"></script>
+    <script src="jquery/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="count.js"></script>
+    <script>
+         $(document).ready(function() {
+            count();
+            getData();
+            function getData() {
+                let itemstr = localStorage.getItem('cardItem');
+                console.log(itemstr);
+            if(itemstr) {
+                let itemArr = JSON.parse(itemstr);
+                let j = 0;
+                let data = '';
+
+                let tot = 0;
+
+                $.each(itemArr, function(i,v) {
+                    data += `
+                        <tr>
+                            <td>${++j}</td>
+                            <td>${v.item_name}</td>
+                            <td>$&nbsp;${v.item_price}</td>
+                            
+                            <td>
+                                <button class="btn btn-sm btn-secondary min" data-item_i="${i}"> - </button>
+                                  &nbsp;  ${v.qty} &nbsp;
+                                <button class = "btn btn-sm btn-secondary max" data-item_i=${i}> + </button>
+                            </td>
+                            <td>$&nbsp;${v.item_price * v.qty}</td>
+                        </tr>
+                    `;
+                    tot += v.item_price * v.qty;
+                });
+                data+= `
+                    <td class="labeltot" colspan = '4'>Total:</td>
+                    <td class="tot">$ ${tot}</td>
+                `;
+                $("#itemData").html(data);
+            } else {
+                let data = '';
+                $("#itemData").html(data);
+            }
+        }
+            $("#itemData").on('click','.min', function() {
+                let item_i = $(this).data('item_i');
+                
+                let itemStr = localStorage.getItem('cardItem');
+                if(itemStr) {
+                    let itemArr = JSON.parse(itemStr);
+                    $.each(itemArr, function(i, v) {
+                        if(item_i == i) {
+                            v.qty--;
+                            if(v.qty <= 0) {
+                                itemArr.splice(item_i, 1);
+                            }
+                        }
+                    });
+                    let itemData = JSON.stringify(itemArr);
+                    localStorage.setItem('cardItem', itemData);
+                    getData();
+                    count();
+                }
+            });
+        
+            $("#itemData").on('click', '.max', function() {
+                let index = $(this).data('item_i');
+                let itemstr = localStorage.getItem('cardItem');
+                if(itemstr) {
+                    let itemarr = JSON.parse(itemstr);
+                    $.each(itemarr, function(i, v) {
+                        if(index == i) {
+                            v.qty++
+                        }
+                    });
+                    let itemData = JSON.stringify(itemarr);
+                    localStorage.setItem('cardItem', itemData);
+                    getData();
+                    count();
+                }
+            })
+            $("#order").click(function(e) {
+                e.preventDefault();
+                localStorage.clear();
+                getData();
+                count();
+            })
+    });
+    </script>
+</body>
+</html>

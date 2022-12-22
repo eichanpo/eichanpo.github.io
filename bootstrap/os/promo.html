@@ -20,6 +20,7 @@
         background-color: black;
         z-index: 100;
      }
+
 </style>
 <body>
     <!-- nav start -->
@@ -46,7 +47,7 @@
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm" id="stickyTop">
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm" id="stickyTop" >
         <div class="container">
             <img src="image/logo2.png" width="150px" height="55px" alt="">
         <a href="" class="navbar-brand me-auto"></a> <!--from start me-auto-->
@@ -62,21 +63,955 @@
                       Catagory
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Men</a></li>
-                      <li><a class="dropdown-item" href="#">Women</a></li>
-                      <li><a class="dropdown-item" href="#">Kids</a></li>
+                      <li><a class="dropdown-item" href="men.html">Men</a></li>
+                      <li><a class="dropdown-item" href="women.html">Women</a></li>
+                      <li><a class="dropdown-item" href="kids.html">Kids</a></li>
                     </ul>
                   </li>
-                <li class="nav-item me-1"><a href=""  class="nav-link">Promotion</a></li>
-                <li class="nav-item me-1"><a href=""  class="nav-link">About</a></li>
-                <li class="nav-item me-1"><a href=""  class="nav-link">Contact</a></li>
+                <li class="nav-item me-1"><a href="promo.html"  class="nav-link">Promotion</a></li>
+                <!-- <li class="nav-item me-1"><a href="about.html"  class="nav-link">About</a></li> -->
+                <li class="nav-item me-1"><a href="contact.html"  class="nav-link">Contact</a></li>
                 <li class="nav-item me-1"><a href="signin.html"  class="nav-link">Login</a></li>
-                <li class="nav-item me-1"><a href="index.html"  class="nav-link">Register</a></li>
+                <li class="nav-item me-1"><a href="register.html"  class="nav-link">Register</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" id="cart" href="chkout.html">
+                        <i class="fa-solid fa-cart-shopping fa-1x"></i>
+                      <span id="count_number" class="position-absolute badge translate-middle px-2 bg-danger border border-light rounded-pill">
+                      </span></a>
+                  </li>
+                  
             </ul>
         </div>
         </div>
+        
     </nav>
 
+    <!-- start btn -->
+    <div class="container mt-5 mb-3 btn-div">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="btn-group" role="group" aria-label="First group">
+                            <button type="button" class="btn all">All promotion items</button>
+                            <button type="button" class="btn men">Men</button>
+                            <button type="button" class="btn women">Women</button>
+                            <button type="button" class="btn kids">Kids</button>
+                          </div>
+                    </div>
+                </div>
+    </div>
+    <!-- end btn -->
+    <!-- start promo div -->
+    <div id="div-men" class="div my-3">
+        <p class="text-center h3 text-secondary">Promotion items(Men)</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1700.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="25" data-name="G-men-20025" data-price="1550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1200.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 750.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1250.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="26" data-name="G-men-20026" data-price="750"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/b3600.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3600.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="27" data-name="G-men-20027" data-price="2550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1350.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1150.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1350.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="28" data-name="G-men-20028" data-price="1150"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1600.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 920.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1600.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="29" data-name="G-men-20029" data-price="920"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1700a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1050.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1700.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="30" data-name="G-men-20030" data-price="1050"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m3980.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3980.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="31" data-name="G-men-20031" data-price="2550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m5600.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 4550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$5600.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="32" data-name="G-men-20032" data-price="4550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m590a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 350.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$590.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="33" data-name="G-men-20033" data-price="350"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m850.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 570.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$850.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="34" data-name="G-men-20034" data-price="570"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m980.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 850.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1130.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="35" data-name="G-men-20035" data-price="850"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1350a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1250.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="36" data-name="G-men-20036" data-price="1250"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="div" class="div my-3">
+        <p class="text-center h3 text-secondary">Promotion items</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1400.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1000.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1400.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="1" data-name="G-women-10011" data-price="1000"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1600.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1100.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1600.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="2" data-name="G-women-10012" data-price="1100"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1750.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="3" data-name="G-women-10013" data-price="1550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g3300.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2830.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3300.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="4" data-name="G-women-10014" data-price="2830"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1600b.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 950.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1720.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="5" data-name="G-women-10015" data-price="950"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g4300.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 3750.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$4300.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"class="addToCard" data-id="6" data-name="G-women-10016" data-price="3750"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g520.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 350.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$520.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"class="addToCard" data-id="7" data-name="G-women-10017" data-price="350"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1600a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 750.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1450.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="8" data-name="G-women-10018" data-price="750"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g550.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 490.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="9" data-name="G-women-10019" data-price="490"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g980.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 540.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$980.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="10" data-name="G-women-10020" data-price="540"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/M850.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1250.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="11" data-name="G-women-10021" data-price="1250"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g3900.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2850.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3900.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="12" data-name="G-women-10022" data-price="2850"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k1100.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 780.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1100.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="13" data-name="G-kids-1001" data-price="780"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k1170.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 910.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1170.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="14" data-name="G-kids-1002" data-price="910"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k1370.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 790.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1350.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="15" data-name="G-kids-1003" data-price="790"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k3150.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3150.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="16" data-name="G-kids-1004" data-price="2550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k395.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1150.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1395.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="17" data-name="G-kids-1005" data-price="150"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k520.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 449.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$920.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="18" data-name="G-kids-1006" data-price="449"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k540.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 270.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$540.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="19" data-name="G-kids-1007" data-price="270"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k930.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 610.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$930.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="20" data-name="G-kids-1008" data-price="610"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k970.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 530.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$970.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="21" data-name="G-kids-1009" data-price="530"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k640a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 390.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$640.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="22" data-name="G-kids-1010" data-price="390"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k930.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 710.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$930.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="23" data-name="G-kids-1011" data-price="710"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k970.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 460.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$980.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="24" data-name="G-kids-1012" data-price="460"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1700.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="25" data-name="G-men-20025" data-price="1550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1200.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 750.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1250.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="26" data-name="G-men-20026" data-price="750"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/b3600.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3600.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="27" data-name="G-men-20027" data-price="2550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1350.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1150.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1350.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="28" data-name="G-men-20028" data-price="1150"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1600.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 920.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1600.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="29" data-name="G-men-20029" data-price="920"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1700a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1050.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1700.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="30" data-name="G-men-20030" data-price="1050"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m3980.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3980.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="31" data-name="G-men-20031" data-price="2550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m5600.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 4550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$5600.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="32" data-name="G-men-20032" data-price="4550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m590a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 350.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$590.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="33" data-name="G-men-20033" data-price="350"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m850.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 570.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$850.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="34" data-name="G-men-20034" data-price="570"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m980.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 850.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1130.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="35" data-name="G-men-20035" data-price="850"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/b/slide/m1350a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1250.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="36" data-name="G-men-20036" data-price="1250"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div-women" class="div my-3">
+        <p class="text-center h3 text-secondary">Promotion items(Women)</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1400.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1000.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1400.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="1" data-name="G-women-10011" data-price="1000"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1600.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1100.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1600.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="2" data-name="G-women-10012" data-price="1100"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1750.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="3" data-name="G-women-10013" data-price="1550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g3300.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2830.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3300.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="4" data-name="G-women-10014" data-price="2830"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1600b.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 950.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1720.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="5" data-name="G-women-10015" data-price="950"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g4300.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 3750.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$4300.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"class="addToCard" data-id="6" data-name="G-women-10016" data-price="3750"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g520.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 350.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$520.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"class="addToCard" data-id="7" data-name="G-women-10017" data-price="350"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g1600a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 750.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1450.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="8" data-name="G-women-10018" data-price="750"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g550.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 490.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="9" data-name="G-women-10019" data-price="490"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g980.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 540.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$980.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="10" data-name="G-women-10020" data-price="540"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/M850.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1250.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1750.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="11" data-name="G-women-10021" data-price="1250"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/g/slide/g3900.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2850.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3900.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="12" data-name="G-women-10022" data-price="2850"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="div-kids" class="div my-3">
+        <p class="text-center h3 text-secondary">Promotion items(Kids)</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k1100.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 780.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1100.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#" class="addToCard" data-id="13" data-name="G-kids-1001" data-price="780"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k1170.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 910.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1170.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="14" data-name="G-kids-1002" data-price="910"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k1370.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 790.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1350.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="15" data-name="G-kids-1003" data-price="790"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k3150.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 2550.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$3150.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="16" data-name="G-kids-1004" data-price="2550"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k395.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 1150.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$1395.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="17" data-name="G-kids-1005" data-price="150"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k520.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 449.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$920.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="18" data-name="G-kids-1006" data-price="449"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k540.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 270.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$540.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="19" data-name="G-kids-1007" data-price="270"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k930.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 610.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$930.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="20" data-name="G-kids-1008" data-price="610"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k970.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 530.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$970.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="21" data-name="G-kids-1009" data-price="530"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k640a.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 390.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$640.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="22" data-name="G-kids-1010" data-price="390"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k930.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 710.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$930.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="23" data-name="G-kids-1011" data-price="710"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 py-3">
+                    <div class="card">
+                        <img src="image/kid/slide/k970.jpg" class="card-img-top" alt="">
+                        <div class="promo">
+                            <span class="badge text-bg-danger rounded"><a href="promo.html" class="text-decoration-none text-light">$ 460.00</a></span><br>
+                            <span class="badge text-danger text-decoration-line-through"><big>$980.00</big></span> 
+                        </div>
+                        <div class="cardicon p-3">
+                            <span><a href="#"  class="addToCard" data-id="24" data-name="G-kids-1012" data-price="460"><i class="fa-solid fa-cart-shopping fa text-danger"></i></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end div -->
+
+    <!-- start btn -->
+    <div class="container mt-5 mb-3 btn-div">
+            <div class="row">
+                <div class="col-12">
+                    <div class="btn-group" role="group" aria-label="First group">
+                        <button type="button" class="btn all">All promotion items</button>
+                        <button type="button" class="btn men">Men</button>
+                        <button type="button" class="btn women">Women</button>
+                        <button type="button" class="btn kids">Kids</button>
+                      </div>
+                </div>
+            </div>
+    </div>
+    <!-- end btn -->
 
 
     <!-- footer -->
@@ -194,8 +1129,91 @@
     <script src="jquery/slick.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/custom.js"></script>
+    <script src="count.js"></script>
     <script>
+       $(document).ready(function() {
+            count();
+            $('.addToCard').click(function(e) {
+                e.preventDefault();
+                let id = $(this).data('id');
+                let name = $(this).data('name');
+                let price = $(this).data('price');
+                console.log(id, name, price);
 
+                let items = {
+                item_id : id, 
+                item_name : name, 
+                item_price : price, 
+                qty : 1,
+                };
+                let itemString = localStorage.getItem('cardItem');
+                console.log(itemString);
+                let itemArray;
+                if(itemString == null) {
+                    itemArray = [];
+                } else {
+                    itemArray = JSON.parse(itemString);
+                }
+
+                let chk = false;
+                $.each(itemArray, function(i, v) {
+                    if(id == v.item_id) {
+                        chk = true;
+                        v.qty++;
+                    }
+                });
+                if(chk == false) {
+                    itemArray.push(items);
+                }
+                
+                let itemData = JSON.stringify(itemArray);
+                localStorage.setItem('cardItem', itemData);
+                count();
+
+            });
+            
+
+        // $(".addToCard").click(function() {
+        //     let id = $(this).data('id');
+        //     let name = $(this).data('name');
+        //     let price = $(this).data('price');
+        //     console.log(id, name, price);
+
+        //     //obj
+        //     let items = {
+        //         item_id : id,
+        //         item_name : name,
+        //         item_price : price,
+        //         qty : 1,
+        //     };  
+
+        //     //add items into ls
+        //     let itemString = localStorage.getItem('shop');
+        //     let itemArray;
+        //     if(itemString == null) {
+        //         itemArray = [];
+        //     } else {
+        //         itemArray = JSON.parse(itemString);
+        //     }
+        //     var chk = false;
+        //     $.each(itemArray, function(i, v) {
+        //         if(id == v.item_id) {
+        //             chk = true;
+        //             v.qty++;
+        //         }
+        //     });
+        //     if(chk == false) {
+        //         itemArray.push(items);
+        //     }
+        //     // itemArray.push(items);
+
+        //     let itemData = JSON.stringify(itemArray);
+        //     localStorage.setItem('shop', itemData);
+        //     count();
+        // });
+
+       });
+    
     </script>
 </body>
 </html>

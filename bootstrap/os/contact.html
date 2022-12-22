@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chan fashion</title>
+    <link rel="icon" href="image/logo2.png">
+    <link rel="apple-touch-icon" href="image/logo2.png">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<style>
+     .sticky {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 100;
+     }
+     .bg-image {
+        background-image:url(image/gucci.jpg);
+        background-color: aliceblue;
+        
+     }
+     .hr {
+        width: 100px;
+        height: 11px;
+        background:#34495e;
+        margin: 10px auto;
+     }
+     .line {
+        width:250px;
+        height: 2px;
+        background-color: rgb(237, 175, 3);
+        margin: auto;
+     }
+</style>
+<body>
+    <!-- nav start -->
+    
+    <nav class="bg-danger py-1">
+            <div class="container">
+            <div class="row text-white">
+                <div class="col-6">
+                    <small class="text-white">
+                        <span class="d-none d-inline-block d-md-inline"><i class=" fa-solid fa-envelope"></i>&nbsp; contact@iwatani.com</span>
+                        <span class="ps-3"><i class=" fa-solid fa-phone-volume"></i>&nbsp; 080-11838371</span>
+                    </small>
+                </div>
+            
+                <div class="col-6 text-end text-white">
+                    <small>
+                        Follow Us &nbsp; : &nbsp; <a href=""><i class="text-white fa-brands fa-facebook"></i></a>
+                        <a href="" class="px-1"><i class="text-white fa-brands fa-whatsapp"></i></a>
+                        <a href=""><i class="text-white fa-brands fa-instagram"></i></a>
+                    </small>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm" id="stickyTop">
+        <div class="container">
+            <img src="image/logo2.png" width="150px" height="55px" alt="">
+        <a href="" class="navbar-brand me-auto"></a> <!--from start me-auto-->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-brand navbar-collapse" id="navBar">
+            <ul class="navbar-nav ms-auto"> <!-- from right ms-auto-->
+                <li class="nav-item me-1 nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <!-- <li class="nav-item me-1"><a href=""  class="nav-link">Product</a></li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catagory
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="men.html">Men</a></li>
+                      <li><a class="dropdown-item" href="women.html">Women</a></li>
+                      <li><a class="dropdown-item" href="kids.html">Kids</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item me-1"><a href="promo.html"  class="nav-link">Promotion</a></li>
+               
+                <li class="nav-item me-1"><a href="contact.html"  class="nav-link">Contact</a></li>
+                <li class="nav-item me-1"><a href="signin.html"  class="nav-link">Login</a></li>
+                <li class="nav-item me-1"><a href="index.html"  class="nav-link">Register</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" id="cart" href="chkout.html"><i class="fa-solid fa-cart-shopping fa-1x"></i>
+                      <span id="count_number" class="position-absolute badge translate-middle px-2 bg-danger border border-light rounded-pill">
+                      </span></a>
+                  </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-dark">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 py-5 text-light text-center">
+                <p class="h1 py-3">What are your disposal</p>
+                <p>
+                    <i class="fa-solid fa-phone-volume text-warning"></i>&nbsp;
+                    0039-351 767 4226
+                </p>
+                <p>
+                    <i class="fa-regular fa-envelope text-warning"></i>&nbsp;
+                    info-chan@gucci.com
+                </p>
+                
+                <p>For any question or information please contact us!</p>
+                <div class="line"></div>
+                <p class="text-white pt-3">
+                    <i class="fa-brands fa-facebook fa-2x px-2"></i>
+                    <i class="fa-brands fa-instagram fa-2x px-2"></i>
+                    <i class="fa-brands fa-line fa-2x px-2"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h1 class="text-center text-secondary">Leave us a message</h1>
+        <p class="text-center"><small><i>We will get back to you as soon as possible</i></small></p>
+
+        <!-- <div class="row justify-content-center pt-1"> -->
+            <div class="bgimg col-lg-8">
+                <form action="" class="contact-form">
+                    <input type="text" class="contact-form-text" placeholder="Your name">
+                    <input type="email" class="contact-form-text" placeholder=".....@email.com">
+                    <input type="number" class="contact-form-text" placeholder="080xxxxxxxx">
+                    <textarea name=""placeholder="your message" class="contact-form-text"></textarea>
+                    <input type="submit" class="contact-form-btn" value="Send">
+                </form>
+            </div>
+        
+    </div>
+
+    <!-- map -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <h5>Chan fashion</h5>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-2">
+                            <span class="fa-stack fa-2x text-primary">
+                                <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                <i class="far fa-address-card fa-inverse fa-stack-1x" style="font-size:16px"></i>
+                            </span>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-10">
+                        <p class="pt-3 ps-3">
+                                725 Fifth Avenue
+                                New York, New York, 10022, United States
+                                T:+1-212-826-2600
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-2">
+                            <span class="fa-stack fa-2x text-primary">
+                                <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                <i class="far fa-paper-plane fa-inverse fa-stack-1x" style="font-size:16px"></i>
+                            </span>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-10">
+                        <p class="pt-3 ps-3">
+                            chen.gucci@newyork.uk
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-2">
+                            <span class="fa-stack fa-2x text-primary">
+                                <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                <i class="fas fa-phone-volume fa-inverse fa-stack-1x" style="font-size:16px"></i>
+                            </span>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-10">
+                        <p class="pt-3 ps-3">
+                            T:+1-212-826-2600
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-2 col-2">
+                            <span class="fa-stack fa-2x text-primary">
+                                <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                <i class="fas fa-fax fa-inverse fa-stack-1x" style="font-size:16px"></i>
+                            </span>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-10">
+                        <p class="pt-3 ps-3">
+                            Fax: +1-888-777-3345
+                        </p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12 ">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="300px" id="gmap_canvas" src="https://maps.google.com/maps?q=gucci,%20newyouk&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:auto;width:100%;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:auto;width:100%;}</style></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white-50 f">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 pb-3">
+                    <h5 class="header ">Chan fashion</h5>
+                    <p align="justify" class="pe-5" style="line-height: 23px;">
+                        By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="#" class="text-white"> Privacy Policy</a>
+                    </p>
+                    <p>
+                        <img src="image/logo2w.png"  class="img-fluid w-50" alt="">
+                    </p>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6">
+                    <h5 class="header ">Information</h5>
+                    <a href="" class="nav-link ps-1 py-1">Home</a>
+                    <a href="" class="nav-link ps-1 py-1">Category</a>
+                    <a href="" class="nav-link ps-1 py-1">Promotion</a>
+                    <a href="" class="nav-link ps-1 py-1">Sign in</a>
+                    <a href="" class="nav-link ps-1 py-1">Register</a>
+                    <a href="" class="nav-link ps-1 py-1">Contact</a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 pb-3">
+                    <h5 class="header ">Check it out</h5>
+                    <a href="" class="nav-link ps-1 py-1">About Chan</a>
+                    <a href="" class="nav-link ps-1 py-1">Equilibrium</a>
+                    <a href="" class="nav-link ps-1 py-1">Code of ethics</a>
+                    <a href="" class="nav-link ps-1 py-1">Chan Garden</a>
+                    <a href="" class="nav-link ps-1 py-1">Pravicy & Cookies</a>
+                    <a href="" class="nav-link ps-1 py-1">Cooperate information</a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    <h5 class="header ">Find us on</h5>
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="col-11 add">
+                            Officiel GUCCI®. 195 Broadway 12th Floor New York, NY 10007 USA        
+                        </div>
+                        <p class="py-1">
+                            <i class="fa-solid fa-phone pe-2"></i>&nbsp; +3456787890
+                        </p>
+                        <p class="py-1">
+                            <i class="fa-solid fa-envelope pe-2"></i>&nbsp; chan@fashion.com
+                        </p>
+                        <div class="container icon">
+                            <div class="row" style="margin-left: -35px;">
+                                <div class="col-1">
+                                    <a href="" class="text-decoration-none" style="color:rgb(7, 220, 88)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-whatsapp fa-stack-1x fa-inverse fa-1x"></i>  
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-1 ms-3">
+                                    <a href="" class="text-decoration-none" style="color:rgb(176, 5, 210)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-viber fa-stack-1x fa-inverse"></i>   
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-1 mx-3">
+                                    <a href="" class="text-decoration-none" style="color:rgba(36, 4, 243, 0.807)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-facebook fa-stack-1x fa-inverse"></i> 
+                                            
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-1 me-3">
+                                    <a href="" class="text-decoration-none" style="color:rgba(255, 142, 21, 0.807)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-instagram fa-stack-1x fa-inverse"></i> 
+                                            
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-1">
+                                    <a href="" class="text-decoration-none" style="color:rgba(57, 233, 253, 0.807)">
+                                        <span class="fa-stack fa-2x">
+                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
+                                            <i class="fa-brands fa-facebook-messenger fa-stack-1x fa-inverse"></i> 
+                                            
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-3">
+                <div class="container px-3">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="text-center">© 2016 - 2020 Guccio` Chan S.p.A. - All rights reserved. </p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script src="jquery/jquery.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="jsfile/slider.js"></script>
+    <script src="jquery/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="count.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            
+            count();
+            let data = localStorage.getItem('cardItem');
+            console.log(data);
+        })
+    </script>
+</body>
+</html>

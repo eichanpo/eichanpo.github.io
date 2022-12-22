@@ -20,6 +20,26 @@
         background-color: black;
         z-index: 100;
      }
+     .bg-image {
+        background-image:url(image/gucci.jpg);
+        background-color: aliceblue;
+        
+     }
+     .hr {
+        width:70px;
+        margin: auto;
+        border: 3px solid black;
+     }
+     .signup {
+        background-color: beige;
+        color: gray;
+        border: 1px solid rgb(214, 213, 213);
+     }
+     .signup:hover {
+        background-color: rgb(243, 251, 251);
+        color: darkcyan;
+        border: 1px solid rgb(214, 213, 213);
+     }
 </style>
 <body>
     <!-- nav start -->
@@ -62,22 +82,128 @@
                       Catagory
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Men</a></li>
-                      <li><a class="dropdown-item" href="#">Women</a></li>
-                      <li><a class="dropdown-item" href="#">Kids</a></li>
+                      <li><a class="dropdown-item" href="men.html">Men</a></li>
+                      <li><a class="dropdown-item" href="women.html">Women</a></li>
+                      <li><a class="dropdown-item" href="kids.html">Kids</a></li>
                     </ul>
                   </li>
-                <li class="nav-item me-1"><a href=""  class="nav-link">Promotion</a></li>
-                <li class="nav-item me-1"><a href=""  class="nav-link">About</a></li>
-                <li class="nav-item me-1"><a href=""  class="nav-link">Contact</a></li>
+                <li class="nav-item me-1"><a href="promo.html"  class="nav-link">Promotion</a></li>
+               
+                <li class="nav-item me-1"><a href="contact.html"  class="nav-link">Contact</a></li>
                 <li class="nav-item me-1"><a href="signin.html"  class="nav-link">Login</a></li>
-                <li class="nav-item me-1"><a href="index.html"  class="nav-link">Register</a></li>
+                <li class="nav-item me-1"><a href="register.html"  class="nav-link">Register</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" id="cart" href="chkout.html"><i class="fa-solid fa-cart-shopping fa-1x"></i>
+                      <span id="count_number" class="position-absolute badge translate-middle px-2 bg-danger border border-light rounded-pill">
+                      </span></a>
+                  </li>
             </ul>
         </div>
         </div>
     </nav>
 
-
+        <!-- form -->
+    
+        <div class="container my-5 bg-warning rounded bg-opacity-25 py-5">
+            <h3 class="text-center text-danger">Create New account to SIGN UP</h3>
+            <hr class="mb-5 hr">
+            <div class="row justify-content-center ">
+                <div class="col-md-8">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="validationDefault01" class="form-label">First name</label>
+                          <input type="text" class="form-control" id="validationDefault01"  placeholder="first name" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationDefault02" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="validationDefault02" placeholder="last name" required>
+                        </div>
+                        <!-- <div class="col-md-4">
+                          <label for="validationDefaultUsername" class="form-label">Username</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                          </div>
+                        </div> -->
+                        <div class="col-md-12">
+                            <label for="validationDefault03" class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder=".....@mail.com" id="validationDefault03" required>
+                          </div>
+                          <div class="col-md-12">
+                            <label for="validationDefault03" class="form-label">Contact number</label>
+                            <input type="number" class="form-control" id="validationDefault03" required>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="validationDefault01" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="validationDefault01"  placeholder="first name" required>
+                            <p><small><a href="#" class="text-danger">Have a coupon?</a></small></p>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="validationDefault02" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="validationDefault02" placeholder="last name" required>
+                          </div>
+                          <div class="col-md-12 bg-secondary bg-opacity-25 rounded p-3">
+                            <div class="form-check">
+                                <input class="form-check-input mt-4" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1"  style="padding-top:21px;">
+                                  credit card
+                                </label>
+                                <img src="image/cards.png" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                          <div class="col-md-12 bg-secondary bg-opacity-25 rounded p-3">
+                            <div class="form-check">
+                                <input class="form-check-input mt-4" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" style="padding-top:21px;" for="exampleRadios1">
+                                  paypal
+                                </label>
+                                <img src="image/paypal.png" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                          
+                        <div class="col-md-12">
+                          <label for="validationDefault03" class="form-label">City</label>
+                          <input type="text" class="form-control" id="validationDefault03" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationDefault04" class="form-label">State</label>
+                          <select class="form-select" id="validationDefault04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option selected>Open this select menu</option>
+                                <option value="1">Marilane</option>
+                                <option value="2">Newyork</option>
+                                <option value="3">Genting</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationDefault05" class="form-label">Zip</label>
+                          <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Agree to terms and conditions
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Sign Up for the Newsletter
+                                </label>
+                                <p><small><i>We respect your Pravicy</i></small></p>
+                              </div>
+                        </div>
+                        <div class="col-12">
+                          <button class="btn signup w-100" type="submit">Sign Up</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <!-- end form -->
 
     <!-- footer -->
     <footer class="bg-dark text-white-50 f">
@@ -194,8 +320,14 @@
     <script src="jquery/slick.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/custom.js"></script>
+    <script src="count.js"></script>
     <script>
-
+        $(document).ready(function(e) {
+            
+            count();
+            let data = localStorage.getItem('cardItem');
+            console.log(data);
+        })
     </script>
 </body>
 </html>

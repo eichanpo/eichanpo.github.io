@@ -15,3 +15,7 @@
     font-family: lobster;
     src: url(../font/Lobster/Lobster-Regular.ttf);
 }
+@font-face {
+    font-family: antom;
+    src: url(../font/Anton/Anton-Regular.ttf);
+}
