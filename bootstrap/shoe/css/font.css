@@ -1,0 +1,31 @@
+@font-face {
+    font-family: roboto;
+    src: url(../font/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: quatt;
+    src: url(../font/Quattrocento_Sans/QuattrocentoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: firaBlack;
+    src: url(../font/Fira_Sans/FiraSans-Black.ttf);
+}
+@font-face {
+    font-family: firaThin;
+    src: url(../font/Fira_Sans/FiraSans-Thin.ttf);
+}
+@font-face {
+    font-family: firaReg;
+    src: url(../font/Fira_Sans/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: natoMed;
+    src: url(../font/Noto_Sans/NotoSans-Medium.ttf);
+}
+@font-face {
+    font-family: natoBold;
+    src: url(../font/Noto_Sans/NotoSans-Bold.ttf);
+}

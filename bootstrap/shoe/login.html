@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="">
+    <link rel="apple-touch-icon" href="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        form{
+            width: 600px;
+            margin: 200px auto;
+        }
+        .div {
+            width: 100%;
+            margin: 15px auto;
+        }
+        .label {
+            display: block;
+            padding: 20px;
+            font-size: 25px;
+        }
+        .input {
+            width: 96%;
+            padding: 10px;
+            border: 1px solid #797979;
+            font-size: 20px;
+            margin-left: 20px;
+            border-radius: 3px;
+        }
+        .btnLogin {
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-weight: bold;
+            color: whitesmoke;
+            background:linear-gradient(90deg, royalblue, lightgreen);
+            padding:7px;
+        }
+        .span {
+            display: block;
+            margin-left: 20px;
+            color: red;
+            font-style: italic;
+            font-size:11px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="shop.html">
+        <div class="div">
+            <label class="label" for="username">User Name</label>
+            <input class="input" type="text" name="username" placeholder="user name">
+            <span class="span"></span>
+        </div>
+        <div class="div">
+            <label class="label" for="password">Password</label>
+            <input class="input" type="password" name="password" placeholder="password">
+            <span class="span"></span>
+        </div>
+        <button class="btnLogin w-100" id="logIn">LOGIN</button>
+    </form>
+    <button class="btn btn-secondary">secondary</button>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    
+    </script>
+</body>
+</html>
