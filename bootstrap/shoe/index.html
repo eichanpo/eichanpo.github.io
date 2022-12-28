@@ -44,15 +44,24 @@
 </head>
 <body>
     <!--start navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-nav" id="nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav sticky-top" id="nav">
         <div class="container">
           
             <a class="d-flex justify-content-between align-items-center order-lg-0" href="index.html"><img src="image/LOGOs.png" class="m-0 p-0 image"  alt=""></a>
           
           <div class="ps-3 cart-icon order-lg-2 nav-btns">
             <button class="btn position-relative mt-1" type="button">
-                <i class="fa-solid fa-bag-shopping text-light"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge bgp">1</span>
+                <!-- <i class="fa-solid fa-bag-shopping text-light" id="bag-icon"></i> -->
+                <!-- <p id="bag-icon1">cart</p> -->
+                <a class="nav-link text-light" id="bag-icon" href="#">
+                    <i class="fa-solid fa-bag-shopping text-light fa-1x"></i>
+                  <!-- <span id="count_number" class="position-absolute badge translate-middle px-2 bg-danger border border-light rounded-pill">
+                  </span>-->
+                  <span id="count_number" class=" position-absolute top-0 start-100 translate-middle badge bgp"></span>
+                </a>
+
+                <!-- <i class='bx bx-shopping-bag text-ligh text-light fa-2x' id="cart-icon"></i> -->
+                <!-- <span class="position-absolute top-0 start-100 translate-middle badge bgp">1</span> -->
             </button>
 
             <button class="btn position-relative mt-1" type="button">
@@ -61,20 +70,20 @@
             <button class="btn position-relative mt-1" type="button">
                 <a href="" class="text-decoration-none text-light"  data-bs-toggle="modal" data-bs-target="#exampleModal">login</a>
             </button>
-        </div>
+            </div>
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon p-0 "></span>
           </button>
           <div class="collapse navbar-collapse order-lg-1" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto text-center text-uppercase">
               <li class="nav-item py-3 px-3">
-                <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item py-3 px-3">
-                <a class="nav-link" href="#">collection</a>
+                <a class="nav-link" href="">collection</a>
               </li>
               <li class="nav-item py-3 px-3">
-                <a class="nav-link" href="#">specials</a>
+                <a class="nav-link" href="">specials</a>
               </li>
               <li class="nav-item py-3 px-3">
                 <a class="nav-link" href="signup.html">sign up</a>
@@ -85,8 +94,65 @@
 
             </ul>
           </div>
+          <div class="cart-list">
+            <h3 class="text-center text-uppercase text-secondary">Your cart</h3>
+            <table class="table align-items-center">
+                <thead>
+                    <td>No</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>qty</td>
+                    <td>Sub total</td>
+                    <!-- <td class="text-danger fw-bolder close" style="cursor:pointer;">X</td> -->
+                </thead>
+                <tbody id="data_body">
+                    
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="offset-md-4 col-md-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-secondary" id="order">Check out</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <i class="fa-solid fa-xmark close-cart close"></i> -->
+            <span class="close-cart close"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+
+          <!-- start cart -->
+          <!-- <div class="cart-list">
+            <h2 class="cart-title text-center fw-bolder text-secondary">Your Cart</h2>
+           
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="image/zoom/mk/sale/mk1.jpg" class="img-fluid w-100 cart-img" alt="">
+                    <div class="detail-box">
+                        <div class="cart-prod-title">
+                            MK-Doser
+                        </div>
+                        <div class="cart-price">$327.75</div>
+                        <input type="number" value="1" class="cart-qty">
+                    </div>
+                   
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>
+                
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                
+                <button type="button" class="btn-buy">Check out</button>
+               
+                <i class="fa-solid fa-xmark" id="close-cart"></i>
+       
+            </div>
+          </div> -->
+          <!-- end cart -->
+
         </div>
-    </nav>
+    </nav> 
     <!-- end navbar-->
 
     <!-- <header>
@@ -615,5 +681,58 @@
     <script nom odule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="js/login.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/countqty.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+    <script>
+        countqty();
+        chkout();
+    //     $(document).ready(function() {
+    //         countqty();
+    //         chkout();
+    //         $('.addToCart').click(function(e) {
+    //         e.preventDefault();
+    //         // alert('hi')
+    //         let id = $(this).data('id');
+    //         let name = $(this).data('name');
+    //         let price = $(this).data('price');
+    //         console.log(id, name, price);
+
+    //         // obj
+    //             let items = {
+    //                 item_id : id,
+    //                 item_name : name,
+    //                 item_price : price,
+    //                 qty : 1,
+    //             };
+
+    //             //to set to localstorage
+    //         let itemArray;
+    //         let itemString = localStorage.getItem('shops');
+    //         if(itemString == null) {
+    //             itemArray = [];
+    //         } else {
+    //             itemArray = JSON.parse(itemString);
+    //         }
+
+    //         //2.for qty
+    //         var status = false;//to chk condition
+    //         $.each(itemArray, function(i, v) {
+    //             if(id == v.item_id) { // selector id and obj(ls) id is equal?
+    //                 status = true;
+    //                 v.qty++;
+    //             }
+    //         });
+    //         if(status == false) {
+    //             itemArray.push(items);//this is array
+    //         }
+    //         //to set ls now
+    //         let itemData = JSON.stringify(itemArray);
+    //         localStorage.setItem('shops', itemData); //after this step, go chk at application
+    //         countqty();
+    //         chkout();
+    //     }); 
+    // });
+    </script>
 </body>
 </html>

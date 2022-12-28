@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
     <style>
         .sticky {
          position:fixed;
@@ -19,7 +20,14 @@
          background-color: black;
          z-index: 100;
       }
-
+      .prod-box {
+        position: relative;
+      }
+      .prod-box:hover {
+        padding: 18px;
+        border: 1px solid rgb(242, 181, 201);
+        transition: .7s;
+      }
     </style>
     
 </head>
@@ -32,8 +40,17 @@
           
           <div class="ps-3 cart-icon order-lg-2 nav-btns">
             <button class="btn position-relative mt-1" type="button">
-                <i class="fa-solid fa-bag-shopping text-light"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge bgp">1</span>
+                <!-- <i class="fa-solid fa-bag-shopping text-light" id="bag-icon"></i> -->
+                <!-- <p id="bag-icon1">cart</p> -->
+                <a class="nav-link text-light" id="bag-icon" href="#">
+                    <i class="fa-solid fa-bag-shopping text-light fa-1x"></i>
+                  <!-- <span id="count_number" class="position-absolute badge translate-middle px-2 bg-danger border border-light rounded-pill">
+                  </span>-->
+                  <span id="count_number" class=" position-absolute top-0 start-100 translate-middle badge bgp"></span>
+                </a>
+
+                <!-- <i class='bx bx-shopping-bag text-ligh text-light fa-2x' id="cart-icon"></i> -->
+                <!-- <span class="position-absolute top-0 start-100 translate-middle badge bgp">1</span> -->
             </button>
 
             <button class="btn position-relative mt-1" type="button">
@@ -42,7 +59,7 @@
             <button class="btn position-relative mt-1" type="button">
                 <a href="" class="text-decoration-none text-light"  data-bs-toggle="modal" data-bs-target="#exampleModal">login</a>
             </button>
-        </div>
+            </div>
           <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon p-0 "></span>
           </button>
@@ -66,10 +83,68 @@
 
             </ul>
           </div>
+          <div class="cart-list">
+            <h3 class="text-center text-uppercase text-secondary">Your cart</h3>
+            <table class="table align-items-center">
+                <thead>
+                    <td>No</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>qty</td>
+                    <td>Sub total</td>
+                    <!-- <td class="text-danger fw-bolder close" style="cursor:pointer;">X</td> -->
+                </thead>
+                <tbody id="data_body">
+                    
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="offset-md-4 col-md-4">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-secondary" id="order">Check out</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <i class="fa-solid fa-xmark close-cart close"></i> -->
+            <span class="close-cart close"><i class="fa-solid fa-xmark"></i></span>
+          </div>
+
+          <!-- start cart -->
+          <!-- <div class="cart-list">
+            <h2 class="cart-title text-center fw-bolder text-secondary">Your Cart</h2>
+           
+            <div class="cart-content">
+                <div class="cart-box">
+                    <img src="image/zoom/mk/sale/mk1.jpg" class="img-fluid w-100 cart-img" alt="">
+                    <div class="detail-box">
+                        <div class="cart-prod-title">
+                            MK-Doser
+                        </div>
+                        <div class="cart-price">$327.75</div>
+                        <input type="number" value="1" class="cart-qty">
+                    </div>
+                   
+                    <i class="fa-solid fa-trash cart-remove"></i>
+                </div>
+                
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                
+                <button type="button" class="btn-buy">Check out</button>
+               
+                <i class="fa-solid fa-xmark" id="close-cart"></i>
+       
+            </div>
+          </div> -->
+          <!-- end cart -->
+
         </div>
-    </nav>
+    </nav> 
     <!-- end navbar-->
     <!-- tap -->
+    
     <div class="container my-5">
         <div class="row justify-content-center">
           <div class="col-xl-4 col-lg-4 col-md-6 col-12 col-sm-12">
@@ -91,10 +166,10 @@
 
                 <div class="row">
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                      <img src="image/zoom/mk/sale/mk16.jpg" class="img-fluid w-100" alt="">
-                      <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
-                          <i class="fas fa-shopping-cart pt-1"></i>
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat h-100 prod-box">
+                      <img src="image/zoom/mk/sale/mk16.jpg" class="img-fluid w-100 prod-img" alt="">
+                      <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon bg-primary addToCart" data-id="1" data-name="MK-Doser" data-price="327.75">
+                          <i class="fas fa-shopping-cart pt-1 " ></i>
                       </span>
                       <div class="text-center">
                           <div class="rating star mt-3 text-primary">
@@ -103,17 +178,17 @@
                               <span class="fas fa-star star-color"></span>
                               <span class="fas fa-star star-color"></span>
                               <span class="fas fa-star star-color"></span>
-                              <p class="new-item fw-bold">MK-embellished </p>
+                              <p class="new-item fw-bold">MK-Doser logo & leather </p>
                               <label class="fw-bold new-item text-danger">$ 327.75</label>
                               <small class="new-item1 text-decoration-line-through">$652.75</small>
-                              <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                              <p class="new-item1 fw-bold d-block btn view">VIEW </p>
                           </div>
                       </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                     <img src="image/zoom/mk/sale/mk1.jpg" class="img-fluid w-100" alt="">
-                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center bg-primary buy-icon addToCart" data-id="2" data-name="MK-embellished" data-price="407.75">
                         <i class="fas fa-shopping-cart pt-1"></i>
                     </span>
                     <div class="text-center">
@@ -124,16 +199,16 @@
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
                             <p class="new-item fw-bold">MK-embellished </p>
-                            <label class="fw-bold new-item text-danger">$ 327.75</label>
-                            <small class="new-item1 text-decoration-line-through">$652.75</small>
+                            <label class="fw-bold new-item text-danger">$ 407.75</label>
+                            <small class="new-item1 text-decoration-line-through">$779.55</small>
                             <p class="new-item1 fw-bold d-block btn">VIEW </p>
                         </div>
                     </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                   <img src="image/zoom/mk/sale/mk15.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="3" data-name="MK-Parker pump" data-price="397.25">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -143,17 +218,17 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
-                          <small class="new-item1 text-decoration-line-through">$652.75</small>
+                          <p class="new-item fw-bold">MK-Parker pump heel </p>
+                          <label class="fw-bold new-item text-danger">$ 397.25</label>
+                          <small class="new-item1 text-decoration-line-through">$551.05</small>
                           <p class="new-item1 fw-bold d-block btn">VIEW </p>
                       </div>
                   </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                     <img src="image/zoom/mk/sale/mk14.jpg" class="img-fluid w-100" alt="">
-                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="4" data-name="MK-Amat metallica" data-price="417.70">
                         <i class="fas fa-shopping-cart pt-1"></i>
                     </span>
                     <div class="text-center">
@@ -163,17 +238,17 @@
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
-                            <p class="new-item fw-bold">MK-embellished </p>
-                            <label class="fw-bold new-item text-danger">$ 327.75</label>
-                            <small class="new-item1 text-decoration-line-through">$652.75</small>
+                            <p class="new-item fw-bold">MK-Amat metallica </p>
+                            <label class="fw-bold new-item text-danger">$ 417.70</label>
+                            <small class="new-item1 text-decoration-line-through">$789.15</small>
                             <p class="new-item1 fw-bold d-block btn">VIEW </p>
                         </div>
                     </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                     <img src="image/zoom/mk/sale/mk13.jpg" class="img-fluid w-100" alt="">
-                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="5" data-name="MK-Astrid heel" data-price="371.90">
                         <i class="fas fa-shopping-cart pt-1"></i>
                     </span>
                     <div class="text-center">
@@ -183,17 +258,17 @@
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
-                            <p class="new-item fw-bold">MK-embellished </p>
-                            <label class="fw-bold new-item text-danger">$ 327.75</label>
-                            <small class="new-item1 text-decoration-line-through">$652.75</small>
+                            <p class="new-item fw-bold">MK-Astrid heel </p>
+                            <label class="fw-bold new-item text-danger">$ 371.90</label>
+                            <small class="new-item1 text-decoration-line-through">$887.75</small>
                             <p class="new-item1 fw-bold d-block btn">VIEW </p>
                         </div>
                     </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                   <img src="image/zoom/mk/sale/mk12.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="6" data-name="MK-Alina Flex" data-price="441.60">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -203,17 +278,17 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
-                          <small class="new-item1 text-decoration-line-through">$652.75</small>
+                          <p class="new-item fw-bold">MK-Alina Flex Logo Pump</p>
+                          <label class="fw-bold new-item text-danger">$ 441.60</label>
+                          <small class="new-item1 text-decoration-line-through">$602.80</small>
                           <p class="new-item1 fw-bold d-block btn">VIEW </p>
                       </div>
                   </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                 <img src="image/zoom/mk/sale/mk9.jpg" class="img-fluid w-100" alt="">
-                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="7" data-name="Lawson leather" data-price="516.45">
                     <i class="fas fa-shopping-cart pt-1"></i>
                 </span>
                 <div class="text-center">
@@ -223,17 +298,17 @@
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
-                        <p class="new-item fw-bold">MK-embellished </p>
-                        <label class="fw-bold new-item text-danger">$ 327.75</label>
-                        <small class="new-item1 text-decoration-line-through">$652.75</small>
+                        <p class="new-item fw-bold">MK-Lawson leather </p>
+                        <label class="fw-bold new-item text-danger">$ 516.45</label>
+                        <small class="new-item1 text-decoration-line-through">$990.75</small>
                         <p class="new-item1 fw-bold d-block btn">VIEW </p>
                     </div>
                 </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                  <img src="image/zoom/mk/sale/mk11.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                  <img src="image/zoom/mk/sale/mk17.jpg" class="img-fluid w-100" alt="">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="8" data-name="MK-Chantal Flex" data-price="377.05">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -243,13 +318,53 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
-                          <small class="new-item1 text-decoration-line-through">$652.75</small>
+                          <p class="new-item fw-bold">MK-Chantal Flex Faux </p>
+                          <label class="fw-bold new-item text-danger">$ 377.05</label>
+                          <small class="new-item1 text-decoration-line-through">$717.70</small>
                           <p class="new-item1 fw-bold d-block btn">VIEW </p>
                       </div>
                   </div>      
                   </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                    <img src="image/zoom/mk/sale/mk18.jpg" class="img-fluid w-100" alt="">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="9" data-name="MK-Chita D Smooth" data-price="516.45">
+                        <i class="fas fa-shopping-cart pt-1"></i>
+                    </span>
+                    <div class="text-center">
+                        <div class="rating star mt-3 text-primary">
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <p class="new-item fw-bold">MK-Chita D Smooth </p>
+                            <label class="fw-bold new-item text-danger">$ 516.45</label>
+                            <small class="new-item1 text-decoration-line-through">$990.75</small>
+                            <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                        </div>
+                    </div>      
+                      </div>
+    
+                      <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                      <img src="image/zoom/mk/sale/mk6.jpg" class="img-fluid w-100" alt="">
+                      <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="10" data-name="MK-Parker" data-price="377.15">
+                          <i class="fas fa-shopping-cart pt-1"></i>
+                      </span>
+                      <div class="text-center">
+                          <div class="rating star mt-3 text-primary">
+                              <span class="fas fa-star star-color"></span>
+                              <span class="fas fa-star star-color"></span>
+                              <span class="fas fa-star star-color"></span>
+                              <span class="fas fa-star star-color"></span>
+                              <span class="fas fa-star star-color"></span>
+                              <p class="new-item fw-bold">MK-Parker Logo Pump </p>
+                              <label class="fw-bold new-item text-danger">$ 377.15</label>
+                              <small class="new-item1 text-decoration-line-through">$717.70</small>
+                              <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          </div>
+                      </div>      
+                      </div>
 
                 </div>
 
@@ -746,5 +861,55 @@
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/countqty.js"></script>
+    <script src="js/checkout.js"></script>
+    <script>
+        $(document).ready(function() {
+            countqty();
+            chkout();
+            $('.addToCart').click(function(e) {
+            e.preventDefault();
+            // alert('hi')
+            let id = $(this).data('id');
+            let name = $(this).data('name');
+            let price = $(this).data('price');
+            console.log(id, name, price);
+
+            // obj
+                let items = {
+                    item_id : id,
+                    item_name : name,
+                    item_price : price,
+                    qty : 1,
+                };
+
+                //to set to localstorage
+            let itemArray;
+            let itemString = localStorage.getItem('shops');
+            if(itemString == null) {
+                itemArray = [];
+            } else {
+                itemArray = JSON.parse(itemString);
+            }
+
+            //2.for qty
+            var status = false;//to chk condition
+            $.each(itemArray, function(i, v) {
+                if(id == v.item_id) { // selector id and obj(ls) id is equal?
+                    status = true;
+                    v.qty++;
+                }
+            });
+            if(status == false) {
+                itemArray.push(items);//this is array
+            }
+            //to set ls now
+            let itemData = JSON.stringify(itemArray);
+            localStorage.setItem('shops', itemData); //after this step, go chk at application
+            countqty();
+            chkout();
+        }); //end click add to cart btn
+    });
+    </script>
 </body>
 </html>
