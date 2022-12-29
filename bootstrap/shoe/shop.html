@@ -28,6 +28,33 @@
         border: 1px solid rgb(242, 181, 201);
         transition: .7s;
       }
+      .h-cs {
+        height:7rem;
+        padding-top: 63px;
+    }
+      #page-header {
+        background-image: url(image/b-collection.jpg);
+        width: 100%;
+        height: 45vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 14px;
+      }
+      #page-header h2, 
+      #page-header p {
+        color: beige;
+      }
+      #page-header h2 {
+        font-family: natoBold;
+        font-size: 36px;
+      }
+      #page-header p {
+        font-family: natoMed;
+      }
     </style>
     
 </head>
@@ -143,8 +170,36 @@
         </div>
     </nav> 
     <!-- end navbar-->
+
+    <!-- start shop items banner -->
+    <!-- header -->
+    <section id="page-header">
+        
+        <h2>#StayHome</h2>
+        <p>Save more with coupons & up tp 50% off!</p>
+    </section>
+    <!-- end shop items banner -->
+
+        <!-- dis pane -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item h-cs active bg-white">
+                <h3 class="text-center text-danger fw-bolder" style="font-family: font-italic;">On sale up to 50%</h3>
+              </div>
+              <div class="carousel-item h-cs bg-white">
+                <h3 class="text-center text-danger fw-bolder" style="font-family: font-italic;">
+                    We are counting down!
+                </h3>
+              </div>
+              <div class="carousel-item h-cs bg-white">
+                <h3 class="text-center text-danger fw-bolder" style="font-family: font-italic;">Go and get <a href="#" class="text-decoration-none text-danger font-italic text-uppercase">coupon here!</a></h3>
+              </div>
+            </div>
+          </div>
+
+
+
     <!-- tap -->
-    
     <div class="container my-5">
         <div class="row justify-content-center">
           <div class="col-xl-4 col-lg-4 col-md-6 col-12 col-sm-12">
@@ -156,7 +211,7 @@
                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Mango</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Zrara</button>
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">YSL&Tom ford</button>
               </li>
             </ul>
           </div>
@@ -181,7 +236,7 @@
                               <p class="new-item fw-bold">MK-Doser logo & leather </p>
                               <label class="fw-bold new-item text-danger">$ 327.75</label>
                               <small class="new-item1 text-decoration-line-through">$652.75</small>
-                              <p class="new-item1 fw-bold d-block btn view">VIEW </p>
+                              <p class="new-item1 fw-bold d-block btn view" data-bs-toggle="modal" data-bs-target="#exampleModal2">VIEW </p>
                           </div>
                       </div>      
                   </div>
@@ -201,7 +256,7 @@
                             <p class="new-item fw-bold">MK-embellished </p>
                             <label class="fw-bold new-item text-danger">$ 407.75</label>
                             <small class="new-item1 text-decoration-line-through">$779.55</small>
-                            <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                            <p class="new-item1 fw-bold d-block btn view" data-bs-toggle="modal" data-bs-target="#exampleModal3">VIEW </p>
                         </div>
                     </div>      
                   </div>
@@ -221,7 +276,7 @@
                           <p class="new-item fw-bold">MK-Parker pump heel </p>
                           <label class="fw-bold new-item text-danger">$ 397.25</label>
                           <small class="new-item1 text-decoration-line-through">$551.05</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item1 fw-bold d-block btn view" data-bs-toggle="modal" data-bs-target="#exampleModal4">VIEW </p>
                       </div>
                   </div>      
                   </div>
@@ -241,7 +296,7 @@
                             <p class="new-item fw-bold">MK-Amat metallica </p>
                             <label class="fw-bold new-item text-danger">$ 417.70</label>
                             <small class="new-item1 text-decoration-line-through">$789.15</small>
-                            <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                            <p class="new-item1 fw-bold d-block btn view" data-bs-toggle="modal" data-bs-target="#exampleModal5">VIEW </p>
                         </div>
                     </div>      
                   </div>
@@ -261,7 +316,7 @@
                             <p class="new-item fw-bold">MK-Astrid heel </p>
                             <label class="fw-bold new-item text-danger">$ 371.90</label>
                             <small class="new-item1 text-decoration-line-through">$887.75</small>
-                            <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                            <p class="new-item1 fw-bold d-block btn"data-bs-toggle="modal" data-bs-target="#exampleModal6">VIEW </p>
                         </div>
                     </div>      
                   </div>
@@ -281,7 +336,7 @@
                           <p class="new-item fw-bold">MK-Alina Flex Logo Pump</p>
                           <label class="fw-bold new-item text-danger">$ 441.60</label>
                           <small class="new-item1 text-decoration-line-through">$602.80</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item1 fw-bold d-block btn"data-bs-toggle="modal" data-bs-target="#exampleModal7">VIEW </p>
                       </div>
                   </div>      
                   </div>
@@ -301,7 +356,7 @@
                         <p class="new-item fw-bold">MK-Lawson leather </p>
                         <label class="fw-bold new-item text-danger">$ 516.45</label>
                         <small class="new-item1 text-decoration-line-through">$990.75</small>
-                        <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                        <p class="new-item1 fw-bold d-block btn view" data-bs-toggle="modal" data-bs-target="#exampleModal1">VIEW </p>
                     </div>
                 </div>      
                   </div>
@@ -321,7 +376,7 @@
                           <p class="new-item fw-bold">MK-Chantal Flex Faux </p>
                           <label class="fw-bold new-item text-danger">$ 377.05</label>
                           <small class="new-item1 text-decoration-line-through">$717.70</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal8">VIEW </p>
                       </div>
                   </div>      
                   </div>
@@ -341,7 +396,7 @@
                             <p class="new-item fw-bold">MK-Chita D Smooth </p>
                             <label class="fw-bold new-item text-danger">$ 516.45</label>
                             <small class="new-item1 text-decoration-line-through">$990.75</small>
-                            <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                            <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal9">VIEW </p>
                         </div>
                     </div>      
                       </div>
@@ -361,7 +416,7 @@
                               <p class="new-item fw-bold">MK-Parker Logo Pump </p>
                               <label class="fw-bold new-item text-danger">$ 377.15</label>
                               <small class="new-item1 text-decoration-line-through">$717.70</small>
-                              <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                              <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal10">VIEW </p>
                           </div>
                       </div>      
                       </div>
@@ -373,9 +428,9 @@
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
                 <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                    <img src="image/zoom/mango/sale/mg1.jpg" class="img-fluid w-100" alt="">
-                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                    <img src="image/zoom/mango/sale/mg.jpg" class="img-fluid w-100" alt="">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="11" data-name="Metallic toe" data-price="289.90">
                         <i class="fas fa-shopping-cart pt-1"></i>
                     </span>
                     <div class="text-center">
@@ -385,17 +440,17 @@
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
-                            <p class="new-item fw-bold">MK-embellished </p>
-                            <label class="fw-bold new-item text-danger">$ 327.75</label>
-                            <small class="new-item1 text-decoration-line-through">$652.75</small>
-                            <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                            <p class="new-item fw-bold">MANGO-metallic toe </p>
+                            <label class="fw-bold new-item text-danger">$ 289.90</label>
+                            <small class="new-item1 text-decoration-line-through">$758.10</small>
+                            <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal11">VIEW </p>
                         </div>
                     </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                   <img src="image/zoom/mango/sale/mg2.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="12" data-name="MANGO-Assymetic" data-price="227.75">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -405,17 +460,17 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
+                          <p class="new-item fw-bold">MANGO-Assymetic </p>
+                          <label class="fw-bold new-item text-danger">$ 227.75</label>
                           <small class="new-item1 text-decoration-line-through">$652.75</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal12">VIEW </p>
                       </div>
                   </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                 <img src="image/zoom/mango/sale/mg3.jpg" class="img-fluid w-100" alt="">
-                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="13" data-name="MANGO-pointed" data-price="235.40">
                     <i class="fas fa-shopping-cart pt-1"></i>
                 </span>
                 <div class="text-center">
@@ -425,17 +480,17 @@
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
-                        <p class="new-item fw-bold">MK-embellished </p>
-                        <label class="fw-bold new-item text-danger">$ 327.75</label>
-                        <small class="new-item1 text-decoration-line-through">$652.75</small>
-                        <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                        <p class="new-item fw-bold">MANGO-pointed </p>
+                        <label class="fw-bold new-item text-danger">$ 235.40</label>
+                        <small class="new-item1 text-decoration-line-through">$452.20</small>
+                        <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal13">VIEW </p>
                     </div>
                 </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                   <img src="image/zoom/mango/sale/mg4.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="14" data-name="MANGO-shahila heel" data-price="411.15">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -445,16 +500,16 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
-                          <small class="new-item1 text-decoration-line-through">$652.75</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item fw-bold">MANGO-shahila heel</p>
+                          <label class="fw-bold new-item text-danger">$ 411.15</label>
+                          <small class="new-item1 text-decoration-line-through">$700.70</small>
+                          <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal14">VIEW </p>
                       </div>
                   </div>      
                   </div>
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                  <img src="image/zoom/mango/sale/mg5.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                  <img src="image/zoom/mango/sale/mg10.jpg" class="img-fluid w-100" alt="">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="15" data-name="MANGO-pinky lace" data-price="291.10">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -464,17 +519,17 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
-                          <small class="new-item1 text-decoration-line-through">$652.75</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item fw-bold">MANGO-pinky lace </p>
+                          <label class="fw-bold new-item text-danger">$ 291.10</label>
+                          <small class="new-item1 text-decoration-line-through">559.35</small>
+                          <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal15">VIEW </p>
                       </div>
                   </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                 <img src="image/zoom/mango/sale/mg6.jpg" class="img-fluid w-100" alt="">
-                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="16" data-name="MANGO-goat quard" data-price="333.70">
                     <i class="fas fa-shopping-cart pt-1"></i>
                 </span>
                 <div class="text-center">
@@ -484,17 +539,17 @@
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
-                        <p class="new-item fw-bold">MK-embellished </p>
-                        <label class="fw-bold new-item text-danger">$ 327.75</label>
-                        <small class="new-item1 text-decoration-line-through">$652.75</small>
-                        <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                        <p class="new-item fw-bold">Endless reder </p>
+                        <label class="fw-bold new-item text-danger">$ 333.70</label>
+                        <small class="new-item1 text-decoration-line-through">$595.15</small>
+                        <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal16">VIEW </p>
                     </div>
                 </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-              <img src="image/zoom/mango/sale/mg7.jpg" class="img-fluid w-100" alt="">
-              <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+              <img src="image/zoom/mango/sale/mg11.jpg" class="img-fluid w-100" alt="">
+              <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="17" data-name="MANGO-leather queen" data-price="317.65">
                   <i class="fas fa-shopping-cart pt-1"></i>
               </span>
               <div class="text-center">
@@ -504,17 +559,17 @@
                       <span class="fas fa-star star-color"></span>
                       <span class="fas fa-star star-color"></span>
                       <span class="fas fa-star star-color"></span>
-                      <p class="new-item fw-bold">MK-embellished </p>
-                      <label class="fw-bold new-item text-danger">$ 327.75</label>
-                      <small class="new-item1 text-decoration-line-through">$652.75</small>
-                      <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                      <p class="new-item fw-bold">MANGO-leather queen </p>
+                      <label class="fw-bold new-item text-danger">$ 317.65</label>
+                      <small class="new-item1 text-decoration-line-through">$852.05</small>
+                      <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal17">VIEW </p>
                   </div>
               </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
                 <img src="image/zoom/mango/sale/mg8.jpg" class="img-fluid w-100" alt="">
-                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="18" data-name="MANGO-nano knot" data-price="221.25">
                     <i class="fas fa-shopping-cart pt-1"></i>
                 </span>
                 <div class="text-center">
@@ -524,13 +579,54 @@
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
-                        <p class="new-item fw-bold">MK-embellished </p>
-                        <label class="fw-bold new-item text-danger">$ 327.75</label>
-                        <small class="new-item1 text-decoration-line-through">$652.75</small>
-                        <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                        <p class="new-item fw-bold">MANGO-nano knot</p>
+                        <label class="fw-bold new-item text-danger">$ 221.25</label>
+                        <small class="new-item1 text-decoration-line-through">$579.95</small>
+                        <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal18">VIEW </p>
                     </div>
                 </div>      
                   </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                    <img src="image/zoom/mango/sale/mg9.jpg" class="img-fluid w-100" alt="">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="19" data-name="MANGO-gradance" data-price="221.25">
+                        <i class="fas fa-shopping-cart pt-1"></i>
+                    </span>
+                    <div class="text-center">
+                        <div class="rating star mt-3 text-primary">
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <p class="new-item fw-bold">MG-gradience</p>
+                            <label class="fw-bold new-item text-danger">$ 221.25</label>
+                            <small class="new-item1 text-decoration-line-through">$579.95</small>
+                            <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal19">VIEW </p>
+                        </div>
+                    </div>      
+                </div>
+
+                <!-- <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                    <img src="image/zoom/mango/sale/mg5.jpg" class="img-fluid w-100" alt="">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="20" data-name="MANGO-nano knot" data-price="221.25">
+                        <i class="fas fa-shopping-cart pt-1"></i>
+                    </span>
+                    <div class="text-center">
+                        <div class="rating star mt-3 text-primary">
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <p class="new-item fw-bold">MANGO-Brick</p>
+                            <label class="fw-bold new-item text-danger">$ 221.25</label>
+                            <small class="new-item1 text-decoration-line-through">$579.95</small>
+                            <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal20">VIEW </p>
+                        </div>
+                    </div>      
+                </div> -->
+                  
                 </div>
 
               </div>
@@ -538,9 +634,9 @@
 
                 <div class="row">
                   
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                    <img src="image/zoom/zara/sale/zr3.jpg" class="img-fluid w-100" alt="">
-                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                    <img src="image/zoom/zara/sale/zr15.jpg" class="img-fluid w-100" alt="">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="19" data-name="Tomford-wile" data-price="227.30">
                         <i class="fas fa-shopping-cart pt-1"></i>
                     </span>
                     <div class="text-center">
@@ -550,17 +646,57 @@
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
                             <span class="fas fa-star star-color"></span>
-                            <p class="new-item fw-bold">MK-embellished </p>
-                            <label class="fw-bold new-item text-danger">$ 327.75</label>
-                            <small class="new-item1 text-decoration-line-through">$652.75</small>
-                            <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                            <p class="new-item fw-bold">Tomford-wile </p>
+                            <label class="fw-bold new-item text-danger">$ 227.30</label>
+                            <small class="new-item1 text-decoration-line-through">$450.05</small>
+                            <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal21">VIEW </p>
                         </div>
                     </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                  <img src="image/zoom/zara/sale/zr4.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                    <img src="image/zoom/zara/sale/zr20.png" class="img-fluid w-100" alt="">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="20" data-name="YSL-shine heel" data-price="331.90">
+                        <i class="fas fa-shopping-cart pt-1"></i>
+                    </span>
+                    <div class="text-center">
+                        <div class="rating star mt-3 text-primary">
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <p class="new-item fw-bold">YSL-shine heel </p>
+                            <label class="fw-bold new-item text-danger">$ 331.90</label>
+                            <small class="new-item1 text-decoration-line-through">$857.70</small>
+                            <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal22">VIEW </p>
+                        </div>
+                    </div>      
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                    <img src="image/zoom/zara/sale/zr21.jpg" class="img-fluid w-100" alt="">
+                    <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="21" data-name="Tomford-nube-heel" data-price="229.65">
+                        <i class="fas fa-shopping-cart pt-1"></i>
+                    </span>
+                    <div class="text-center">
+                        <div class="rating star mt-3 text-primary">
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <span class="fas fa-star star-color"></span>
+                            <p class="new-item fw-bold">Tomford-nube-heel</p>
+                            <label class="fw-bold new-item text-danger">$ 229.65</label>
+                            <small class="new-item1 text-decoration-line-through">$555.40</small>
+                            <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal23">VIEW </p>
+                        </div>
+                    </div>      
+                  </div>
+
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                  <img src="image/zoom/zara/sale/zr22.jpg" class="img-fluid w-100" alt="">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="22" data-name="YSL-rosy" data-price="727.60">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -570,17 +706,17 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
-                          <small class="new-item1 text-decoration-line-through">$652.75</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item fw-bold">YSL Rosey heel </p>
+                          <label class="fw-bold new-item text-danger">$ 727.60</label>
+                          <small class="new-item1 text-decoration-line-through">$1652.75</small>
+                          <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal24">VIEW </p>
                       </div>
                   </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                <img src="image/zoom/zara/sale/zr5.jpg" class="img-fluid w-100" alt="">
-                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                <img src="image/zoom/zara/sale/zr23.jpg" class="img-fluid w-100" alt="">
+                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="23" data-name="Tomford-snake" data-price="711.75">
                     <i class="fas fa-shopping-cart pt-1"></i>
                 </span>
                 <div class="text-center">
@@ -590,17 +726,17 @@
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
-                        <p class="new-item fw-bold">MK-embellished </p>
-                        <label class="fw-bold new-item text-danger">$ 327.75</label>
+                        <p class="new-item fw-bold">Tomford-snake map</p>
+                        <label class="fw-bold new-item text-danger">$ 711.75</label>
                         <small class="new-item1 text-decoration-line-through">$652.75</small>
-                        <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                        <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal25">VIEW </p>
                     </div>
                 </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                  <img src="image/zoom/zara/sale/zr8.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                  <img src="image/zoom/zara/sale/zr1.jpg" class="img-fluid w-100" alt="">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="24" data-name="YSL-skylines" data-price="559.20">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -610,17 +746,17 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
-                          <small class="new-item1 text-decoration-line-through">$652.75</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item fw-bold">YSL-skylines </p>
+                          <label class="fw-bold new-item text-danger">$ 559.20</label>
+                          <small class="new-item1 text-decoration-line-through">$766.10</small>
+                          <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal26">VIEW </p>
                       </div>
                   </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                  <img src="image/zoom/zara/sale/zr12.jpg" class="img-fluid w-100" alt="">
-                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                  <img src="image/zoom/zara/sale/zr8b.jpg" class="img-fluid w-100" alt="">
+                  <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="25" data-name="Tomford parkour" data-price="229.70">
                       <i class="fas fa-shopping-cart pt-1"></i>
                   </span>
                   <div class="text-center">
@@ -630,17 +766,17 @@
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
                           <span class="fas fa-star star-color"></span>
-                          <p class="new-item fw-bold">MK-embellished </p>
-                          <label class="fw-bold new-item text-danger">$ 327.75</label>
-                          <small class="new-item1 text-decoration-line-through">$652.75</small>
-                          <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                          <p class="new-item fw-bold">Tomford parkour </p>
+                          <label class="fw-bold new-item text-danger">$ 229.70.75</label>
+                          <small class="new-item1 text-decoration-line-through">$764.30</small>
+                          <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal27">VIEW </p>
                       </div>
                   </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                <img src="image/zoom/zara/sale/zr9.jpg" class="img-fluid w-100" alt="">
-                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                <img src="image/zoom/zara/sale/zr18.jpg" class="img-fluid w-100" alt="">
+                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="26" data-name="Tomford-sweetmemo" data-price="498.10">
                     <i class="fas fa-shopping-cart pt-1"></i>
                 </span>
                 <div class="text-center">
@@ -650,17 +786,17 @@
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
-                        <p class="new-item fw-bold">MK-embellished </p>
-                        <label class="fw-bold new-item text-danger">$ 327.75</label>
-                        <small class="new-item1 text-decoration-line-through">$652.75</small>
-                        <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                        <p class="new-item fw-bold">YSL-sweetmeno </p>
+                        <label class="fw-bold new-item text-danger">$ 498.10</label>
+                        <small class="new-item1 text-decoration-line-through">$921.75</small>
+                        <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal28">VIEW </p>
                     </div>
                 </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-              <img src="image/zoom/zara/sale/zr10.jpg" class="img-fluid w-100" alt="">
-              <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+              <img src="image/zoom/zara/sale/zr6.jpg" class="img-fluid w-100" alt="">
+              <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="27" data-name="YSL-stilello" data-price="441.10">
                   <i class="fas fa-shopping-cart pt-1"></i>
               </span>
               <div class="text-center">
@@ -670,17 +806,17 @@
                       <span class="fas fa-star star-color"></span>
                       <span class="fas fa-star star-color"></span>
                       <span class="fas fa-star star-color"></span>
-                      <p class="new-item fw-bold">MK-embellished </p>
-                      <label class="fw-bold new-item text-danger">$ 327.75</label>
-                      <small class="new-item1 text-decoration-line-through">$652.75</small>
-                      <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                      <p class="new-item fw-bold">YSL-stilello </p>
+                      <label class="fw-bold new-item text-danger">$ 441.10</label>
+                      <small class="new-item1 text-decoration-line-through">$885.50</small>
+                      <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal29">VIEW </p>
                   </div>
               </div>      
                   </div>
 
-                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat">
-                <img src="image/zoom/zara/sale/zr11.jpg" class="img-fluid w-100" alt="">
-                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon">
+                  <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 position-relative   collection-img py-2 feat prod-box">
+                <img src="image/zoom/zara/sale/zr5.jpg" class="img-fluid w-100" alt="">
+                <span class="position-absolute text-light d-flex pt-2   justify-content-center buy-icon addToCart" data-id="28" data-name="YSL-feather" data-price="338.80">
                     <i class="fas fa-shopping-cart pt-1"></i>
                 </span>
                 <div class="text-center">
@@ -690,10 +826,10 @@
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
                         <span class="fas fa-star star-color"></span>
-                        <p class="new-item fw-bold">MK-embellished </p>
-                        <label class="fw-bold new-item text-danger">$ 327.75</label>
-                        <small class="new-item1 text-decoration-line-through">$652.75</small>
-                        <p class="new-item1 fw-bold d-block btn">VIEW </p>
+                        <p class="new-item fw-bold">YSL-feather </p>
+                        <label class="fw-bold new-item text-danger">$ 338.80</label>
+                        <small class="new-item1 text-decoration-line-through">$790.40</small>
+                        <p class="new-item1 fw-bold d-block btn" data-bs-toggle="modal" data-bs-target="#exampleModal30">VIEW </p>
                     </div>
                 </div>      
                   </div>
@@ -707,24 +843,22 @@
     </div>
     <!-- end tap -->
     <!-- footer -->
-    <footer class="bg-footer text-white-50 f">
-        <div class="container">
-            <div class="row pt-5">
+    <footer class="bg-footer text-white-50">
+        <div class="container pt-5">
+            <div class="row gy-5">
                 
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                     <h5 class="header ">FIND US ON</h5>
-                    <div class="row">
-                        <div class="col-2">
-                            <i class="fa-solid fa-house"></i>
-                        </div>
-                        <div class="col-10 add ms-0">
+                    <div class="row pt-3" style="font-family:Arial, Helvetica, sans-serif; font-size:14px;">
+
+                        <div class=" add ms-0">
                             Official chanlolita. 195 Broadway 12th Floor New York, NY 10007 USA        
                         </div>
                         <p class="py-1">
-                            <i class="fa-solid fa-phone pe-2"></i>&nbsp; &nbsp; +0801117823
+                            +0801117823
                         </p>
                         <p class="py-1">
-                            <i class="fa-solid fa-envelope pe-2"></i>&nbsp; &nbsp; lolitachan@os.com
+                            lolitachan@os.com
                         </p>
                         <div class="container icon">
                             <div class="row" style="margin-left: -35px;">
@@ -775,29 +909,35 @@
                         </div> 
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12" style="font-family:Arial, Helvetica, sans-serif; font-size:14px;">
                     <h5 class="header ">SHOPPING GUIDE</h5>
-                    <a href="" class="nav-link ps-1 py-1">ChatShop-Bundle Deals</a>
+                    <div class="pt-3">
+                        <a href="" class="nav-link ps-1 py-1">ChatShop-Bundle Deals</a>
                     <a href="" class="nav-link ps-1 py-1">ChatShop-hillfest</a>
                     <a href="" class="nav-link ps-1 py-1">Size chart</a>
                     <a href="" class="nav-link ps-1 py-1">Shipping & Returns</a>
                     <a href="" class="nav-link ps-1 py-1">Terms and conditions</a>
                     <a href="" class="nav-link ps-1 py-1">Terms of us</a>
+                    </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 pb-3">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 pb-3" style="font-family:Arial, Helvetica, sans-serif; font-size:14px;">
                     <h5 class="header ">COMPANY INFO</h5>
-                    <a href="" class="nav-link ps-1 py-1">Who we are</a>
-                    <a href="" class="nav-link ps-1 py-1">Company profile</a>
-                    <a href="" class="nav-link ps-1 py-1">Careers</a>
-                    <a href="" class="nav-link ps-1 py-1">Chan zone</a>
-                    <a href="" class="nav-link ps-1 py-1">Pravicy & Cookies</a>
-                    <a href="" class="nav-link ps-1 py-1">Co-operate information</a>
+                    <div class="pt-3">
+                        <a href="" class="nav-link ps-1 py-1">Who we are</a>
+                        <a href="" class="nav-link ps-1 py-1">Company profile</a>
+                        <a href="" class="nav-link ps-1 py-1">Careers</a>
+                        <a href="" class="nav-link ps-1 py-1">Chan zone</a>
+                        <a href="" class="nav-link ps-1 py-1">Pravicy & Cookies</a>
+                        <a href="" class="nav-link ps-1 py-1">Co-operate information</a>
+                    </div>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 pb-3">
                     <h5 class="header ">LOLITACHAN</h5>
-                    <small class="pe-5" style="line-height: 23px;">
-                        By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="#" class="text-white"> Privacy Policy</a>
-                    </small>
+                    <div class="pt-3">
+                        <small class="pe-5" style="line-height: 23px;">
+                            By entering your email address below, you consent to receiving our newsletter with access in our <a href="#" class="text-white"> Privacy Policy</a>
+                        </small>
+                    </div>
                     <p class="mt-2">
                         <img src="image/LOGOs.png"  class="img-fluid w-50" alt="">
                     </p>
@@ -816,7 +956,7 @@
     </footer>
     <!-- end footer -->
 
-    <!-- start modal  -->
+    <!-- start login modal  -->
         
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -852,7 +992,1181 @@
         </div>
         </div>
     </div>
-    <!-- end modal -->
+    <!-- end login modal -->
+
+    <!-- start view modal -->
+        <!-- 2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">MK-Dosar Logo leather</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mk/sale/mk16.jpg"  class=" w-75 pro-img2" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image2(this)">
+                                    <img src="image/zoom/mk/sale/mk16.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image2(this)">
+                                    <img src="image/zoom/mk/sale/mk16a.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image2(this)">
+                                    <img src="image/zoom/mk/sale/mk16b.jpg" alt="">
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+        <!-- 03 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">MK-embellished</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                          <div class="row">
+                            <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                                <div class="product">
+                                    <div class="main-img">
+                                        <img src="image/zoom/mk/sale/mk1.jpg"  class=" w-75 pro-img3" alt="">
+                                    </div>
+                                    <div class="thumb-img">
+                                        <div class="box active-img" onclick="change_Image3(this)">
+                                            <img src="image/zoom/mk/sale/mk1.jpg" alt="">      
+                                        </div>
+                                        <div class="box" onclick="change_Image3(this)">
+                                            <img src="image/zoom/mk/sale/mk1a.jpg" alt="">
+                                        </div>
+                                        <div class="box" onclick="change_Image3(this)">
+                                            <img src="image/zoom/mk/sale/mk1b.jpg" alt="">
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </col-12>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+    </div>
+        <!-- 04 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">MK-Parker pump heel</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mk/sale/mk15.jpg"  class=" w-75 pro-img4" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image4(this)">
+                                    <img src="image/zoom/mk/sale/mk15.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image4(this)">
+                                    <img src="image/zoom/mk/sale/mk15a.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image4(this)">
+                                    <img src="image/zoom/mk/sale/mk15b.jpg" alt="">
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+        </div>
+    </div>   
+        <!-- 05 -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">MK-Amat metallica</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/mk/sale/mk14.jpg"  class=" w-75 pro-img5" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image5(this)">
+                                        <img src="image/zoom/mk/sale/mk14.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image5(this)">
+                                        <img src="image/zoom/mk/sale/mk14a.jpg" alt="">
+                                    </div>
+                                    <div class="box" onclick="change_Image5(this)">
+                                        <img src="image/zoom/mk/sale/mk14b.jpg" alt="">
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div> 
+        <!-- 06 -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">MK-Loson leather</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mk/sale/mk13.jpg"  class=" w-75 pro-img6" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image6(this)">
+                                    <img src="image/zoom/mk/sale/mk13.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image6(this)">
+                                    <img src="image/zoom/mk/sale/mk13a.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image6(this)">
+                                    <img src="image/zoom/mk/sale/mk13b.jpg" alt="">
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+        <!-- 07 -->
+    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+            <div class="modal-body">
+                <h3 class="text-center text-primary py-2 text-uppercase">MK-Alina Flex Logo Pump</h3>
+                    
+                <div class="row">
+                <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="product">
+                        <div class="main-img">
+                            <img src="image/zoom/mk/sale/mk12.jpg"  class=" w-75 pro-img7" alt="">
+                        </div>
+                        <div class="thumb-img">
+                            <div class="box active-img" onclick="change_Image7(this)">
+                                <img src="image/zoom/mk/sale/mk12.jpg" alt="">      
+                            </div>
+                            <div class="box" onclick="change_Image7(this)">
+                                <img src="image/zoom/mk/sale/mk12a.jpg" alt="">
+                            </div>
+                                <!-- <div class="box" onclick="change_Image2(this)">
+                                    <img src="image/zoom/mk/sale/mk16b.jpg" alt="">
+                                </div> -->
+                        </div>
+                    </div>
+                    <div class="pt-3" style="padding-left: 11%;">
+                        <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </col-12>
+                </div>
+            </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  
+                </div> -->
+        </div>
+    </div>
+    </div>
+        <!-- 08 -->
+    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <h3 class="text-center text-primary py2 text-uppercase">MK-Chantal Flex Faux</h3>
+                            
+                        <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/mk/sale/mk17.jpg"  class=" w-75 pro-img8" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image8(this)">
+                                        <img src="image/zoom/mk/sale/mk17.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image8(this)">
+                                        <img src="image/zoom/mk/sale/mk17a.jpg" alt="">
+                                    </div>
+                                        <!-- <div class="box" onclick="change_Image2(this)">
+                                            <img src="image/zoom/mk/sale/mk16b.jpg" alt="">
+                                        </div> -->
+                                </div>
+                            </div>
+                            <!-- <div class="pt-3" style="padding-left: 11%;">
+                                <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                            </div> -->
+                        </div>
+                    </col-12>
+                        </div>
+                    </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                          
+                        </div>
+                </div>
+            </div>
+    </div>
+        <!-- 09 -->
+    <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+    
+                <div class="modal-body">
+                    <h3 class="text-center text-primary py-2 text-uppercase">MK-Chita D Smooth</h3>
+                        
+                    <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mk/sale/mk18.jpg"  class=" w-75 pro-img9" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image9(this)">
+                                    <img src="image/zoom/mk/sale/mk18.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image9(this)">
+                                    <img src="image/zoom/mk/sale/mk18a.jpg" alt="">
+                                </div>
+                                    <!-- <div class="box" onclick="change_Image2(this)">
+                                        <img src="image/zoom/mk/sale/mk16b.jpg" alt="">
+                                    </div> -->
+                            </div>
+                        </div>
+                        <!-- <div class="pt-3" style="padding-left: 11%;">
+                            <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                        </div> -->
+                    </div>
+                </col-12>
+                    </div>
+                </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      
+                    </div>
+            </div>
+        </div>
+    </div>
+        <!-- 10 -->
+    <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+    
+                <div class="modal-body">
+                    <h3 class="text-center text-primary py-2 text-uppercase">MK-Chita D Smooth</h3>
+                        
+                    <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mk/sale/mk6.jpg"  class=" w-75 pro-img10" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image10(this)">
+                                    <img src="image/zoom/mk/sale/mk6.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image10(this)">
+                                    <img src="image/zoom/mk/sale/mk6a.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image10(this)">
+                                    <img src="image/zoom/mk/sale/mk6b.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </col-12>
+                    </div>
+                </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      
+                    </div>
+            </div>
+        </div>
+    </div>
+        <!-- 01 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">MK-Loson leather</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="product">
+                        <div class="main-img">
+                            <img src="image/zoom/mk/sale/mk9.jpg"  class=" w-75 pro-img" alt="">
+                        </div>
+                        <div class="thumb-img">
+                            <div class="box active-img" onclick="change_Image(this)">
+                                <img src="image/zoom/mk/sale/mk9.jpg" alt="">      
+                            </div>
+                            <div class="box" onclick="change_Image(this)">
+                                <img src="image/zoom/mk/sale/mk9a.jpg" alt="">
+                            </div>
+                            <div class="box" onclick="change_Image(this)">
+                                <img src="image/zoom/mk/sale/mk9b.jpg" alt="">
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </col-12>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- end mk modal -->
+    
+<!-- start mango -->
+        <!-- 01 -->
+    <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">MANGO-metallic toe</h1>
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mango/sale/mg.jpg"  class=" w-75 pro-img11" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image11(this)">
+                                    <img src="image/zoom/mango/sale/mg.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image11(this)">
+                                    <img src="image/zoom/mango/sale/mga.jpg" alt="">
+                                </div>
+                                <!-- <div class="box" onclick="change_Image11(this)">
+                                    <img src="image/zoom/mango/sale/mg1b.jpg" alt="">
+                                </div> -->
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+
+        <!-- 02 -->
+    <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+    
+            <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">MANGO-Assymetic</h1>
+                <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mango/sale/mg2.jpg"  class=" w-75 pro-img12" alt="">
+                            </div>
+                        <div class="thumb-img">
+                        <div class="box active-img" onclick="change_Image12(this)">
+                            <img src="image/zoom/mango/sale/mg2.jpg" alt="">      
+                        </div>
+                        <div class="box" onclick="change_Image12(this)">
+                            <img src="image/zoom/mango/sale/mg2a.jpg" alt="">
+                        </div>
+                        <div class="box" onclick="change_Image12(this)">
+                            <img src="image/zoom/mango/sale/mg2b.jpg" alt="">
+                        </div>
+                            <div class="box" onclick="change_Image12(this)">
+                                <img src="image/zoom/mango/sale/mg2c.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </col-12>
+        </div>
+        </div>
+    <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+    </div>
+    </div>
+    </div>
+    </div>
+        <!-- 03 -->
+    <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">MANGO-mash pointed</h1>
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mango/sale/mg3.jpg"  class=" w-75 pro-img13" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image13(this)">
+                                    <img src="image/zoom/mango/sale/mg3.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image13(this)">
+                                    <img src="image/zoom/mango/sale/mg3a.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image13(this)">
+                                    <img src="image/zoom/mango/sale/mg3b.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image13(this)">
+                                    <img src="image/zoom/mango/sale/mg3c.jpg" alt="">
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+        <!-- 04 -->
+    <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">MANGO-mash pointed</h1>
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mango/sale/mg4.jpg"  class=" w-75 pro-img14" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image14(this)">
+                                    <img src="image/zoom/mango/sale/mg4.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image14(this)">
+                                    <img src="image/zoom/mango/sale/mg4a.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image14(this)">
+                                    <img src="image/zoom/mango/sale/mg4b.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image14(this)">
+                                    <img src="image/zoom/mango/sale/mg4c.jpg" alt="">
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+        <!-- 05 -->
+    <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+    
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">MANGO-mash pointed</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/mango/sale/mg10.jpg"  class=" w-75 pro-img15" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image15(this)">
+                                        <img src="image/zoom/mango/sale/mg10.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image15(this)">
+                                        <img src="image/zoom/mango/sale/mg10a.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="box" onclick="change_Image14(this)">
+                                        <img src="image/zoom/mango/sale/mg4b.jpg" alt="">
+                                    </div>
+                                    <div class="box" onclick="change_Image14(this)">
+                                        <img src="image/zoom/mango/sale/mg4c.jpg" alt="">
+                                    </div> -->
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+        <!-- 06 -->
+    <div class="modal fade" id="exampleModal16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+
+                <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Endless reder</h1>
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/mango/sale/mg6.jpg"  class=" w-75 pro-img16" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image16(this)">
+                                    <img src="image/zoom/mango/sale/mg6.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image16(this)">
+                                    <img src="image/zoom/mango/sale/mg6a.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image16(this)">
+                                    <img src="image/zoom/mango/sale/mg6b.jpg" alt="">
+                                </div>
+                                <!-- <div class="box" onclick="change_Image16(this)">
+                                    <img src="image/zoom/mango/sale/mg4c.jpg" alt="">
+                                </div> -->
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+            <!-- 07 -->
+    <div class="modal fade" id="exampleModal17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+    
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Endless reder</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/mango/sale/mg11.jpg"  class=" w-75 pro-img17" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image17(this)">
+                                        <img src="image/zoom/mango/sale/mg11.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image17(this)">
+                                        <img src="image/zoom/mango/sale/mg11a.jpg" alt="">
+                                    </div>
+                                    <div class="box" onclick="change_Image17(this)">
+                                        <img src="image/zoom/mango/sale/mg11b.jpg" alt="">
+                                    </div>
+                                    <div class="box" onclick="change_Image17(this)">
+                                        <img src="image/zoom/mango/sale/mg11c.jpg" alt="">
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+            <!-- 08 -->
+    <div class="modal fade" id="exampleModal18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+    
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Endless reder</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/mango/sale/mg8.jpg"  class=" w-75 pro-img18" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image18(this)">
+                                        <img src="image/zoom/mango/sale/mg8.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image18(this)">
+                                        <img src="image/zoom/mango/sale/mg8a.jpg" alt="">
+                                    </div>
+                                    <div class="box" onclick="change_Image18(this)">
+                                        <img src="image/zoom/mango/sale/mg8b.jpg" alt="">
+                                    </div>
+                                    <div class="box" onclick="change_Image18(this)">
+                                        <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+    <!-- 09 -->
+    <div class="modal fade" id="exampleModal19" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-body">
+                <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Endless reder</h1>
+              <div class="row">
+                <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="product">
+                        <div class="main-img">
+                            <img src="image/zoom/mango/sale/mg9.jpg"  class=" w-75 pro-img19" alt="">
+                        </div>
+                        <div class="thumb-img">
+                            <div class="box active-img" onclick="change_Image19(this)">
+                                <img src="image/zoom/mango/sale/mg9.jpg" alt="">      
+                            </div>
+                            <div class="box" onclick="change_Image19(this)">
+                                <img src="image/zoom/mango/sale/mg9a.jpg" alt="">
+                            </div>
+                            <div class="box" onclick="change_Image19(this)">
+                                <img src="image/zoom/mango/sale/mg9b.jpg" alt="">
+                            </div>
+                            <!-- <div class="box" onclick="change_Image19(this)">
+                                <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                            </div> -->
+                        </div>
+                      </div>
+                </div>
+            </col-12>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- 20 -->
+    <div class="modal fade" id="exampleModal20" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+
+            <div class="modal-body">
+                <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">MANGO-Brick</h1>
+              <div class="row">
+                <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="product">
+                        <div class="main-img">
+                            <img src="image/zoom/mango/sale/mg5.jpg"  class=" w-75 pro-img20" alt="">
+                        </div>
+                        <div class="thumb-img">
+                            <div class="box active-img" onclick="change_Image20(this)">
+                                <img src="image/zoom/mango/sale/mg5.jpg" alt="">      
+                            </div>
+                            <div class="box" onclick="change_Image20(this)">
+                                <img src="image/zoom/mango/sale/mg5a.jpg" alt="">
+                            </div>
+                            <div class="box" onclick="change_Image20(this)">
+                                <img src="image/zoom/mango/sale/mg5b.jpg" alt="">
+                            </div>
+                            <!-- <div class="box" onclick="change_Image19(this)">
+                                <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                            </div> -->
+                        </div>
+                      </div>
+                </div>
+            </col-12>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+    </div>
+        <!-- end mango -->
+   
+        <!-- start tomford -->
+        <!-- 01 -->
+    <div class="modal fade" id="exampleModal21" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+    
+                <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Tomford-wile</h1>
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/zara/sale/zr15.jpg"  class=" w-75 pro-img21" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image21(this)">
+                                    <img src="image/zoom/zara/sale/zr15.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image21(this)">
+                                    <img src="image/zoom/zara/sale/zr15a.jpg" alt="">
+                                </div>
+                                <div class="box" onclick="change_Image21(this)">
+                                    <img src="image/zoom/zara/sale/zr15b.jpg" alt="">
+                                </div>
+                                <!-- <div class="box" onclick="change_Image19(this)">
+                                    <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                </div> -->
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+
+        <!-- 02 -->
+    <div class="modal fade" id="exampleModal22" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+    
+                <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2"> YSL-shine heel</h1>
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/zara/sale/zr20.png"  class=" w-75 pro-img22" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image22(this)">
+                                    <img src="image/zoom/zara/sale/zr20.png" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image22(this)">
+                                    <img src="image/zoom/zara/sale/zr20a.png" alt="">
+                                </div>
+                                <!-- <div class="box" onclick="change_Image22(this)">
+                                    <img src="image/zoom/zara/sale/zr15b.jpg" alt="">
+                                </div> -->
+                                <!-- <div class="box" onclick="change_Image19(this)">
+                                    <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                </div> -->
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+        <!-- 03 -->
+    <div class="modal fade" id="exampleModal23" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+    
+                <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2"> YSL-shine heel</h1>
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/zara/sale/zr21.jpg"  class=" w-75 pro-img23" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image23(this)">
+                                    <img src="image/zoom/zara/sale/zr21.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image23(this)">
+                                    <img src="image/zoom/zara/sale/zr21a1.jpg" alt="">
+                                </div>
+                                <!-- <div class="box" onclick="change_Image22(this)">
+                                    <img src="image/zoom/zara/sale/zr15b.jpg" alt="">
+                                </div> -->
+                                <!-- <div class="box" onclick="change_Image19(this)">
+                                    <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                </div> -->
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+        <!-- 04 -->
+    <div class="modal fade" id="exampleModal24" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+    
+                <div class="modal-body">
+                    <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2"> YSL-shine heel</h1>
+                  <div class="row">
+                    <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                        <div class="product">
+                            <div class="main-img">
+                                <img src="image/zoom/zara/sale/zr22.jpg"  class=" w-75 pro-img24" alt="">
+                            </div>
+                            <div class="thumb-img">
+                                <div class="box active-img" onclick="change_Image24(this)">
+                                    <img src="image/zoom/zara/sale/zr22.jpg" alt="">      
+                                </div>
+                                <div class="box" onclick="change_Image24(this)">
+                                    <img src="image/zoom/zara/sale/zr22a.jpg" alt="">
+                                </div>
+                                <!-- <div class="box" onclick="change_Image22(this)">
+                                    <img src="image/zoom/zara/sale/zr15b.jpg" alt="">
+                                </div> -->
+                                <!-- <div class="box" onclick="change_Image19(this)">
+                                    <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                </div> -->
+                            </div>
+                          </div>
+                    </div>
+                </col-12>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+    </div>
+            <!-- 05 -->
+    <div class="modal fade" id="exampleModal25" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Tomford-snake map</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/zara/sale/zr23.jpg"  class=" w-75 pro-img25" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image25(this)">
+                                        <img src="image/zoom/zara/sale/zr23.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image25(this)">
+                                        <img src="image/zoom/zara/sale/zr23a.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="box" onclick="change_Image22(this)">
+                                        <img src="image/zoom/zara/sale/zr15b.jpg" alt="">
+                                    </div> -->
+                                    <!-- <div class="box" onclick="change_Image19(this)">
+                                        <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                    </div> -->
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+            <!-- 06 -->
+    <div class="modal fade" id="exampleModal26" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Tomford-snake map</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/zara/sale/zr1.jpg"  class=" w-75 pro-img26" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image26(this)">
+                                        <img src="image/zoom/zara/sale/zr1.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image26(this)">
+                                        <img src="image/zoom/zara/sale/zr1a.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="box" onclick="change_Image22(this)">
+                                        <img src="image/zoom/zara/sale/zr15b.jpg" alt="">
+                                    </div> -->
+                                    <!-- <div class="box" onclick="change_Image19(this)">
+                                        <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                    </div> -->
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+            <!-- 07 -->
+    <div class="modal fade" id="exampleModal27" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Tomford-snake map</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/zara/sale/zr8b.jpg"  class=" w-75 pro-img27" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image27(this)">
+                                        <img src="image/zoom/zara/sale/zr8b.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image27(this)">
+                                        <img src="image/zoom/zara/sale/zr8a.jpg" alt="">
+                                    </div>
+                                    <div class="box" onclick="change_Image27(this)">
+                                        <img src="image/zoom/zara/sale/zr8.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="box" onclick="change_Image19(this)">
+                                        <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                    </div> -->
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+            <!-- 08 -->
+    <div class="modal fade" id="exampleModal28" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Tomford-snake map</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/zara/sale/zr18.jpg"  class=" w-75 pro-img28" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image28(this)">
+                                        <img src="image/zoom/zara/sale/zr18.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image28(this)">
+                                        <img src="image/zoom/zara/sale/zr18a.jpg" alt="">
+                                    </div>
+                                    <div class="box" onclick="change_Image28(this)">
+                                        <img src="image/zoom/zara/sale/zr18b.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="box" onclick="change_Image19(this)">
+                                        <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                    </div> -->
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+            <!-- 09 -->
+    <div class="modal fade" id="exampleModal29" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Tomford-snake map</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/zara/sale/zr6.jpg"  class=" w-75 pro-img29" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image29(this)">
+                                        <img src="image/zoom/zara/sale/zr6.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image29(this)">
+                                        <img src="image/zoom/zara/sale/zr6a.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="box" onclick="change_Image29(this)">
+                                        <img src="image/zoom/zara/sale/zr18b.jpg" alt="">
+                                    </div> -->
+                                    <!-- <div class="box" onclick="change_Image19(this)">
+                                        <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                    </div> -->
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+            <!-- 09 -->
+            <div class="modal fade" id="exampleModal30" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+        
+                    <div class="modal-body">
+                        <h1 class="modal-title fs-5 text-primary text-center text-uppercase py-2">Tomford-snake map</h1>
+                      <div class="row">
+                        <div class="offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                            <div class="product">
+                                <div class="main-img">
+                                    <img src="image/zoom/zara/sale/zr5.jpg"  class=" w-75 pro-img30" alt="">
+                                </div>
+                                <div class="thumb-img">
+                                    <div class="box active-img" onclick="change_Image30(this)">
+                                        <img src="image/zoom/zara/sale/zr5.jpg" alt="">      
+                                    </div>
+                                    <div class="box" onclick="change_Image30(this)">
+                                        <img src="image/zoom/zara/sale/zr5a.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="box" onclick="change_Image29(this)">
+                                        <img src="image/zoom/zara/sale/zr18b.jpg" alt="">
+                                    </div> -->
+                                    <!-- <div class="box" onclick="change_Image19(this)">
+                                        <img src="image/zoom/mango/sale/mg8c.jpg" alt="">
+                                    </div> -->
+                                </div>
+                              </div>
+                        </div>
+                    </col-12>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" style="width:75px;" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+    </div>
+        <!-- end tomford -->
+    <!-- end view modal -->
 
     <script src="jquery/jquery.min.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
@@ -863,6 +2177,7 @@
     <script src="js/script.js"></script>
     <script src="js/countqty.js"></script>
     <script src="js/checkout.js"></script>
+    <script src="js/view.js"></script>
     <script>
         $(document).ready(function() {
             countqty();
@@ -910,6 +2225,131 @@
             chkout();
         }); //end click add to cart btn
     });
+    // start mk
+    function change_Image(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img").src = e.children[0].src;
+    }
+    function change_Image2(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img2").src = e.children[0].src;
+    }
+    function change_Image3(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img3").src = e.children[0].src;
+    }
+    function change_Image4(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img4").src = e.children[0].src;
+    }
+    function change_Image5(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img5").src = e.children[0].src;
+    }
+    function change_Image6(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img6").src = e.children[0].src;
+    }
+    function change_Image7(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img7").src = e.children[0].src;
+    }
+    function change_Image8(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img8").src = e.children[0].src;
+    }
+    function change_Image9(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img9").src = e.children[0].src;
+    }
+    function change_Image10(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img10").src = e.children[0].src;
+    }
+    // end mk
+    function change_Image11(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img11").src = e.children[0].src;
+    }
+    function change_Image12(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img12").src = e.children[0].src;
+    }
+    function change_Image13(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img13").src = e.children[0].src;
+    }
+    function change_Image14(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img14").src = e.children[0].src;
+    }
+    function change_Image15(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img15").src = e.children[0].src;
+    }
+    function change_Image16(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img16").src = e.children[0].src;
+    }
+    function change_Image17(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img17").src = e.children[0].src;
+    }
+    function change_Image18(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img18").src = e.children[0].src;
+    }
+    function change_Image19(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img19").src = e.children[0].src;
+    }
+    function change_Image20(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img20").src = e.children[0].src;
+    }
+    // end mango
+
+    // start tomford
+    function change_Image21(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img21").src = e.children[0].src;
+    }
+    function change_Image22(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img22").src = e.children[0].src;
+    }
+    function change_Image23(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img23").src = e.children[0].src;
+    }
+    function change_Image24(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img24").src = e.children[0].src;
+    }
+    function change_Image25(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img25").src = e.children[0].src;
+    }
+    function change_Image26(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img26").src = e.children[0].src;
+    }
+    function change_Image27(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img27").src = e.children[0].src;
+    }
+    function change_Image28(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img28").src = e.children[0].src;
+    }
+    function change_Image29(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img29").src = e.children[0].src;
+    }
+    function change_Image30(e) {
+        console.log(e.children[0].src);
+        document.querySelector(".pro-img30").src = e.children[0].src;
+    }
     </script>
 </body>
 </html>

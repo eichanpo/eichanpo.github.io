@@ -29,3 +29,11 @@
     font-family: natoBold;
     src: url(../font/Noto_Sans/NotoSans-Bold.ttf);
 }
+@font-face {
+    font-family: nova;
+    src: url(../font/Nova_Square/NovaSquare-Regular.ttf);
+}
+@font-face {
+    font-family: font-italic;
+    src: url(../font/italic/Bona_Nova/BonaNova-Italic.ttf);
+}

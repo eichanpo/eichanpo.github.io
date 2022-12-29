@@ -157,7 +157,7 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
     <!-- end tap -->
     <!-- footer -->
     <footer class="bg-footer text-white-50 f">
@@ -307,7 +307,6 @@
     </div>
     <!-- end modal -->
 
-    <script src="jquery/jquery.min.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
     <script src="jquery/jquery.min.js"></script>
     <!-- isotope js -->
@@ -317,8 +316,12 @@
     <script src="js/countqty.js"></script>
     <script src="js/checkout.js"></script>
     <script>
-       chkout();
-       countqty();
+
+        $(document).ready(function() {
+            chkout();
+            countqty();
+
+        })
     </script>
 </body>
 </html>

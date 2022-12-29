@@ -9,26 +9,26 @@ function chkout() {
             let itemArr = JSON.parse(itemStr);
             let data = '';
             let j = 1;
-            let total = 0;
+            let total = 0.00;
             $.each(itemArr, function (i, v) {  
                 data += `
                 <tr>
                     <td>${j++}</td>
                     <td>${v.item_name}</td>
-                    <td>${v.item_price}</td>
+                    <td>$&nbsp;${v.item_price}</td>
                     <td>
                         <span class="min" data-item_i="${i}"><i class="fa-solid fa-circle-arrow-left"></i></span>
                         &nbsp ${v.qty} &nbsp
                         <span class="max" data-item_i=${i}><i class="fa-solid fa-circle-arrow-right max"></i></span>
                     </td>
-                    <td>${v.item_price * v.qty}</td>
+                    <td>$&nbsp;${v.item_price * v.qty}</td>
                 </tr>
                 `;
-                total += v.item_price * v.qty;
+                total += parseFloat(v.item_price * v.qty);
             });
             data += `
                 <td colspan="4">Total</td>
-                <td>${total}</td>
+                <td>$&nbsp; ${total}</td>
             `;
 
             $("#data_body").html(data);
@@ -78,8 +78,9 @@ function chkout() {
     $("#order").click(function() {
         // e.preventDefault();
         localStorage.clear();
-        chkout();
+        
         countqty();
+        chkout();
     });
 
 
