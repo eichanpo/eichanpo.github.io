@@ -117,14 +117,9 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item py-3 px-3">
-                <a class="nav-link" href="">collection</a>
+                <a class="nav-link" href="collection.html">collection</a>
               </li>
-              <li class="nav-item py-3 px-3">
-                <a class="nav-link" href="">specials</a>
-              </li>
-              <li class="nav-item py-3 px-3">
-                <a class="nav-link" href="signup.html">sign up</a>
-              </li>
+
               <li class="nav-item py-3 px-3 border-0">
                 <a class="nav-link" href="contact.html">contact</a>
               </li>
@@ -198,13 +193,13 @@
               <div class="text-center carousel-item active">
                 <h2 class="text-capitalize lb1 title-gray">Best collection</h2>
                 <h1 class="lb1 h1 text-uppercase py-2 fw-bold">New arrivals</h1>
-                <a href="" class="btn btn-cs mt-3 text-uppercase">go Now</a>
+                <a href="collection.html" class="btn btn-cs mt-3 text-uppercase">go Now</a>
               </div>
               <div class="text-center carousel-item">
                 <h2 class="text-capitalize lb2">Best price</h2>
                 <h1 class="lb2 h1 text-uppercase py-2 fw-bold">New season</h1>
                 <!-- <a href="login.html" class="btn mt-3 text-uppercase">buy Now</a> -->
-                <a href="" class="btn btn-cs mt-3 text-uppercase"  data-bs-toggle="modal" data-bs-target="#exampleModal">buy now</a>
+                <a href="#" class="btn btn-cs mt-3 text-uppercase"  data-bs-toggle="modal" data-bs-target="#exampleModal">buy now</a>
               </div>
             </div>
 
@@ -689,7 +684,7 @@
                         <input class="input " type="password" name="password" placeholder="password">
                         <span class="span"></span>
                     </div>
-                    <small><i><a href="signup.html" class="text-success">Not a member yet? please sign up</a></i></small> <br>
+                    <small><i><a href="signup.html" class="text-success" data-bs-toggle="modal" data-bs-target="#exampleModal1">Not a member yet? please sign up</a></i></small> <br>
 
                     <button class="btnLogin mb-3 mt-2" id="logIn">LOGIN</button>
                     <button type="button" class="btnLogin mb-3 mt-2" data-bs-dismiss="modal">CLOSE</button>
@@ -701,6 +696,57 @@
         </div>
         </div>
     </div>
+
+    <!-- start sign in -->
+        <!-- sign up -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5 centerh1 text-danger" id="exampleModalLabel">Register</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="container">
+                                <form action="" class="form-signup">
+                                    <p>Create your account free only take a minute.</p>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6 pt-2">
+                                                <input class="form-control" type="text" name="firstname" placeholder="first name">
+                                            </div>
+                                            <div class="col-md-6 pt-2">
+                                                <input class="form-control" type="text" name="lastname" placeholder="last name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group pt-2">
+                                        <input type="email" class="form-control" name="email" placeholder="email address">
+                                    </div>
+                                    <div class="form-group pt-2">
+                                        <input type="password" class="form-control" name="password" placeholder="password">
+                                    </div>
+                                    <div class="form-group pt-2">
+                                        <input type="password" class="form-control" name="confirm_password" placeholder="confirm password">
+                                    </div>
+                                    <div class="form-group pt-2 pb-3">
+                                        <label for="">
+                                            <input type="checkbox">
+                                            I accept the <a href="#">Terms of Use</a> & <a href="#"> Privacy Policy</a>
+                                        </label>
+                                    </div>
+                                    
+            
+                                    <button class="btnLogin1 mb-3 mt-2">Sign up</button>
+                                    <button type="button" class="btnLogin1 mb-3 mt-2" data-bs-dismiss="modal">CLOSE</button>
+                                </form>
+                            
+                            
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+    </div> 
     <!-- end modal -->
 
     <script src="jquery/jquery.min.js"></script>

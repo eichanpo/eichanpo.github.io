@@ -262,6 +262,7 @@ nav .ship-text {
       border-radius: 3px;
       outline: none;
   }
+  /* modal login */
   .btnLogin {
       border: none;
       outline: none;
@@ -274,6 +275,27 @@ nav .ship-text {
       width: 100px;
       margin-left:5px;
   }
+  .form-signup {
+    margin: 0 auto;
+    max-width: 400px;
+    /* text-align: center; */
+  }
+
+  .btnLogin1 {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: whitesmoke;
+    background:linear-gradient(90deg, rgb(193, 196, 196), rgb(255, 120, 133));
+    padding:7px;
+    font-size: 16px;
+    width: 100px;
+    margin-left:5px;
+}
+
+
+/* modal sign up end */
   .span {
       display: block;
       margin-left: 20px;
