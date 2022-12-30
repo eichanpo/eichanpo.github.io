@@ -43,6 +43,39 @@
         padding: 15px;
         transition: .9s;
     }
+    #feature {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #feature .fe-box{
+        width: 180px;
+        text-align: center;
+        padding: 25px 15px;
+        box-shadow: -2px 7px 12px rgba(0,0,0,0.1);
+        border: 1px solid rgb(226, 223, 223);
+        border-radius: 4px;
+        margin: 15px 0;
+    }
+    #feature .fe-box:hover {
+        box-shadow: -2px 10px 54px rgba(0,0,0,0.1);
+        transition: .3s;
+    }
+    .fe-box img {
+        width: 145px;
+        margin-bottom: 10px;
+    }
+    #feature .fe-box .h6 {
+        display: inline-block;
+        padding: 11px;
+        line-height: 1;
+        border-radius: 4px;
+        color: #088178;
+        background-color: beige;
+        /* margin-top: 11px; */
+    }
+
     </style>
     
 </head>
@@ -178,6 +211,35 @@
         </div>
     </div>
     <!-- end carousel with header -->
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="image/shipping.png" class="img-fluid" alt="">
+            <h6 class="header6">Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="image/online-order.png" class="img-fluid" alt="">
+            <h6 class="header6">Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="image/savemoney.png" class="img-fluid" alt="">
+            <h6 class="header6">Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="image/promotion.png" class="img-fluid" alt="">
+            <h6 class="header6">Promotion</h6>
+        </div>
+        <div class="fe-box">
+            <img src="image/happysell.png" class="img-fluid" alt="">
+            <h6 class="header6">Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="image/support.png" class="img-fluid" alt="">
+            <h6 class="header6">24/7 Support</h6>
+        </div>
+
+    </section>
+
 
     <!-- start collections -->
     <section id="collection" class="py-5 mb-3">
