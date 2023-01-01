@@ -9,7 +9,10 @@ function chkout() {
             let itemArr = JSON.parse(itemStr);
             let data = '';
             let j = 1;
-            let total = 0.00;
+            let total = 0;
+            let n=0;
+            // let n = num.toFixed(3);
+            
             $.each(itemArr, function (i, v) {  
                 data += `
                 <tr>
@@ -21,14 +24,15 @@ function chkout() {
                         &nbsp ${v.qty} &nbsp
                         <span class="max" data-item_i=${i}><i class="fa-solid fa-circle-arrow-right max"></i></span>
                     </td>
-                    <td>$&nbsp;${v.item_price * v.qty}</td>
+                    <td>$&nbsp;${(v.item_price * v.qty).toFixed(2)}</td>
                 </tr>
                 `;
-                total += parseFloat(v.item_price * v.qty);
+                total += (v.item_price * v.qty);
+                n = total.toFixed(2);
             });
             data += `
                 <td colspan="4">Total</td>
-                <td>$&nbsp; ${total}</td>
+                <td>$&nbsp; ${n}</td>
             `;
 
             $("#data_body").html(data);

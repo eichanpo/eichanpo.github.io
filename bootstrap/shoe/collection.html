@@ -350,6 +350,56 @@
       }
       /* modal sign up */
 
+
+      .pro {
+        position: relative;
+        
+      }
+      .detail-btn {
+        margin-top: 10px;
+        padding: 4px 7px;
+        border-color: #088178;
+        color: #088178;
+        border-radius: 25px;
+        
+      }
+      .detail-btn {
+        position: absolute;
+        /* z-index: 2; */
+        top: 20;
+        left: 195px;
+        
+      }
+      @media (min-width:769px) and (max-width:1324px) {
+        .detail-btn {
+            top:20;
+            left: 170px;
+        }
+      }
+      @media (min-width:427px) and (max-width:768px) {
+        .detail-btn {
+            top:20;
+            left: 170px;
+        }
+      }
+      @media (min-width:320px) and (max-width:426px) {
+        .detail-btn {
+            top:20;
+            left: 170px;
+        }
+      }
+      .pro .detail-btn{
+        display: none;
+        
+      }
+   
+      .pro:hover .detail-btn {
+        display: block;
+        border-color: #088178;
+        color: #088178;
+        border-radius: 25px;
+      }
+
     </style>
     
 </head>
@@ -459,25 +509,8 @@
         </div>
     </nav> 
     <!-- end navbar-->
-    <!-- dis pane -->
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item h-cs active bg-danger">
-            <h5 class="text-center text-light fw-bolder">On sale up to 50%</h5>
-          </div>
-          <div class="carousel-item h-cs bg-danger">
-            <h5 class="text-center text-light fw-bolder">
-                We are counting down!
-            </h5>
-          </div>
-          <div class="carousel-item h-cs bg-danger">
-            <h5 class="text-center text-light fw-bolder">Go can get <a href="#" class="text-decoration-none text-white">coupon here</a></h5>
-          </div>
-        </div>
-    </div> -->
-    <!-- end dis pane -->
       <!-- count down here -->
-      <div class="container-fluid bg-img">
+      <div class="container-fluid bg-img mb-5">
         <div class="content">
             <p>Time is under counting down!</p>
             <h1>It is <span>Offering Period</span> NOW</h1>
@@ -505,21 +538,745 @@
       <!-- end count down -->
 
 
-      <!-- js btns -->
-      <!-- <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 col-sm-12" style="cursor: pointer;">
-                <p class="boot">boot</p>
-                <p class="slipper">slipper</p>
-                <p class="shoe">casual</p>
-                <p class="heel">heel</p>
-                <p class="showall">showall</p>
+      <!-- start detail -->
+        <!-- 01 -->
+      <div class="container image-container">
+        <div class="row py-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="image/collection/h7.jpg" id="imgbox" class="m-1 w-100 big-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="">
+            <div class="small-img">
+              <img src="image/collection/h7.jpg" width="60" class="m-1 sliderThumb" onclick="funImg(this)" alt="">
+              <img src="image/collection/h6.jpg" class="m-1 sliderThumb" width="60" onclick="funImg(this)" alt="">
+              <img src="image/collection/h5.jpg" width="60" class="m-1 sliderThumb" onclick="funImg(this)" alt="">
+              <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg(this)" alt="">
             </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 id="productName">
+                Ramya Kalym
+            </h2>
+            <small class="text-muted">
+              Article: 09881
+            </small>
+            <h4 class="my-4">
+              USD
+              <span id="price">497.50</span>$
+            </h4>
+            <label for="selectSize" class="text-muted">
+              Size:
+            </label>
+            <select name="selectSize" id="size" class="form-select">
+              <option value="" selected>32</option>
+              <option value="1">32</option>
+              <option value="2">34</option>
+              <option value="3">36</option>
+            </select>
+            <div class="d-grid my-4">
+              <button class="btn btn-lg btn-dark addToCart"  data-id="33" data-name="Ramya Kalym" data-price="497.10"  type="button" id="bagBtn">
+                Add to bag
+              </button>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Description</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    What's even more challenging is coming up with a great content idea - one that will bring you the right traffic and resonate across your audience.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Avaliable in store</strong>
+                   </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    Writing a great blog post can take hours, days, and sometimes even weeks, so it’s critical <br><br> That you do your research to ensure your post will reach your intended audience.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Delivry and Return</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    This post provides you with creative blog post ideas to help spark some ideas for your next article.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Size and Fit</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    Additionally, we provide you with proven tips and strategies on how to find the right blog post topic for your shoe brand.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div> -->
+      </div>
+      <!-- 02 -->
+      <div class="container image-container2">
+        <div class="row py-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="image/collection/h1.jpg" id="imgbox2" class="m-1 w-100 big-img"  alt="">
+            <div class="small-img">
+              <img src="image/collection/h1.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt="">
+              <img src="image/collection/h6.jpg" class="m-1 sliderThumb" width="60" onclick="funImg2(this)" alt=""> <!--
+              <img src="image/collection/h5.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt="">
+              <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt=""> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 id="productName">
+              Opium Black
+            </h2>
+            <small class="text-muted">
+              Article: 06774
+            </small>
+            <h4 class="my-4">
+              USD
+              <span id="price">857.10</span>$
+            </h4>
+            <label for="selectSize" class="text-muted">
+              Size:
+            </label>
+            <select name="selectSize" id="size" class="form-select">
+              <option value="" selected>32</option>
+              <option value="1">34</option>
+              <option value="2">36</option>
+              <option value="3">38</option>
+            </select>
+            <div class="d-grid my-4">
+              <button class="btn btn-lg btn-dark addToCart" type="button" data-id="29" data-name="Opium black" data-price="857.10">
+                
+                Add to bag
+              </button>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Description</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    What's even more challenging is coming up with a great content idea - one that will bring you the right traffic and resonate across your audience.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Avaliable in store</strong>
+                   </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    Writing a great blog post can take hours, days, and sometimes even weeks, so it’s critical that you do your research to ensure your post will reach your intended audience. <br><br>This post provides you with creative blog post ideas to help spark some ideas for your next article.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Delivry and Return</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, debitis inventore.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Size and Fit</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quisquam magnam repellat.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 03 -->
+      <div class="container image-container3">
+        <div class="row py-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="image/collection/h2.jpg" id="imgbox3" class="m-1 w-100 big-img"  alt="">
+            <div class="small-img">
+              <img src="image/collection/h2.jpg" width="60" class="m-1 sliderThumb" onclick="funImg3(this)" alt="">
+              <img src="image/collection/h6.jpg" class="m-1 sliderThumb" width="60" onclick="funImg3(this)" alt=""> <!--
+              <img src="image/collection/h5.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt="">
+              <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt=""> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 id="productName">
+                Genuine Sharp
+            </h2>
+            <small class="text-muted">
+              Article: 07771
+            </small>
+            <h4 class="my-4">
+              USD
+              <span id="price">719.70</span>$
+            </h4>
+            <label for="selectSize" class="text-muted">
+              Size:
+            </label>
+            <select name="selectSize" id="size" class="form-select">
+              <option value="" selected>32</option>
+              <option value="1">34</option>
+              <option value="2">36</option>
+              <option value="3">38</option>
+            </select>
+            <div class="d-grid my-4">
+              <button class="btn btn-lg btn-dark addToCart" type="button"  data-id="30" data-name="Genuine Sharp" data-price="719.70">
+                Add to bag
+              </button>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Description</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    What's even more challenging is coming up with a great content idea - one that will bring you the right traffic and resonate across your audience.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Avaliable in store</strong>
+                   </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    for your site - and oftentimes, they will generate quality traffic and interest. <br><br>Why not have an industry expert write a piece of content for you, rather than writing it yourself?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Delivry and Return</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    Coming up with new blog post ideas and topics can be time-consuming and daunting.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Size and Fit</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    Looking to write a new blog post but experiencing some writer's block?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 04 -->
+      <div class="container image-container4">
+        <div class="row py-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="image/collection/h3.jpg" id="imgbox4" class="m-1 w-100 big-img"  alt="">
+            <div class="small-img">
+              <img src="image/collection/h3.jpg" width="60" class="m-1 sliderThumb" onclick="funImg4(this)" alt="">
+              <img src="image/zoom/zara/sale/zr23.jpg" class="m-1 sliderThumb" width="60" onclick="funImg4(this)" alt=""> <!--
+              <img src="image/collection/h5.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt="">
+              <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt=""> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 id="productName">
+                Saint Laurant
+            </h2>
+            <small class="text-muted">
+              Article: 09921
+            </small>
+            <h4 class="my-4">
+              USD
+              <span id="price">757.70</span>$
+            </h4>
+            <label for="selectSize" class="text-muted">
+              Size:
+            </label>
+            <select name="selectSize" id="size" class="form-select">
+              <option value="" selected>32</option>
+              <option value="1">34</option>
+              <option value="2">36</option>
+              <option value="3">38</option>
+            </select>
+            <div class="d-grid my-4">
+              <button class="btn btn-lg btn-dark addToCart" data-id="31" data-name="Saint Laurant" data-price="757.70">
+                Add to bag
+              </button>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Description</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    for your site - and oftentimes, they will generate quality traffic and interest.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Avaliable in store</strong>
+                   </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    Interviews are a great way to add value to your business while mixing up your blogging style. <br><br>Not only will your audience read this content, but the audience of your interviewee will also read and share this content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Delivry and Return</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, debitis inventore.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Size and Fit</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    Finding the right content type and topic for your blog is critical. The last thing you want is to spend hours and days writing a piece of content
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 05 -->
+      <div class="container image-container5">
+        <div class="row py-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="image/collection/h9.jpg" id="imgbox5" class="m-1 w-100 big-img"  alt="">
+            <div class="small-img">
+              <img src="image/collection/h9.jpg" width="60" class="m-1 sliderThumb" onclick="funImg5(this)" alt="">
+              <img src="image/collection/h8.jpg" class="m-1 sliderThumb" width="60" onclick="funImg5(this)" alt=""> <!--
+              <img src="image/collection/h5.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt="">
+              <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt=""> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 id="productName">
+                Browny wollo
+            </h2>
+            <small class="text-muted">
+              Article: 03021
+            </small>
+            <h4 class="my-4">
+              USD
+              <span id="price">457.10</span>$
+            </h4>
+            <label for="selectSize" class="text-muted">
+              Size:
+            </label>
+            <select name="selectSize" id="size" class="form-select">
+              <option value="" selected>32</option>
+              <option value="1">34</option>
+              <option value="2">36</option>
+              <option value="3">38</option>
+            </select>
+            <div class="d-grid my-4">
+              <button class="btn btn-lg btn-dark addToCart" data-id="32" data-name="Browny wollo" data-price="457.10">
+                Add to bag
+              </button>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Description</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    Finding the right content type and topic for your blog is critical. The last thing you want is to spend hours and days writing a piece of content
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Avaliable in store</strong>
+                   </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    If you're starting a shoe brand, or looking to grow. <br><br>this free guide is exactly what you need. Join our free newsletter and get it right now.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Delivry and Return</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    For those that want a quick answer or don’t have time to read a long article, this is a great way to get your point across
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Size and Fit</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    Finding the right content type and topic for your blog is critical. The last thing you want is to spend hours and days writing a piece of content that doesn’t end up performing well.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 06 -->
+      <div class="container image-container6">
+        <div class="row py-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="image/collection/h10.jpg" id="imgbox6" class="m-1 w-100 big-img"  alt="">
+            <div class="small-img">
+              <img src="image/collection/h10.jpg" width="60" class="m-1 sliderThumb" onclick="funImg6(this)" alt="">
+              <img src="image/collection/h11.jpg" class="m-1 sliderThumb" width="60" onclick="funImg6(this)" alt=""> <!--
+              <img src="image/collection/h5.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt="">
+              <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt=""> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 id="productName">
+                Opyum Suede
+            </h2>
+            <small class="text-muted">
+              Article: 03021
+            </small>
+            <h4 class="my-4">
+              USD
+              <span id="price">776.80</span>$
+            </h4>
+            <label for="selectSize" class="text-muted">
+              Size:
+            </label>
+            <select name="selectSize" id="size" class="form-select">
+              <option value="" selected>32</option>
+              <option value="1">34</option>
+              <option value="2">36</option>
+              <option value="3">38</option>
+            </select>
+            <div class="d-grid my-4">
+              <button class="btn btn-lg btn-dark addToCart" data-id="34" data-name="Opyum Suede" data-price="776.80">
+                Add to bag
+              </button>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Description</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    Finding the right content type and topic for your blog is critical. The last thing.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Avaliable in store</strong>
+                   </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    We’ve outlined tips to help you find the right blog post topic! <br><br>You want is to spend hours and days writing a piece of content that doesn’t end up performing well.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Delivry and Return</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    Manually going through different websites to see what others are writing about slippers.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Size and Fit</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    Google search console is a great and free way to see what your audience is searching for:
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 07 -->
+      <div class="container image-container7">
+        <div class="row py-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="image/collection/h8.jpg" id="imgbox7" class="m-1 w-100 big-img"  alt="">
+            <div class="small-img">
+              <img src="image/collection/h8.jpg" width="60" class="m-1 sliderThumb" onclick="funImg7(this)" alt="">
+              <img src="image/collection/h9.jpg" class="m-1 sliderThumb" width="60" onclick="funImg7(this)" alt="">
+              <img src="image/collection/h10.jpg" width="60" class="m-1 sliderThumb" onclick="funImg7(this)" alt=""><!--
+              <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt=""> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 id="productName">
+                Yves Saint
+            </h2>
+            <small class="text-muted">
+              Article: 09921
+            </small>
+            <h4 class="my-4">
+              USD
+              <span id="price">775.90</span>$
+            </h4>
+            <label for="selectSize" class="text-muted">
+              Size:
+            </label>
+            <select name="selectSize" id="size" class="form-select">
+              <option value="" selected>32</option>
+              <option value="1">34</option>
+              <option value="2">36</option>
+              <option value="3">38</option>
+            </select>
+            <div class="d-grid my-4">
+              <button class="btn btn-lg btn-dark addToCart"  data-name="Yves Saint" data-price="775.90">
+                Add to bag
+              </button>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Description</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    Are there ways that I can improve this content type? (ie. adding photos, videos, optimizing keywords, making the posts longer and more valuable
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Avaliable in store</strong>
+                   </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    Get our 5-minute email newsletter packed with business ideas! <br><br> And money-making opportunities, backed by real-life case studies.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Delivry and Return</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    I'm Pat Walls and I created Starter Story - a website dedicated to helping people start businesses. We interview entrepreneurs from around the world 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Size and Fit</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    Are there ways that I can improve this content type? (ie. adding photos, videos, optimizing keywords, making the posts longer and more valuable to the reader, etc)
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 08 -->
+      <div class="container image-container8">
+        <div class="row py-5 g-5">
+          <div class="col-12 col-md-6">
+            <img src="image/collection/h12.jpg" id="imgbox8" class="m-1 w-100 big-img"  alt="">
+            <div class="small-img">
+              <img src="image/collection/h12.jpg" width="60" class="m-1 sliderThumb" onclick="funImg8(this)" alt="">
+              <img src="image/collection/h10.jpg" class="m-1 sliderThumb" width="60" onclick="funImg8(this)" alt="">
+              <img src="image/zoom/zara/sale/zr21.jpg" width="60" class="m-1 sliderThumb" onclick="funImg8(this)" alt=""><!--
+              <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg2(this)" alt=""> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h2 id="productName">
+                Lues Patent
+            </h2>
+            <small class="text-muted">
+              Article: 08910
+            </small>
+            <h4 class="my-4">
+              USD
+              <span id="price">457.70</span>$
+            </h4>
+            <label for="selectSize" class="text-muted">
+              Size:
+            </label>
+            <select name="selectSize" id="size" class="form-select">
+              <option value="" selected>32</option>
+              <option value="1">34</option>
+              <option value="2">36</option>
+              <option value="3">38</option>
+            </select>
+            <div class="d-grid my-4">
+              <button class="btn btn-lg btn-dark addToCart" data-id="36" data-name="Lues Patent" data-price="457.70">
+                Add to bag
+              </button>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <strong>Description</strong>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    Are these top-performing sites massive businesses? If so, what would it take to rank for something like this?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <strong>Avaliable in store</strong>
+                   </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    Are there ways that I can improve this content type? <br><br> (ie. adding photos, videos, optimizing keywords, making the posts longer and more valuable to the reader, etc)
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <strong>Delivry and Return</strong>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    Just because your audience is searching for something, doesn’t always mean you can win for that content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <strong>Size and Fit</strong>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    A great way to find content types is by seeing what your competitors with similar audiences are doing.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end detail -->
+
 
 <!-- end js btns -->
-
+    <div class="container mt-5">
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                <button class="btn btn-outline-info heels">heels</button>
+                <button class="btn btn-outline-info boots">boots</button>
+                <button class="btn btn-outline-info shoes">shoes</button>
+                <button class="btn btn-outline-info slippers">slippers</button>
+            </div>
+        </div>
+    </div>
       <!-- p1 -->
       <section id="prod1" class="section-p1">
         <h2 class="header2">Heels</h2>
@@ -527,6 +1284,7 @@
         <div class="pro-container">
             <div class="pro">
                 <img src="image/collection/h1.jpg" alt="">
+                <!-- <span class="btn detail-btn clickimg btn2">detail</span> -->
                 <div class="des">
                     <span>YSL</span>
                     <h5 class="header5">Opium Black</h5>
@@ -539,10 +1297,11 @@
                     </div>
                     <h4 class="header4">$857.10</h4>
                 </div>
-                <a href="#" class="addToCart" data-id="29" data-name="Genuine Sharp" data-price="857.10"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
+                <a href="#" class="btn2" data-id="29" data-name="Opium black" data-price="857.10"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
             </div>
             <div class="pro">
-                <img src="image/collection/h12.jpg" alt="">
+                <img src="image/collection/h2.jpg" alt="">
+                <!-- <span class="btn detail-btn clickimg btn3">detail</span> -->
                 <div class="des">
                     <span>YSL</span>
                     <h5 class="header5">Genuine Sharp</h5>
@@ -555,10 +1314,11 @@
                     </div>
                     <h4 class="header4">$719.70</h4>
                 </div>
-                <a href="#" class="addToCart" data-id="30" data-name="YSL" data-price="719.70"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
+                <a href="#" class="btn3" data-id="30" data-name="YSL" data-price="719.70"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
             </div>
             <div class="pro">
                 <img src="image/collection/h3.jpg" alt="">
+                <!-- <span class="btn detail-btn clickimg btn4">detail</span> -->
                 <div class="des">
                     <span>YSL</span>
                     <h5 class="header5">Saint Laurant </h5>
@@ -571,13 +1331,14 @@
                     </div>
                     <h4 class="header4">$757.70</h4>
                 </div>
-                <a href="#" class="addToCart" data-id="31" data-name="YSL" data-price="757.70"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
+                <a href="#" class="btn4"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
             </div>
             <div class="pro">
-                <img src="image/collection/h1.jpg" alt="">
+                <img src="image/collection/h9.jpg" alt="">
+                <!-- <span class="btn detail-btn clickimg btn5">detail</span> -->
                 <div class="des">
                     <span>YSL</span>
-                    <h5 class="header5">Saint Laurant</h5>
+                    <h5 class="header5">Browny wollo</h5>
                     <div class="star" style="font-size:12px; color:rgb(243, 181, 25);">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
@@ -587,10 +1348,11 @@
                     </div>
                     <h4 class="header4">$457.70</h4>
                 </div>
-                <a href="#" class="addToCart" data-id="32" data-name="YSL" data-price="857.10"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
+                <a href="#" class="btn5" data-id="32" data-name="Browny wollo" data-price="457.10"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
             </div>
             <div class="pro">
                 <img src="image/collection/h4.jpg" alt="">
+                <!-- <span class="btn detail-btn clickimg btn1">detail</span> -->
                 <div class="des">
                     <span>YSL</span>
                     <h5 class="header5">Ramya Kalym</h5>
@@ -603,10 +1365,11 @@
                     </div>
                     <h4 class="header4">$497.50</h4>
                 </div>
-                <a href="#" class="addToCart" data-id="33" data-name="YSL" data-price="497.10"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
+                <a href="#" class="btn1"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
             </div>
             <div class="pro">
                 <img src="image/collection/h10.jpg" alt="">
+                <!-- <span class="btn detail-btn clickimg btn6">detail</span> -->
                 <div class="des">
                     <span>YSL</span>
                     <h5 class="header5">Opyum Suede</h5>
@@ -619,10 +1382,11 @@
                     </div>
                     <h4 class="header4">$776.80</h4>
                 </div>
-                <a href="#" class="addToCart" data-id="34" data-name="YSL" data-price="776.80"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
+                <a href="#" class="btn6" ><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
             </div>
             <div class="pro">
                 <img src="image/collection/h8.jpg" alt="">
+                <!-- <span class="btn detail-btn clickimg btn7">detail</span> -->
                 <div class="des">
                     <span>YSL</span>
                     <h5 class="header5">Yves Saint</h5>
@@ -635,10 +1399,11 @@
                     </div>
                     <h4 class="header4">$775.90</h4>
                 </div>
-                <a href="#" class="addToCart" data-id="35" data-name="YSL" data-price="775.90"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
+                <a href="#" class=" btn7" data-id="35"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
             </div>
             <div class="pro">
                 <img src="image/collection/h12.jpg" alt="">
+                <span class="btn detail-btn clickimg">detail</span>
                 <div class="des">
                     <span>YSL</span>
                     <h5 class="header5">Lues Patent</h5>
@@ -651,7 +1416,7 @@
                     </div>
                     <h4 class="header4">$457.70</h4>
                 </div>
-                <a href="#" class="addToCart" data-id="36" data-name="YSL" data-price="457.70"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
+                <a href="#" class="btn8"><i class="fas fa-shopping-cart text-light bg-secondary p-2 rounded-circle cart" style="border:4px solid #cce7d0;"></i></a>
             </div>
 
         </div>
@@ -1293,42 +2058,138 @@
         $(document).ready(function() {
             chkout();
             countqty();
+
             // $("#prod1").hide();
             // $("#prod2").hide();
             // $("#prod3").hide();
             // $("#prod4").hide();
 
-            // $(".heel").click(function() {
-            //     $("#prod1").show('slow');
-            //     $("#prod2").hide('slow');
-            //     $("#prod3").hide('slow');
-            //     $("#prod4").hide('slow');
-            // })
-            // $(".boot").click(function() {
-            //     $("#prod2").show('slow');
-            //     $("#prod1").hide('slow');
-            //     $("#prod3").hide('slow');
-            //     $("#prod4").hide('slow');
-            // })
-            // $(".shoe").click(function() {
-            //     $("#prod3").show('slow');
-            //     $("#prod1").hide('slow');
-            //     $("#prod4").hide('slow');
-            //     $("#prod2").hide('slow');
-            // })
-                // $(".slipper").click(function() {
-                //     $("#prod4").show('slow');
-                //     $("#prod1").hide('slow');
-                //     $("#prod2").hide('slow');
-                //     $("#prod3").hide('slow');
-                // })
-                // $(".showall").click(function() {
-                //     $("#prod4").show('slow');
-                //     $("#prod1").show('slow');
-                //     $("#prod4").show('slow');
-                //     $("#prod3").show('slow');
-                // })
+            
+            $(".image-container").hide();
+            $(".image-container2").hide();
+            $(".image-container3").hide();
+            $(".image-container4").hide();
+            $(".image-container5").hide();
+            $(".image-container6").hide();
+            $(".image-container7").hide();
+            $(".image-container8").hide();
+           
 
+            // 01
+            $(".btn1").click(function() {
+                $(".image-container").show();
+                $(".image-container2").hide();
+                $(".image-container3").hide();
+                $(".image-container4").hide();
+                $(".image-container5").hide();
+                $(".image-container6").hide();
+                $(".image-container7").hide();
+                $(".image-container8").hide();
+            });
+            // 02  
+            $(".btn2").click(function() {
+                $(".image-container2").show();
+                $(".image-container").hide();
+                $(".image-container3").hide();
+                $(".image-container4").hide();
+                $(".image-container5").hide();
+                $(".image-container6").hide();
+                $(".image-container7").hide();
+                $(".image-container8").hide();
+            });
+            // 03
+            $(".btn3").click(function() {
+                $(".image-container3").show();
+                $(".image-container2").hide();
+                $(".image-container").hide();
+                $(".image-container4").hide();
+                $(".image-container5").hide();
+                $(".image-container6").hide();
+                $(".image-container7").hide();
+                $(".image-container8").hide();               
+            });
+            // 04
+            $(".btn4").click(function() {
+                $(".image-container4").show();
+                $(".image-container3").hide();
+                $(".image-container2").hide();
+                $(".image-container").hide();
+                $(".image-container5").hide();
+                $(".image-container6").hide();
+                $(".image-container7").hide();
+                $(".image-container8").hide();
+            });
+                // 05
+                $(".btn5").click(function() {
+                $(".image-container5").show();
+                $(".image-container3").hide();
+                $(".image-container2").hide();
+                $(".image-container").hide();
+                $(".image-container4").hide();
+                $(".image-container6").hide();
+                $(".image-container7").hide();
+                $(".image-container8").hide();
+            });
+                // 06
+                $(".btn6").click(function() {
+                $(".image-container6").show();
+                $(".image-container3").hide();
+                $(".image-container2").hide();
+                $(".image-container").hide();
+                $(".image-container4").hide();
+                $(".image-container5").hide();
+                $(".image-container7").hide();
+                $(".image-container8").hide();
+            });
+                            // 07
+                $(".btn7").click(function() {
+                $(".image-container7").show();
+                $(".image-container3").hide();
+                $(".image-container2").hide();
+                $(".image-container").hide();
+                $(".image-container4").hide();
+                $(".image-container5").hide();
+                $(".image-container6").hide();
+                $(".image-container8").hide();
+            });
+                // 08
+                $(".btn8").click(function() {
+                $(".image-container8").show();
+                $(".image-container3").hide();
+                $(".image-container2").hide();
+                $(".image-container").hide();
+                $(".image-container4").hide();
+                $(".image-container5").hide();
+                $(".image-container6").hide();
+                $(".image-container7").hide();
+            });
+
+
+
+            $(".heels").click(function() {
+                $("#prod1").show();
+                $("#prod2").hide();
+                $("#prod3").hide();
+                $("#prod4").hide();
+            });
+            $(".boots").click(function() {
+                $("#prod2").show();
+                $("#prod1").hide();
+                $("#prod3").hide();
+                $("#prod4").hide();
+            });
+            $(".shoes").click(function() {
+                $("#prod3").show();
+                $("#prod2").hide();
+                $("#prod1").hide();
+                $("#prod4").hide();
+            });
+            $(".slippers").click(function() {
+                $("#prod4").show();
+                $("#prod2").hide();
+                $("#prod3").hide();
+                $("#prod1").hide();
+            });
 
             $('.addToCart').click(function(e) {
             e.preventDefault();
@@ -1374,6 +2235,44 @@
         }); //end click add to cart btn
             
         });
+
+        // detail item
+
+        function funImg (smallimg) {
+        var fullimg = document.getElementById("imgbox");
+        fullimg.src = smallimg.src;
+      }
+      function funImg2 (smallimg) {
+        var fullimg = document.getElementById("imgbox2");
+        fullimg.src = smallimg.src;
+      }
+      function funImg3 (smallimg) {
+        var fullimg = document.getElementById("imgbox3");
+        fullimg.src = smallimg.src;
+      }
+      function funImg4 (smallimg) {
+        var fullimg = document.getElementById("imgbox4");
+        fullimg.src = smallimg.src;
+      }
+      function funImg5 (smallimg) {
+        var fullimg = document.getElementById("imgbox5");
+        fullimg.src = smallimg.src;
+      }
+      function funImg6 (smallimg) {
+        var fullimg = document.getElementById("imgbox6");
+        fullimg.src = smallimg.src;
+      }
+      function funImg7 (smallimg) {
+        var fullimg = document.getElementById("imgbox7");
+        fullimg.src = smallimg.src;
+      }
+      function funImg8 (smallimg) {
+        var fullimg = document.getElementById("imgbox8");
+        fullimg.src = smallimg.src;
+      }
+        // end detail item
+
+
 
         var countdown = new Date("Jan 1, 2023 00:00:00").getTime();
         var x = setInterval(function() {

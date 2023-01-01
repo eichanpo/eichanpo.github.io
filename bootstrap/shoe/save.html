@@ -8,55 +8,86 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="icon" href="">
 </head>
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!--start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav sticky-top" id="nav">
+      <div class="container">
+        
+          <a class="d-flex justify-content-between align-items-center order-lg-0" href="index.html"><img src="image/LOGOs.png" class="m-0 p-0 image"  alt=""></a>
+        
+        <div class="ps-3 cart-icon order-lg-2 nav-btns">
+          <button class="btn position-relative mt-1" type="button">
+              <a class="nav-link text-light" id="bag-icon" href="#">
+                  <i class="fa-solid fa-bag-shopping text-light fa-1x"></i>
+
+                <span id="count_number" class=" position-absolute top-0 start-100 translate-middle badge bgp"></span>
+              </a>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
+
+          <button class="btn position-relative mt-1" type="button">
+              <i class="fa fa-search text-light"></i>
+          </button>
+          <button class="btn position-relative mt-1" type="button">
+              <a href="" class="text-decoration-none text-light"  data-bs-toggle="modal" data-bs-target="#exampleModal">login</a>
+          </button>
           </div>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon p-0 "></span>
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto text-center text-uppercase">
+            <li class="nav-item py-3 px-3">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item py-3 px-3">
+              <a class="nav-link" href="collection.html">collection</a>
+            </li>
+            <li class="nav-item py-3 px-3 border-0">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+
+          </ul>
         </div>
-      </nav>
-    <!-- end navbar -->
-      
+        <div class="cart-list">
+          <h3 class="text-center text-uppercase text-secondary">Your cart</h3>
+          <table class="table align-items-center">
+              <thead>
+                  <td>No</td>
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td>qty</td>
+                  <td>Sub total</td>
+              </thead>
+              <tbody id="data_body">
+                  
+              </tbody>
+          </table>
+          <div class="row">
+              <div class="offset-md-4 col-md-4">
+                  <div class="d-grid gap-2 checkoutbtn">
+                      <button class="btn btn-outline-secondary" id="order">Check out</button>
+                  </div>
+              </div>
+          </div>
+          <span class="close-cart close"><i class="fa-solid fa-xmark"></i></span>
+        </div>
 
-<!-- <div class="container"> -->
+      </div>
+    </nav> 
+  <!-- end navbar-->
 
-
-<div class="container">
+<div class="container image-container">
   <div class="row py-5 g-5">
     <div class="col-12 col-md-6">
-      <img src="image/zoom/mk/mk.jpg" class="m-1 w-100 sliderMainImage" data-bs-toggle="modal" data-bs-target="#imageModal" alt="">
-      <div>
-        <img src="image/zoom/mk/mk10.jpg" class="m-1 sliderThumb" width="60" alt="">
-        <img src="image/zoom/mk/mk11a.jpg" width="60" class="m-1 sliderThumb" alt="">
+      <img src="image/collection/h7.jpg" id="imgbox" class="m-1 w-100 big-img" data-bs-toggle="modal" data-bs-target="#imageModal" alt="">
+      <div class="small-img">
+        <img src="image/collection/h7.jpg" width="60" class="m-1 sliderThumb" onclick="funImg(this)" alt="">
+        <img src="image/collection/h6.jpg" class="m-1 sliderThumb" width="60" onclick="funImg(this)" alt="">
+        <img src="image/collection/h5.jpg" width="60" class="m-1 sliderThumb" onclick="funImg(this)" alt="">
+        <img src="image/collection/h4.jpg" width="60" class="m-1 sliderThumb" onclick="funImg(this)" alt="">
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -80,7 +111,7 @@
         <option value="3">XL</option>
       </select>
       <div class="d-grid my-4">
-        <button class="btn btn-lg btn-dark" type="button" id="bagBtn">
+        <button class="btn btn-lg btn-dark addToCart" data-id="70" data-name="YSL ramya" data-price="497.50" type="button" id="bagBtn">
           Add to bag
         </button>
       </div>
@@ -139,11 +170,75 @@
 </div>
 
 
+<button class="clickimg " data-id="70" data-name="YSL ramya" data-price="497.50">click</button>
 
     <!-- start footer -->
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
     <script src="jquery/jquery.min.js"></script>
-    <script src="js/custom.js"></script>
+  
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/countqty.js"></script>
+    <script src="js/checkout.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+        chkout();
+        countqty();
+        $(".image-container").hide();
+        $(".clickimg").click(function() {
+          $(".image-container").show();
+        });
+      });
+      $('.addToCart').click(function(e) {
+            e.preventDefault();
+            // alert('hi')
+            let id = $(this).data('id');
+            let name = $(this).data('name');
+            let price = $(this).data('price');
+            console.log(id, name, price);
+
+            // obj
+                let items = {
+                    item_id : id,
+                    item_name : name,
+                    item_price : price,
+                    qty : 1,
+                };
+                console.log(items);
+                //to set to localstorage
+            let itemArray;
+            let itemString = localStorage.getItem('shops');
+            if(itemString == null) {
+                itemArray = [];
+            } else {
+                itemArray = JSON.parse(itemString);
+            }
+
+            //2.for qty
+            var status = false;//to chk condition
+            $.each(itemArray, function(i, v) {
+                if(id == v.item_id) { // selector id and obj(ls) id is equal?
+                    status = true;
+                    v.qty++;
+                }
+            });
+            if(status == false) {
+                itemArray.push(items);//this is array
+            }
+            //to set ls now
+            let itemData = JSON.stringify(itemArray);
+            localStorage.setItem('shops', itemData); //after this step, go chk at application
+            countqty();
+            chkout();
+        }); //end click add to cart btn
+  
+
+      function funImg (smallimg) {
+        var fullimg = document.getElementById("imgbox");
+        fullimg.src = smallimg.src;
+      }
+    </script>
 </body>
 </html>

@@ -12,14 +12,28 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <style>
-        .sticky {
-         position:fixed;
-         top: 0;
-         width: 100%;
-         background-color: black;
-         z-index: 100;
-      }
+        .small img {
+            width: 100%;
+        }
 
+        .small div {  
+            padding: 3px;
+        } 
+        .big img {
+            width: 100%;
+            height: 100%;
+            margin-top: 54px;
+        }   
+        @media (max-width: 1048px) and (min-width:426px) {
+            .big img {
+               margin-bottom: 45px;
+            }
+        }
+        @media(max-width:425px) {
+            .big img {
+                margin-top: 0;
+            }
+        }
     </style>
     
 </head>
@@ -135,139 +149,35 @@
         </div>
     </nav> 
     <!-- end navbar-->
-    <!-- tap -->
-    <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Micheal Kors</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Mango</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Zrara</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="offset-lg-2 col-2 bg-primary small m-0">
+                <!-- <div class="row"> -->
+                    <div class="col-12 align-items-center">
+                        <img src="image/collection/h8.jpg" class="img-fluid img1"  alt="">
+                    </div>
+                    <div class="col-12">
+                        <img src="image/collection/h8.jpg" class="img-fluid"  alt="">
+                    </div>
+                    <div class="col-12">
+                        <img src="image/collection/h8.jpg" class="img-fluid"  alt="">
+                    </div>
+                    <div class="col-12">
+                        <img src="image/collection/h8.jpg" class="img-fluid"  alt="">
+                    </div>
+                <!-- </div> -->
             </div>
-          </div>
+            <div class="col-6 bg-warning big">
+                <div class="col-12">
+                    <img src="image/collection/h8.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
         </div>
     </div>
+ 
     <!-- end tap -->
-    <!-- footer -->
-    <footer class="bg-footer text-white-50 f">
-        <div class="container">
-            <div class="row pt-5">
-                
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                    <h5 class="header ">FIND US ON</h5>
-                    <div class="row">
-                        <div class="col-2">
-                            <i class="fa-solid fa-house"></i>
-                        </div>
-                        <div class="col-10 add ms-0">
-                            Official chanlolita. 195 Broadway 12th Floor New York, NY 10007 USA        
-                        </div>
-                        <p class="py-1">
-                            <i class="fa-solid fa-phone pe-2"></i>&nbsp; &nbsp; +0801117823
-                        </p>
-                        <p class="py-1">
-                            <i class="fa-solid fa-envelope pe-2"></i>&nbsp; &nbsp; lolitachan@os.com
-                        </p>
-                        <div class="container icon">
-                            <div class="row" style="margin-left: -35px;">
-                                <div class="col-1">
-                                    <a href="" class="text-decoration-none" style="color:rgb(247, 92, 21)">
-                                        <span class="fa-stack fa-2x">
-                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
-                                            <i class="fa-brands fa-dribbble fa-stack-1x fa-inverse fa-1x"></i>  
-                                        </span>
-                                    </a>
-                                </div>
-                                <!-- <div class="col-1 ms-3">
-                                    <a href="" class="text-decoration-none" style="color:rgb(176, 5, 210)">
-                                        <span class="fa-stack fa-2x">
-                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
-                                            <i class="fa-brands fa-viber fa-stack-1x fa-inverse"></i>   
-                                        </span>
-                                    </a>
-                                </div> -->
-                                <div class="col-1 mx-3">
-                                    <a href="" class="text-decoration-none" style="color:rgba(248, 6, 6, 0.807)">
-                                        <span class="fa-stack fa-2x">
-                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
-                                            <i class="fa-brands fa-pinterest fa-stack-1x fa-inverse"></i> 
-                                            
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-1 me-3">
-                                    <a href="" class="text-decoration-none" style="color:rgba(59, 128, 197, 0.807)">
-                                        <span class="fa-stack fa-2x">
-                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
-                                            <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i> 
-                                            
-                                        </span>
-                                    </a>
-                                </div>
-                                <!-- <div class="col-1">
-                                    <a href="" class="text-decoration-none" style="color:rgba(57, 233, 253, 0.807)">
-                                        <span class="fa-stack fa-2x">
-                                            <i class="fa-solid fa-circle fa-stack-1x"></i>
-                                            <i class="fa-brands fa-facebook-messenger fa-stack-1x fa-inverse"></i> 
-                                            
-                                        </span>
-                                    </a>
-                                </div> -->
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-                    <h5 class="header ">SHOPPING GUIDE</h5>
-                    <a href="" class="nav-link ps-1 py-1">ChatShop-Bundle Deals</a>
-                    <a href="" class="nav-link ps-1 py-1">ChatShop-hillfest</a>
-                    <a href="" class="nav-link ps-1 py-1">Size chart</a>
-                    <a href="" class="nav-link ps-1 py-1">Shipping & Returns</a>
-                    <a href="" class="nav-link ps-1 py-1">Terms and conditions</a>
-                    <a href="" class="nav-link ps-1 py-1">Terms of us</a>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 pb-3">
-                    <h5 class="header ">COMPANY INFO</h5>
-                    <a href="" class="nav-link ps-1 py-1">Who we are</a>
-                    <a href="" class="nav-link ps-1 py-1">Company profile</a>
-                    <a href="" class="nav-link ps-1 py-1">Careers</a>
-                    <a href="" class="nav-link ps-1 py-1">Chan zone</a>
-                    <a href="" class="nav-link ps-1 py-1">Pravicy & Cookies</a>
-                    <a href="" class="nav-link ps-1 py-1">Co-operate information</a>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 pb-3">
-                    <h5 class="header ">LOLITACHAN</h5>
-                    <small class="pe-5" style="line-height: 23px;">
-                        By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="#" class="text-white"> Privacy Policy</a>
-                    </small>
-                    <p class="mt-2">
-                        <img src="image/LOGOs.png"  class="img-fluid w-50" alt="">
-                    </p>
-                </div>
-                
-                <hr class="mt-3">
-                <div class="container px-3">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" class="text-center">© 2016 - 2020 lolita chan - All rights reserved. </p>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer -->
+
 
     <!-- start modal  -->
         

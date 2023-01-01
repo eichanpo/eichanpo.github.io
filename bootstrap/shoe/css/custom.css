@@ -87,15 +87,34 @@ body {
     top: 0;
     /* right:-100%; */
     right: 0;
-    width: 630px;
+    width: 54%;
     min-height: 100vh;
     padding: 21px;
     background: #fff;
     box-shadow: -2px 0 18px gray;
     transition: 0.3s;
 }
-.cart-list.active{
-    right: 0;
+@media(max-width:768px) and (min-width:426px) {
+    .cart-list {
+        width:90%;
+    }
+    table  {
+        font-size:11px;
+    }
+}
+@media(max-width: 425px) and (min-width:320px) {
+    .cart-list h3 {
+        font-size: 11px;
+    }
+    .cart-list #order {
+        font-size: 11px;
+    }
+    .cart-list {
+        width: 90%;
+    }
+    table {
+        font-size:9px;
+    }
 }
 .cart-box {
     display: grid;
