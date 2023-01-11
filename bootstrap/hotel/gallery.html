@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="image/logo">
+    <link rel="stylesheet" href="css/font.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/hotel.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+
+        .gallery p {
+            font-size: 100px;
+            font-weight: bolder;
+            opacity: 0.1;
+            position: absolute;
+            margin-top: -54px;
+            color: rgba(69, 69, 15, 0.666);
+            font-family: design;
+            cursor: pointer;
+        }
+        .gallery h5 {
+            margin: 30px 0;
+            font-size: 25px;
+            position: relative;
+            padding-left: 25px;
+            color: rgb(50, 171, 133);
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        
+.gallery-menu {
+    padding: 0 21px;
+    border-right: 1px solid rgb(0, 128, 117);
+}
+.gallery-menu-end {
+    padding: 0 21px;
+}
+@media (max-width:950px) and (min-width: 769px) {
+    .gallery p {
+        font-size: 72px;
+    }
+    .gallery h5 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) and (min-width:426px) {
+    .gallery p {
+        font-size:60px;
+        margin-top: -36px;
+    }
+    .gallery h5 {
+        font-size: 16px;
+    }
+}
+@media (max-width:425px) and (min-width:376px) {
+    .gallery p {
+        font-size:45px;
+        margin-top: -25px;
+    }
+    .gallery h5 {
+        font-size:13px;
+        padding-left:2px;
+    }
+}
+@media (max-width:375px) and (min-width:320px) {
+    #switch-1 h1 {
+        font-size: 25px;
+    }
+    #switch-3 h1 {
+        font-size: 22px;
+    }
+    .gallery p {
+        font-size:36px;
+        margin-top: -18px;
+    }
+    .gallery-menu, .gallery-menu-end {
+        padding: 9px;
+    }
+    .gallery h5 {
+        font-size:11px;
+        padding: 0;
+        margin: 0;
+    }
+}
+.cap {
+    color: rgba(3, 117, 106, 0.826);
+}
+
+    </style>
+</head>
+<body>
+    <!--  nav -->
+        <!-- top-nav -->
+    <section class="bg-topNav">
+        <div class="container bg-topNav text-light">
+            <div class="row top-bar" style="padding-bottom: 3px;">
+                <div class="col text-start">
+                    <span>
+                        <a href="#" class="text-decoration-none text-light"><i class="fa-brands fa-facebook-f hover-icon"></i></a>
+                    </span>
+                    <span class="text-light">
+                        <a href="#" class="text-decoration-none text-light">
+                            <i class="fa-brands fa-twitter hover-icon"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#" class="text-decoration-none text-light">
+                            <i class="fa-brands fa-skype hover-icon"></i>
+                        </a>
+                    </span>
+                    <span class="text-light">
+                        <a href="#" class="text-decoration-none text-light">
+                            <i class="fa-brands fa-instagram hover-icon"></i>
+                        </a>
+                    </span>
+                    <span class="text-light">
+                        <a href="#" class="text-decoration-none text-light">
+                            <i class="fa-brands fa-google-plus-g hover-icon"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="col text-end">
+                    <span class="showspan">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <a href="#" class="text-decoration-none text-light">+095-837-7117</a>
+                    </span>
+                    <span class="showspan">
+                        |
+                    </span>
+                    <span class="showspan">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="#" class="text-decoration-none text-light">yonmyohthu@bagan.com</a>
+                    </span>
+                    <span class="hidespan pt-1">
+                        <a href="#" class="text-decoration-none text-light">Contact us</a>
+                    </span>
+                </div>
+            </div>
+        </div> 
+    </section>
+        <!-- end top nav -->
+        <!-- start main nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav-color sticky-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand p-0" href="#">
+            <img src="image/logo3a.png" class="img-fluid" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-menu" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: rgb(17, 102, 73);" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="book.html">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+        <!-- end main nav -->
+    <!-- end nav -->
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <div class="gallery">
+                    <p>G . A . L . L . E . R . Y<p>
+                    <h5>
+                        <span class="gallery-menu switching1" >Room & Suites</span>
+                        <span class="gallery-menu switching2" >Dining & Bar </span>
+                        <span class="gallery-menu-end switching3" >Health & Leisure</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="row g-3" id="switch-1">
+            <hr>
+
+            <h1 class="text-center my-5 bgColor1" style="font-family: design;">Rooms  .  and .   Suits</h1>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/deluxe-double1.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Dueluxe double room</p>
+                    <p class="cap text-uppercase mp-0">Nature View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/deluxe-double2.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Dueluxe double room</p>
+                    <p class="cap text-uppercase mp-0">Nature View <small>(Bacony side)</small></p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/twin (2).jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Twin suite</p>
+                    <p class="cap text-uppercase mp-0">Balcony View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/deluxe-double.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">King Suite</p>
+                    <p class="cap text-uppercase mp-0">Balcony View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/deluxe-double3.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">King Suite</p>
+                    <p class="cap text-uppercase mp-0">Balcony View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/twin (1).jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Dueluxe double room</p>
+                    <p class="cap text-uppercase mp-0">Nature View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/superior-family1.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Superior family Suite</p>
+                    <p class="cap text-uppercase mp-0">garden View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/superior-family2.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Superior family suite</p>
+                    <p class="cap text-uppercase mp-0">Garden View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/superior-family3.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Standard family suite</p>
+                    <p class="cap text-uppercase mp-0">city View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/superior-family4.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Standard family suite</p>
+                    <p class="cap text-uppercase mp-0">city View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/single rom1.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Single room</p>
+                    <p class="cap text-uppercase mp-0">Balcony View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/single rom2.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Single room</p>
+                    <p class="cap text-uppercase mp-0">Nature View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/lake-view5.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Deluxe room</p>
+                    <p class="cap text-uppercase mp-0">Lake View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/lake-view4.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Deluxe room <small>(Balcony)</small></p>
+                    <p class="cap text-uppercase mp-0">lake View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/lake-view6.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">King suite</p>
+                    <p class="cap text-uppercase mp-0">lake View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/lake-view1.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Family room</p>
+                    <p class="cap text-uppercase mp-0">city View</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/rooms/lake-view2.jpg" class="img-fluid img-hv-img" alt="">
+                    <p class="h3 bgColor1 pt-3 mb-0">Family room</p>
+                    <p class="cap text-uppercase mp-0">city View</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3" id="switch-2">
+            <hr>
+            <h1 class="text-center my-5 bgColor1" style="font-family: design;">Dinning  .  and .   Bar</h1>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/skyview8.jpg" class="img-fluid  img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
+                    <p class="cap">cocktail, wine and other drinks</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/skyview2.jpg" class="img-fluid  img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
+                    <p class="cap">lunch(burmese traditional meals)</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/sky-view1.jpg" class="img-fluid  img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
+                    <p class="cap">lunch(burmese traditional meals)</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/skyview9.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
+                    <p class="cap">special shaking maker</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/skyview6.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
+                    <p class="cap">light drinks</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/skyview5.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
+                    <p class="cap">cafe and tea</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/skyview7.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
+                    <p class="cap">breakfast</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/heritae.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Heritage</p>
+                    <p class="cap">Cafe & Bakery</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/dinning/heritage2.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Heritage</p>
+                    <p class="cap">Cake & Bakery</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/bf-buffet1.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Breakfast <small>(buffet)</small></p>
+                    <p class="cap">6:00 am - 10:00am</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/bf-buffet.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Breakfast <small>(buffet)</small></p>
+                    <p class="cap">6:00 am - 10:00am</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/bf-buffet3.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Breakfast <small>(buffet)</small></p>
+                    <p class="cap">6:00 am - 10:00am</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/bf-buffet4.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Breakfast <small>(buffet)</small></p>
+                    <p class="cap">6:00 am - 10:00am</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3" id="switch-3">
+            <hr>
+            <h1 class="text-center my-5 bgColor1" style="font-family: design;">Health  .  and  .  Leisure</h1>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/gym2.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Gym Studio</p>
+                    <p class="cap">24 hours</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/gym1.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Gym Studio</p>
+                    <p class="cap">24 hours</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/pool1.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Ground Pool</p>
+                    <p class="cap">6:00 am - 22:00pm</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/pool2.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Ground pool</p>
+                    <p class="cap">6:00 am - 22:00pm</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/massage3.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Massage <small>(special aroma)</small></p>
+                    <p class="cap">10:00 am - 23:00pm</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/massage2.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Massage <small>(burmese traditional)</small></p>
+                    <p class="cap">10:00 am - 23:00pm</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/massage1.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Massage <small>(thai traditional)</small></p>
+                    <p class="cap">10:00 am - 23:00pm</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/event2.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Bagan culture event</p>
+                    <p class="cap">event    (offers)</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/event1.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Burmese culture</p>
+                    <p class="cap">event (offers)</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/event3.jpeg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Bagan traditional dance</p>
+                    <p class="cap">event (offers)</p>
+                </div>
+            </div>
+            <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
+                <div class="gShow img-hv">
+                    <img src="image/room/gallery/facilities/event4.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
+                    <p class="h4 bgColor1 pt-3 mb-0">Bagan traditional dance</p>
+                    <p class="cap">outdoor</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <!-- footer -->
+    <footer class="ft-p">
+        <div class="container mt-5">
+            <div class="row g-3 justify-content-center" >
+                <div class="col-lg-4 col-md-12 text-light pt-3 pb-2">
+                    <!-- <img src="image/logo-footer.png" class="img-fluid w-25 pt-3" alt=""> -->
+                    <h5 class="h5 pt-3">HOTEL BAGAN INFORMATION</h5>
+                    <p class="pt-3">Check in: <span>1:00pm</span><big>&nbsp;|&nbsp;</big>Check out: <span>10:30am</span></p>
+                    <p class="">Parking: <span>Parking lots available</span></p>
+                    <p class="">Address: <span>160 Cherry road, Anandar(9) Qtr, Myo-Ma(7),<br> Old Bagan, Myanmar (Burma)</span></p>
+                    <div class="input-group mb-3 w-75">
+                        <input type="text" class="form-text text-light" placeholder="Short message">
+                        <button class="btn btnborder ms-1" type="button"><i class="fa-solid fa-computer-mouse text-light"></i></button>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-2 pb-2 pt-3 text-light facility">
+                    
+                    <h5 class="h5 pt-3 text-uppercase">Get to know</h5>
+                    <p class="my-0 pt-3"><a href="#" class="nav-link ps-1 py-1">about us</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">press room</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Blog</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Pravicy</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">terms of use</a></p>
+                    
+                </div>
+                <div class="col-lg-3 pb-2 pt-3 text-light facility">
+                    <h5 class="h5 pt-3 text-uppercase">Facilities</h5>
+                    <p class="my-0 pt-3"><a href="#" class="nav-link ps-1 py-1">Drink & Bar</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Dinning and foods activity</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Wellness & healthy specialized</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Thai Massage and Burmese traditional massage</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Family karaokey</a></p>
+                </div>
+                <div class="col-lg-3 pb-2 pt-3 text-light facility">
+                    <h5 class="h5 pt-3 text-uppercase">Customer Services</h5>
+                    <p class="my-0 pt-3"><a href="#" class="nav-link ps-1 py-1">Contact us</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Help Center</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Manage subscription</a></p>
+                    <p class="my-0"><a href="#" class="nav-link ps-1 py-1">Feedback</a></p>
+                    <img src="image/logo-footer.png" class="img-fluid w-50" style="margin-top: -1px;" alt="">
+                </div>
+                <hr class="mt-3 text-light">
+                <div class="container px-3 text-light">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <p class="text-center" style="font-family: light; font-size:11px; color:rgb(176, 187, 185);">© 2023 yonmyohthu, Inc., an Expedia hotel group. All rights reserved.  </p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="color-opacity"></div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#switch-1").show();
+            $("#switch-2").show();
+            $("#switch-3").show();
+
+            $(".switching1").click(function() {
+                $("#switch-1").show();
+                $("#switch-2").hide();
+                $("#switch-3").hide();
+            });
+
+            $(".switching2").click(function() {
+                $("#switch-2").show();
+                $("#switch-1").hide();
+                $("#switch-3").hide();
+            });
+
+            $(".switching3").click(function() {
+                $("#switch-3").show();
+                $("#switch-1").hide();
+                $("#switch-2").hide();
+            });
+        });
+        $(".gShow").click(function() {
+            window.location.href = "rooms.html";
+        });
+    </script>
+</body>
+</html>
