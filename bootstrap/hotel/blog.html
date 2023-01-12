@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="image/logo">
+    <link rel="icon" href="image/logo.png">
     <link rel="stylesheet" href="css/font.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/hotel.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
+
+        /* -------------- */
         @media (max-width:768px) {
             .blogText h5 {
                 font-size: 12px;
@@ -39,63 +42,71 @@
                 padding: 0;
             }
         }
+
+        .gallery p {
+        font-size: 100px;
+        font-weight: bolder;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: -54px;
+        color: rgba(69, 69, 15, 0.666);
+        font-family: design;
+        cursor: pointer;
+    }
+    .gallery h5 {
+        margin: 30px 0;
+        font-size: 34px;
+        position: relative;
+        padding-left: 25px;
+        color: rgb(49, 112, 91);
+        font-weight: bolder;
+        cursor: pointer;
+        }
+    @media (max-width:950px) and (min-width: 769px) {
+        .gallery p {
+            font-size: 72px;
+            margin-top: -40px;
+        }
+        .gallery h5 {
+            font-size: 25px;
+        }
+    }
+    @media (max-width: 768px) and (min-width:426px) {
+    .gallery p {
+        font-size:60px;
+        margin-top: -30px;
+    }
+    .gallery h5 {
+        font-size: 25px;
+    }
+}
+    @media (max-width:425px) and (min-width:376px) {
+        .gallery p {
+            font-size:45px;
+            margin-top: -25px;
+        }
+        .gallery h5 {
+            font-size:18px;
+            padding-left:2px;
+        }
+    }
+    @media (max-width:375px) and (min-width:320px) {
+        .gallery p {
+            font-size:34px;
+            margin-top: -15px;
+        }
+        .gallery h5 {
+            font-size:18px;
+            padding-left:2px;
+        }
+    }
     </style>
 </head>
 <body>
     <!--  nav -->
-        <!-- top-nav -->
-    <section class="bg-topNav">
-        <div class="container bg-topNav text-light">
-            <div class="row top-bar" style="padding-bottom: 3px;">
-                <div class="col text-start">
-                    <span>
-                        <a href="#" class="text-decoration-none text-light"><i class="fa-brands fa-facebook-f hover-icon"></i></a>
-                    </span>
-                    <span class="text-light">
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-brands fa-twitter hover-icon"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-brands fa-skype hover-icon"></i>
-                        </a>
-                    </span>
-                    <span class="text-light">
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-brands fa-instagram hover-icon"></i>
-                        </a>
-                    </span>
-                    <span class="text-light">
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-brands fa-google-plus-g hover-icon"></i>
-                        </a>
-                    </span>
-                </div>
-                <div class="col text-end">
-                    <span class="showspan">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <a href="#" class="text-decoration-none text-light">+095-837-7117</a>
-                    </span>
-                    <span class="showspan">
-                        |
-                    </span>
-                    <span class="showspan">
-                        <i class="fa-regular fa-envelope"></i>
-                        <a href="#" class="text-decoration-none text-light">yonmyohthu@bagan.com</a>
-                    </span>
-                    <span class="hidespan pt-1">
-                        <a href="#" class="text-decoration-none text-light">Contact us</a>
-                    </span>
-                </div>
-            </div>
-        </div> 
-    </section>
-        <!-- end top nav -->
-        <!-- start main nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-nav-color sticky-top shadow-sm">
         <div class="container">
-          <a class="navbar-brand p-0" href="#">
+          <a class="navbar-brand" href="#">
             <img src="image/logo3a.png" class="img-fluid" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,10 +118,10 @@
                 <a class="nav-link active" style="color: rgb(17, 102, 73);" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
+                <a class="nav-link" href="rooms.html">Rooms</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="book.html">Book</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -124,9 +135,22 @@
             </ul>
           </div>
         </div>
-    </nav>
-        <!-- end main nav -->
+    </nav>>
     <!-- end nav -->
+
+    <div class="container my-5 pt-5">
+        <div class="row">
+            <div class="col">
+                <div class="gallery">
+                    <p>B . l . o . g . N . e . w  .  S<p>
+
+                    <h5>
+                        <span class="gallery-menu switching1" >Our Blog</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- blog -->
     <div class="container my-5">
@@ -175,6 +199,15 @@
                 <small><b><a href="https://www.hotelspeak.com/author/maja-nenadov/" class="text-decoration-none bgColor1">Maja ninadov</a></b>&nbsp; January 16 2023</small>
                 <p>The travel industry was one of the worst affected by the global COVID pandemic. The closure of international borders and implementation of lockdowns in most countries saw...</p>
                 <a href="https://www.hotelspeak.com/2022/11/hotel-marketing-email-marketing-segmentation-explained/" class="text-decoration-none"><h6 class="blog-span">read more</h6></a>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-md-6 views-a">
+                <a href="https://www.amara-marketing.com/travel-blog" class="btn px-3 py-2 " style="border-radius: 0;">1</a>
+                <a href="https://www.amara-marketing.com/travel-blog" class="btn px-3 py-2 " style="border-radius: 0; ">2</a>
+                <a href="https://www.amara-marketing.com/travel-blogl" class="btn px-3 py-2 " style="border-radius: 0; ">3</a>
+                <i class="fa-solid fa-ellipsis"></i>
+                <a href="https://www.amara-marketing.com/travel-blog" class="btn px-3 py-2" style="border-radius: 0; ">Next</a>
             </div>
         </div>
     </div>

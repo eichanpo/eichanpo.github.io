@@ -5,71 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="image/logo.jpg">
+    <link rel="icon" href="image/logo.png">
     <link rel="stylesheet" href="css/font.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/hotel.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <style>
+        body {
+            background-color: rgb(242, 242, 232);
+        }
+        .gallery p {
+        font-size: 100px;
+        font-weight: bolder;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: -54px;
+        color: rgba(69, 69, 15, 0.666);
+        font-family: design;
+        cursor: pointer;
+    }
+    .gallery h5 {
+        margin: 30px 0;
+        font-size: 34px;
+        position: relative;
+        padding-left: 25px;
+        color: rgb(49, 112, 91);
+        font-weight: bolder;
+        cursor: pointer;
+        }
+        .fadeIn p {
+            text-align: justify;
+        }
+        @media(max-width:1199px) and (min-width:992px) {
+            .fadeIn .hist {
+                font-size: 21px;
+            }
+            .content {
+                font-size:12px;
+                line-height: 21px;
+            }
+        }
+
+        /* -----for plug in slider------- */
+
+         .img-hv {
+        position: relative;
+        cursor: pointer;
+    }
+     .lavel-slide {
+        width: 100%;
+        position: absolute;
+        top:70%;
+        padding: 45px 9px; 
+        text-align: center;
+        background-color: rgba(0, 8, 6, 0.429);
+        background-size: 100%;
+        color: #fff;
+        background-position: center;
+        display: none;
+         
+    }
+    .lavel-slide p {
+        font-size:25px;
+    }
+    @media (max-width: 1199px) and (min-width:769px) {
+        .lavel-slide {
+            padding: 31px 9px;
+        }
+    }
+    @media (max-width: 768px) and (min-width:426px) {
+        .lavel-slide {
+            padding: 18px 9px;
+        }
+    }
+    @media (max-width: 425px) and (min-width:376px) {
+        .lavel-slide {
+            padding: 18px 2px;
+        }
+        .lavel-slide p {
+            font-size: 12px;
+        }
+    }
+    @media (max-width: 375px) {
+        .lavel-slide {
+            padding: 11px 2px;
+        }
+        .lavel-slide p {
+            font-size: 12px;
+        }
+    }
+    .img-hv:hover .lavel-slide{
+        display: block;
+        cursor: pointer;
+    }
+    .img-hv:hover .hv-img{
+        filter: brightness(70%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
 
     </style>
 </head>
 <body>
     <!--  nav -->
-        <!-- top-nav -->
-    <section class="bg-topNav">
-        <div class="container bg-topNav text-light">
-            <div class="row top-bar" style="padding-bottom: 3px;">
-                <div class="col text-start">
-                    <span>
-                        <a href="#" class="text-decoration-none text-light"><i class="fa-brands fa-facebook-f hover-icon"></i></a>
-                    </span>
-                    <span class="text-light">
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-brands fa-twitter hover-icon"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-brands fa-skype hover-icon"></i>
-                        </a>
-                    </span>
-                    <span class="text-light">
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-brands fa-instagram hover-icon"></i>
-                        </a>
-                    </span>
-                    <span class="text-light">
-                        <a href="#" class="text-decoration-none text-light">
-                            <i class="fa-brands fa-google-plus-g hover-icon"></i>
-                        </a>
-                    </span>
-                </div>
-                <div class="col text-end">
-                    <span class="showspan">
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <a href="#" class="text-decoration-none text-light">+095-837-7117</a>
-                    </span>
-                    <span class="showspan">
-                        |
-                    </span>
-                    <span class="showspan">
-                        <i class="fa-regular fa-envelope"></i>
-                        <a href="#" class="text-decoration-none text-light">yonmyohthu@bagan.com</a>
-                    </span>
-                    <span class="hidespan pt-1">
-                        <a href="#" class="text-decoration-none text-light">Contact us</a>
-                    </span>
-                </div>
-            </div>
-        </div> 
-    </section>
-        <!-- end top nav -->
-        <!-- start main nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-nav-color sticky-top shadow-sm">
         <div class="container">
-          <a class="navbar-brand p-0" href="#">
+          <a class="navbar-brand" href="#">
             <img src="image/logo3a.png" class="img-fluid" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,10 +126,10 @@
                 <a class="nav-link active" style="color: rgb(17, 102, 73);" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
+                <a class="nav-link" href="rooms.html">Rooms</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="book.html">Book</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -99,14 +144,13 @@
           </div>
         </div>
     </nav>
-        <!-- end main nav -->
     <!-- end nav -->
 
     <div class="container-fluid banner-abtImg">
         <div class="row">
             <div class="col align-self-center">
                 <h4 class="text-center contact-banner align-self-center">
-                    Hotel Promotion and Packages at " Yon Myoh Thu " old town Bagan
+                    <span style="font-family:design;"> old town Bagan</span>
                     <p class="text-center h6 pt-3">
                         Discover the best hotel deals and offers in Bagan. Book your accommodation directly with " Yon Myoh Thu " old Bagan and get the best deals!
                     </p>
@@ -116,9 +160,111 @@
         </div>
     </div>
 
+    <!-- grid about hote -->
+    <div class="container my-5">
+        <h1 class=" bgColor1 my-5 ps-3" style="font-family:design; border-left: 5px solid rgb(61, 154, 123);">Our history</h1>
+        <div class="row justify-content-center g-3 shadow-sm">
+            <div class="col-lg-6 from-left fadeIn">
+                <img src="image/history.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 align-self-center fadeIn p-3">
+                <h1 class="bgColor1 hist">We are</h1>              
+                <p class="content">Originally opened in 1998, the hotel was commissioned by the Trustees of the Estate of BAgan, the youngest son of Loke Yew, and sited on a hillside edging Lake Gardens, opposite the Bagan Railway Station. Designed by architectural firm Keys and Dowdeswell, the complex was fashioned in a transitional hybrid of Beaux-Arts and Art Deco styles, with extensive use of arches, pilasters and cornice on the main block, a more vernacular double-storey annexe, and an extended Art Deco porte-cochère that leads down the hill.
+                The 51-room hotel served as a more luxurious counterpart to the old town station's built-in hotel and various contemporaries in Bagan, with larger rooms, furnishing and silverware imported from Myanmar, modern plumbing with hot and cold water, showers, and long baths in 18 rooms, and a roof garden with a dance floor and seating for 350 patrons.
+                </p>
+            </div>
+        </div>        
+        <h1 class=" bgColor1 my-5 pe-3" style="text-align: right; font-family:design; border-right: 5px solid rgb(61, 154, 123);">Our Chefs</h1>
+        <div class="row justify-content-center g-3 shadow-sm">
+            <div class="col-lg-6 f fadeIn align-self-center p-3">
+                <h1 class="bgColor1 hist">Hotel Chefs</h1>              
+                <p>“We wanted to give our guests the feeling that they’re coming to a dinner party in our hotel instead of a restaurant. At SingleThread, we have a style that’s all our own. We are making burmese curry and salad, but are heavily influenced by our Burmese style; we are a Yon Myoh Thu Hotel restaurant”</p>
+            </div>
+            <div class="col-lg-6 align-self-center from-right fadeIn">
+                <img src="image/chef.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+        <h1 class=" bgColor1 my-5 ps-3" style="font-family:design; border-left: 5px solid rgb(61, 154, 123);">Facilities</h1>
+        <div class="row justify-content-center g-3 shadow-sm">
+            <div class="col-lg-6 from-left fadeIn">
+                <img src="image/room/banner/11.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 align-self-center fadeIn p-3">
+                <h1 class="bgColor1 hist">Service & facilities</h1>              
+                <p class="">Our dedicated and experienced staff caters to the needs of guests with an extensive range of services and facilities.  If you require any service not listed here, please contact us and we will assist in any way we can. Facilities  Business Centre Health Club Conference
+                </p>
+            </div>
+        </div> 
+        <h1 class=" bgColor1 my-5 pe-3" style="text-align: right; font-family:design; border-right: 5px solid rgb(61, 154, 123);">Our Chefs</h1>
+        <div class="row justify-content-center g-3 shadow-sm">
+            <div class="col-lg-6 f fadeIn align-self-center p-3">
+                <h1 class="bgColor1 hist">Explore Bagan near by</h1>              
+                <p>“We wanted to give our guests the feeling that they’re coming to a dinner party in our hotel instead of a restaurant. At SingleThread, we have a style that’s all our own. We are making burmese curry and salad, but are heavily influenced by our Burmese style; we are a Yon Myoh Thu Hotel restaurant”</p>
+            </div>
+            <div class="col-lg-6 align-self-center from-right fadeIn">
+                <img src="image/bagan.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- end grid about hotel  -->
 
 
-
+<!-- start mini carousel -->
+<div class="container my-5" style="padding-bottom: 45px;">
+    <h1 class=" bgColor1 my-5 ps-3" style="font-family:design; border-left: 5px solid rgb(61, 154, 123);">Burmese Foods</h1>
+     <section class="customer-logos slider">
+        <div class="slide img-fluid">
+            <div class="img-hv">
+                <img src="image/b1.jpg" class="hv-img" >
+                <div class="lavel-slide">       
+                    <p>Monk Hinkar </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide img-fluid">
+            <div class="img-hv">
+                <img src="image/b6.jpeg" class="hv-img" >
+                <div class="lavel-slide">       
+                    <p>Shan style chips</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide img-fluid">
+            <div class="img-hv">
+                <img src="image/b5.jpg" class="hv-img" >
+                <div class="lavel-slide">       
+                    <p>Tea leaf salad </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide img-fluid">
+            <div class="img-hv">
+                <img src="image/b3.jpeg" class="hv-img" >
+                <div class="lavel-slide">       
+                    <p>Burmese chips </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide img-fluid">
+            <div class="img-hv">
+                <img src="image/b4.jpg" class="hv-img" >
+                <div class="lavel-slide">       
+                    <p>Shan noddle </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide img-fluid">
+            <div class="img-hv">
+                <img src="image/b2.JPG" class="hv-img" >
+                <div class="lavel-slide">       
+                    <p>Nan Gyi Salad </p>
+                </div>
+            </div>
+        </div>
+     </section>
+</div>
+<!-- end mini carousel -->
     
 
 
@@ -178,7 +324,34 @@
     </footer>
     <!-- end footer -->
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/slickFoods.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        const faders = document.querySelectorAll('.fadeIn');
+        const appearOptions = {
+        threshold: 1,
+        rootMargin: "0px 0px -100px 0px"
+    };
+    const appearOnscroll = new IntersectionObserver(function(entries, appearOnscroll) {
+        entries.forEach( entry => {
+            if(!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('appear');
+                appearOnscroll.unobserve(entry.target);
+
+            }
+        })
+    }, appearOptions);
+    faders.forEach(fader => {
+        appearOnscroll.observe(fader);
+    })
+
+
+
+    </script>
 </body>
 </html>
