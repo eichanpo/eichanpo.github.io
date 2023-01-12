@@ -207,34 +207,7 @@
 
   
         /* start booking section  */
-        
-    .booking-section {
-        background-color: #333;
-        padding: 45px;
-    }
-    .input label {
-        font-size: 21px;
-    }
-    .input .booking-input {
-        outline: none;
-        width: 75%;
-        background-color: beige;
-        padding: 21px;
-        border-radius: 0;
-    }
-    .btn-book {
-        width: 100%;
-        background-color: beige;
-        border-radius: 9px;
-        border: none;
-        font-size: 19px;
-        color: #666;
-        padding: 21px;
-    }
-    .btn-book:hover {
-        background-color: rgb(245, 245, 190);
-    }
-
+  
         /* end booking section */
 
 .about-sec .btn {
@@ -247,7 +220,7 @@
     font-family: design;
     color: gray;
 }
-.headeing h2 {
+.heading h2 {
     font-family: barlow-bold;
 }
 @media (max-width: 1000px) {
@@ -676,7 +649,7 @@ footer {
 ::placeholder {
     color: rgb(200, 239, 247);
     opacity: 0.9;
-    font-size:16px;
+    font-size:12px;
    font-style: italic;
 }
 @media(max-width:425px) {

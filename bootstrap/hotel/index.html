@@ -71,6 +71,38 @@
             padding-left:2px;
         }
     }
+    .book-section ::placeholder {
+        font-style: normal;
+        color: rgb(96, 96, 96);
+        font-size: 14px;
+    }
+    .input-box p {
+        font-size: 21px;
+        color: #fff;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .input {
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 1.0rem;
+        color: #fff;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid gray;
+    }
+    .input-box .btn {
+        padding: 1rem;
+        border: 1px solid gray;
+        margin: 25px 0;
+    }
+    .input-box .btn:hover {
+        background-color: #01433c;
+    }
+    .input-box select .color {
+        background-color: black;
+    }
+
     </style>
 </head>
 <body>
@@ -113,10 +145,6 @@
     </nav>
         <!-- end main nav -->
     <!-- end nav -->
-
-
-
-
 
     <!-- start banner -->
 
@@ -200,43 +228,64 @@
     <!-- <h1 class="animate__animated animate__bounce">An animated element</h1> -->
 
   <!-- book -->
-    <section class="booking-section ">
-        <h1 class="text-center text-light" style="font-family: design;">Book your rooms</h1>
+    <section class="bgColor2 pt-5">
         <div class="container">
-            <div class="row g-3 justify-content-center">
-                <div class="col-lg-2 col-md-6 col-sm-12 input">
-                    <label for="" class="form-label text-light mb-0">Arrival</label>
-                    <input type="date" class="booking-input form-control" placeholder="Arrival Date">
+            <div class="row g-3">
+                <div class="col-lg-2 col-md-6 input-box">
+                    <p>check in</p>
+                    <input type="date" class="input">
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 input">
-                    <label for="" class="form-label text-light mb-0">Departure</label>
-                    <input type="date" class="booking-input form-control" placeholder="depatrure Date">
+                <div class="col-lg-2 col-md-6 input-box">
+                    <p>check out</p>
+                    <input type="date"  class="input">
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 input">
-                    <label for="" class="form-label text-light mb-0">Adult</label>
-                    <select name="" id="" class="booking-input form-control">
-                        <option value="">adult</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
+                <div class="col-lg-2 col-md-6 input-box">
+                    <p>adults</p>
+                    <select class="input" required>
+                        <option class="color" value="1">1 adult</option>
+                        <option class="color" value="2">2 adults</option>
+                        <option class="color" value="3">3 adults</option>
+                        <option class="color" value="1">4 adults</option>
+                        <option class="color" value="2">5 adults</option>
+                        <option class="color" value="3">6 adults</option>
                     </select>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 input">
-                    <label for="" class="form-label text-light mb-0">Children</label>
-                    <select name="" id="" class="booking-input form-control">
-                        <option value="">children</option>
-                        <option value="">0</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
+                <div class="col-lg-2 col-md-6 input-box">
+                    <p>children</p>
+                    <select class="input" required>
+                        <option class="color" value="">0 children</option>
+                        <option class="color" value="1">1 children</option>
+                        <option class="color" value="2">2 childrens</option>
+                        <option class="color" value="3">3 childrens</option>
+                        <option class="color" value="1">4 childrens</option>
+                        <option class="color" value="2">5 childrens</option>
+                        <option class="color" value="3">6 childrens</option>
                     </select>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <button class=" btn-book w-75">Check avability</button>
+                <div class="col-lg-2 col-md-6 input-box">
+                    <p>infants</p>
+                    <select class="input" required>
+                        <option class="color" value="">0 infant</option>
+                        <option class="color" value="1">1 infant</option>
+                        <option class="color" value="2">2 infants</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 col-md-6 input-box">
+                    <p>rooms</p>
+                    <select class="input" required>
+                        <option class="color" value="1">dueluxe room</option>
+                        <option class="color" value="2">king suite</option>
+                        <option class="color" value="3">twin room</option>
+                        <option class="color" value="1">family suite</option>
+                        <option class="color" value="2">single room</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row g-3" >
+                <div class="col-12">
+                    <div class="col-12 input-box">
+                        <input type="button" value="Check avalibality" class="btn text-white">
+                    </div>
                 </div>
             </div>
         </div>
