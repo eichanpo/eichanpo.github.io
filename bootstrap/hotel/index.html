@@ -13,7 +13,65 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-
+    <style>
+    .gallery p {
+        font-size: 100px;
+        font-weight: bolder;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: -54px;
+        color: rgba(69, 69, 15, 0.666);
+        font-family: design;
+        cursor: pointer;
+    }
+    .gallery h5 {
+        margin: 30px 0;
+        font-size: 34px;
+        position: relative;
+        padding-left: 25px;
+        color: rgb(50, 171, 133);
+        font-weight: bolder;
+        cursor: pointer;
+        }
+    @media (max-width:950px) and (min-width: 769px) {
+        .gallery p {
+            font-size: 72px;
+            margin-top: -40px;
+        }
+        .gallery h5 {
+            font-size: 25px;
+        }
+    }
+    @media (max-width: 768px) and (min-width:426px) {
+    .gallery p {
+        font-size:60px;
+        margin-top: -30px;
+    }
+    .gallery h5 {
+        font-size: 25px;
+    }
+}
+    @media (max-width:425px) and (min-width:376px) {
+        .gallery p {
+            font-size:45px;
+            margin-top: -25px;
+        }
+        .gallery h5 {
+            font-size:18px;
+            padding-left:2px;
+        }
+    }
+    @media (max-width:375px) and (min-width:320px) {
+        .gallery p {
+            font-size:34px;
+            margin-top: -15px;
+        }
+        .gallery h5 {
+            font-size:18px;
+            padding-left:2px;
+        }
+    }
+    </style>
 </head>
 <body>
     <!--  nav -->
@@ -69,7 +127,7 @@
         <!-- start main nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-nav-color sticky-top shadow-sm">
         <div class="container">
-          <a class="navbar-brand p-0" href="#">
+          <a class="navbar-brand" href="#">
             <img src="image/logo3a.png" class="img-fluid" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,6 +143,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="book.html">Book</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -234,7 +295,7 @@
   
 
 
-  <!-- start about top -->
+  <!-- start about us -->
     <section class="about-sec top-sec my-5">
         <div class="container flex">
             <div class="row g-3">
@@ -253,9 +314,9 @@
             </div>
         </div>
     </section>
-  <!-- end about top -->
+  <!-- end about us -->
 
-  <!-- counte top -->
+  <!-- counter top -->
     <section class=" counter">
         <div class="container">
             <div class="row g-3 justify-content-center">
@@ -436,9 +497,85 @@
     <!-- end slider small -->
 
 
+    <!-- start service  -->
+    <div class="container my-5 pt-5">
+        <div class="row">
+            <div class="col">
+                <div class="gallery">
+                    <p>S . E . R . V . I . C . E  .  S<p>
+
+                    <h5>
+                        <span class="gallery-menu switching1" >Our services</span>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row g-3 justify-content-center">
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-champagne-glasses"></i>
+                            <h5>Delious Food</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <h5>Fitness</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                            <h5>Restaurant</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-spa"></i>
+                            <h5>Beauty Spa</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 align-self-center" style="border: 1px solid rgb(9, 163, 115); padding: 7px;">
+                <img src="image/services.jpeg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end service  -->
+
+
+    <!-- newsletter input -->
+    <section class="subscribe mt-5">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="text-light text-center col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12">
+                    <i class="fa-solid fa-envelope-open display-3"></i>
+                    <p class="h3 mt-5">SIGN UP FOR NEW LETTER</p>
+                    <div class="input-group newslr mb-3">
+                        <input type="text" class="form-control input" placeholder="your email" >
+                        <button class="btn btn-outline-light" type="button" id="button-addon2">Subscribe</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end newsletter input -->
+
+
+    <!-- customre review  header-->
+
+
+
+
 
     <!-- footer -->
-    <footer class="ft-p mt-5">
+    <footer class="ft-p" style="margin-top: 100px;">
         <div class="container mt-5">
             <div class="row g-3 justify-content-center" >
                 <div class="col-lg-4 col-md-12 text-light pt-3 pb-2">
