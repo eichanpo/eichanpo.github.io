@@ -206,9 +206,59 @@
 }
 
   
-        /* start booking section  */
-  
-        /* end booking section */
+        /* start detail section  */
+
+
+.product {
+    background-color: #eff1f2;
+    /* background-color: rgb(233, 237, 239); */
+    height: 70vh;
+    padding-top:25px;
+}
+.product .main-img img {
+    /* max-width: 500px; */
+    max-width: 70%;
+    
+    margin: auto;
+    display: block;
+}
+@media (max-width:1024px) and (min-width: 426px) {
+    .product .main-img img {
+        /* height:340px; */
+        height: 50%;
+    }
+    .product {
+        /* height:139vh; */
+        height: 85%;
+    }
+}
+@media (max-width:425px) and (min-width: 320px) {
+    .product .main-img img {
+        height:60%;
+    }
+    .product {
+        height:105vh;
+    }
+}
+.product .thumb-img {
+    text-align: center;
+    margin-top: 16px;
+}
+.product .thumb-img .box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(153, 164, 172);
+    margin: 2px;
+    cursor: pointer;
+}
+
+.product .thumb-img .box img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+        /* end detail section end detail modal*/
 
 .about-sec .btn {
     padding: 7px 45px;
