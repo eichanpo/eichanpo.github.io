@@ -57,6 +57,9 @@
 .contact-item {
     cursor: pointer;
 }
+.contact-item {
+    font-size: 12px;
+}
 .contact-nav {
     display: none;
 }
