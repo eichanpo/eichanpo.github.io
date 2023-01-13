@@ -621,9 +621,14 @@
     color: rgb(180, 218, 205); 
     font-weight: lighter;
 }
-@media (max-width:1024px) and (min-width:426px) {
+@media (max-width:1024px) and (min-width:769px) {
     .contact-banner {
         margin-top: 100px;
+    }
+}
+@media (max-width:768px) and (min-width:426px) {
+    .contact-banner {
+        margin-top: 70px;
     }
 }
 @media (max-width:425px) and (min-width:320px) {
@@ -640,17 +645,18 @@
 }
 
 
-/* end about */
+
 .banner-abtImg {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0, 0, 0, 0.814)), url(../image/room/dinning.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 77vh;
+    height: 76vh;
 }
-@media (max-widht:768px) and (min-height:426px) {
+
+@media (max-widht:768px) and (min-width:426px) {
     .banner-abtImg {
-        height: 63vh;
+        height: 60vh;
     }
 }
 @media (max-width:425px) {
@@ -661,6 +667,9 @@
         display: none;
     }
 }
+/* end about */
+
+
 /* start footer */
 footer {
     background-image:linear-gradient(0deg, rgba(0,0,0,0.9), rgba(15, 95, 85, 0.9)) ,url(../image/footer.jpg);
