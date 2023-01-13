@@ -46,6 +46,29 @@
 /* end booking */
 
 /* start navbar */
+/* start top nav */
+.topnav .topicon {
+    padding: 8px;
+    cursor: pointer;
+}
+.topnav .topicon:hover {
+    color: rgb(177, 174, 174);
+}
+.contact-item {
+    cursor: pointer;
+}
+.contact-nav {
+    display: none;
+}
+@media(max-width: 768px) {
+    .contact-item {
+        display: none;
+    }
+    .contact-nav {
+        display: block;
+    }
+}
+/* end top nav */
 .navbar-brand img {
     height: 54px;
 }
