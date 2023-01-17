@@ -11,6 +11,7 @@
 }
 .bgColor2 {
     background-color: rgb(48, 103, 85);
+    /* background-color: rgb(9, 39, 29); */
 }
 .bgColor1 {
     color: rgb(49, 115, 95);
@@ -108,7 +109,7 @@
     }
 }
 
-    /* background-color: rgb(221, 225, 225); */
+
 
     
     .nav-menu > ul > li {
@@ -131,7 +132,7 @@
         content:"";
         position: absolute;
         width: 100%;
-        height: 2px;
+        height:2px;
         bottom: -6px;
         left: 0;
         background-color: rgb(202, 207, 209);
@@ -139,6 +140,7 @@
         width: 0px;
         transition: all 0.3s ease-in-out;
     }
+
     .nav-menu a:hover::before, 
     .nav-menu li:hover > a::before, 
     .nav-menu .active > a::before {
@@ -150,7 +152,7 @@
     .nav-menu li:hover > a {
         color: rgb(90, 171, 145);
     }
-    
+  
         
 
     /* navigation menu ended */
@@ -175,6 +177,23 @@
         transform: scale(1.5, 1.5);
     }
 }
+    /* add overlay on carousel class */
+.overlay-csoul {
+    position: relative;
+    background:linear-gradient(-128deg, transparent 10%, rgba(0, 0, 0, 0.993));
+    width: 100%;
+    height: 77vh;
+
+}
+.overlay-csoul img.overlay-img {
+    mix-blend-mode: overlay;
+}
+.overlay-csoul>.text {
+    color: white;
+    position: absolute;
+}
+    /* add overlay on carousel class */
+
 .carousel-item .text {
     position: absolute;
     top: 34%;
@@ -211,7 +230,7 @@
         font-size:16px;
         padding: 7px 34px;
     }
-    .carousel-item img {
+    .overlay-csoul, .carousel-item img {
         height: 63vh;
     }
 }
@@ -226,7 +245,7 @@
         font-size:12px;
         padding: 5px 21px;
     }
-    .carousel-item img {
+    .overlay-csoul, .carousel-item img {
         height: 45vh;
     }
 }
@@ -349,22 +368,40 @@
         cursor: pointer;
     }
     .slideimg .lavel-slide {
-        width: 100%;
+        width: 81%;
         position: absolute;
-        top:70%;
-        padding: 18px 9px;
+        border-radius: 9px;
+        top:36%; left: 11%;
+        padding: 25px 9px;
         text-align: center;
-        background-color: rgba(0, 8, 6, 0.429);
+        align-items: center;
+        background-color: rgba(0, 8, 6, 0.653);
         background-size: 100%;
         color: #fff;
+        font-size: 21px;
         background-position: center;
-        display: none;
+        /* display: none; */
          
     }
-    .img-hv:hover .lavel-slide{
+    @media(max-width: 1024px) and (min-width:769px) {
+        .slideimg .lavel-slide {
+            font-size:16px;
+        }
+    }
+    @media(max-width:768px) and (min-width:426px) {
+        .slideimg .lavel-slide {
+            font-size: 11px;
+        }
+    }
+    @media (max-width: 425px) {
+        .slideimg .lavel-slide {
+            font-size: 11px;
+        }
+    }
+    /* .img-hv:hover .lavel-slide{
         display: block;
         cursor: pointer;
-    }
+    } */
     .img-hv:hover .img-hv-img{
         filter: brightness(70%);
         -webkit-transition: all 1s ease;
@@ -378,47 +415,30 @@
     }
     /* end plug slider */
     /* start service-icon */
-    .service-icon {
-        padding: 54px;
-        border: 1px solid rgb(9, 163, 115);
-        color: rgb(39, 106, 85);
-        text-align: center;
-        transition: 0.5s;
+    .service-bg {
+        background-image: linear-gradient(70deg, rgba(0, 0, 0, 0.952), rgba(0, 0, 0, 0.407)), url(../image/room/bagan1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        padding: 60px 0;
+        margin: 100px 0;
         cursor: pointer;
     }
-    .service-icon:hover {
-        color: #fff;
-        background-color: rgb(32, 109, 85);
+    .service-bg .card {
+        border: none;
     }
-    .service-icon i {
-        font-size:45px; 
+    .sv-div {
+        color: #def8f6;
+        transition: 0.3s;
     }
-    .service-icon h5 {
-        font-weight: bolder;
-        margin-top: 25px;
+    .sv-div:hover {
+        color:  #95fff6;
+        background-color: #def8f61a;
     }
-    @media (max-width:425px) and (min-width:326px) {
-        .service-icon {
-            padding: 25px;
-        }
-        .service-icon i {
-            font-size: 34px;
-        }
-        .service-icon h5 {
-            font-size: 16px;
-        }
-    }
-    @media (max-width:325px) {
-        .service-icon {
-            padding: 25px;
-        }
-        .service-icon i {
-            font-size: 34px;
-        }
-        .service-icon h5 {
-            font-size: 14px;
-        }
-    }
+
+   /* end sercive */
     .review-img img {
         width: 50px;
         height: 50px;

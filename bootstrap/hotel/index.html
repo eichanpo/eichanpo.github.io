@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YONMYOHTHU</title>
     <link rel="icon" href="image/logo.png">
     <link rel="stylesheet" href="css/font.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <title>YONMYOHTHU</title>
+
     <style>
     .gallery p {
         font-size: 100px;
@@ -85,38 +85,158 @@
     .newslr input {
         padding-left: 16px;
     }
-    .input-box p {
-        font-size: 21px;
-        color: #fff;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+
     .input {
         width: 100%;
-        padding: 1rem 0;
+        height: 100%;
+        /* padding: 1rem 0; */
         font-size: 1.0rem;
         color: #fff;
         outline: none;
         background-color: transparent;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid rgb(70, 245, 251);
+        border-left: 1px solid rgb(70, 245, 251);
+        border-top: 1px solid gold;
+        border-right: 1px solid gold;
+    }
+ 
+    .input-box input::placeholder {
+        padding-left:11px;
+        color: white;
+        font-style: normal;
+        font-size: 16px;
+    }
+    .input-box p {
+        font-family: myanmarreg;
+        color: #00ffe5;
+        font-size: 18px;
+        margin-bottom: 0;
     }
     .input-box .btn {
         padding: 1rem;
-        border: 1px solid gray;
+        border-bottom: 1px solid rgb(70, 245, 251);
+        border-left: 1px solid rgb(70, 245, 251);
+        border-top: 1px solid gold;
+        border-right: 1px solid gold;
         margin: 25px 0;
+        background-color: #01433c;
     }
     .input-box .btn:hover {
-        background-color: #01433c;
+        background-color: #006057;
     }
     .input-box select .color {
         background-color: black;
+        color:white;
     }
 
+    /* booking */
+
+
+    .banner-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding-bottom: 20px;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: 450px 450px;
+    }
+    .card-img {
+        background: url(image/room/bagan1.jpg) center/cover no-repeat;
+    }
+    .banner-b h2 {
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+    .card-content {
+        background: #fff;
+        height: 330px;
+    }
+    .card-content h3{
+        text-align: center;
+        color: #333;
+        padding-inline-start: 25px 0 10px 0;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .form-row {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    form select, form input {
+        display: block;
+        width: 100%;
+        margin: 15px 12px;
+        padding: 5px;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #eee;
+        font-weight: 300;
+    }
+    form input[type=date], form input[type=text], form input[type=number], form input::placeholder, select {
+        color: #006057;
+        font-style: normal;
+        font-size: 16px;
+    }
+    form input[type=submit] {
+        color: #fff;
+        background: #006057;
+        padding: 12px 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    form input[type=submit]:hover {
+        background-color: #01433c;
+    }
+    @media (max-width:992px) {
+        .card-container {
+            grid-template-columns: 100%;
+        }
+        .card-img {
+            height: 330px;
+            /* margin-bottom: 25px; */
+        }
+        .booking-area .main-btn {
+            margin-left:9px !important;
+        }
+    }
+    .main-btn {
+        background-color: transparent;
+        border: 1px solid #01a393;
+        color: #006057;
+    }
+    .main-btn:hover {
+        background-color: transparent;
+        border: 1px solid #01a393;
+        color: #01a393;
+    }
+    .booking-area {
+        background: #fff;
+        box-shadow: 0 .625rem .9375rem 0 rgb(0 0 0 / 10%);
+        margin-top: -4rem;
+        padding: 3.125rem 1.875rem;
+        z-index: 9999999;
+        position: relative;
+    }
+    @media (max-width:425px)  {
+        .booking-area {
+            margin-top: 0;
+        }
+        .main-btn {
+            font-size: 12px;
+        }
+    }
     </style>
 </head>
 <body>
         <!-- top nav -->
-    <section class="bgColor2 text-light">
+    <!-- <section class="bgColor2 text-light">
             <div class="container topnav">
                 <div class="row py-1">
                     <div class="col-6 align-self-center">
@@ -133,12 +253,12 @@
                     </div>
                 </div>
             </div>
-    </section>
+    </section> -->
         <!-- end tov nav -->
         <!-- start main nav -->
     <nav class="navbar navbar-expand-lg navbar-light bg-nav-color sticky-top shadow-sm">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="image/logo3a.png" class="img-fluid" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,7 +267,7 @@
           <div class="collapse navbar-collapse nav-menu" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" style="color: rgb(17, 102, 73);" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link atag active" style="color: rgb(17, 102, 73);" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="rooms.html">Rooms</a>
@@ -174,73 +294,74 @@
 
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel"> 
         <div class="carousel-inner color-overlay ">
-                    <div class="carousel-item active">
-                      <img src="image/room/banner/29.jpg" class=" img-fluid d-block w-100" alt="...">
+                    <div class="carousel-item overlay-csoul active">
+                      <img src="image/room/banner/29.jpg" class="overlay-img img-fluid d-block w-100" alt="" >
+
                         <div class="text">
                         <h1>Spend your holiday</h1>
                         <p>Browse our rooms and other gallery!</p>
                         <div class="flex-contact">
-                            <a href="#" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Check Now</a>
+                            <a href="rooms.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Book Now</a>
                         </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                      <img src="image/room/banner/12.jpg" class="img-fluid d-block w-100" alt="...">
+                    <div class="carousel-item overlay-csoul">
+                      <img src="image/room/banner/12.jpg" class="img-fluid d-block w-100 overlay-img" alt="" >
                       <div class="text">
                         <h1>Spend your holiday</h1>
                         <p>Browse our rooms and other gallery!</p>
                         <div class="flex-contact">
-                            <a href="contact.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Check Now</a>
+                            <a href="rooms.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Book Now</a>
                         </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="image/room/banner/18.jpg" class="img-fluid d-block w-100" alt="...">
-                        <div class="text">
-                          <h1>Spend your holiday</h1>
-                          <p>Browse our rooms and other gallery!</p>
-                          <div class="flex-contact">
-                              <a href="contact.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Check Now</a>
-                          </div>
-                          </div>
-                      </div>
-                    <div class="carousel-item">
-                        <img src="image/room/banner/28.jpg" class="img-fluid d-block w-100" alt="...">
+                    <div class="carousel-item overlay-csoul">
+                        <img src="image/room/banner/18.jpg" class="overlay-img img-fluid d-block w-100" alt="...">
                         <div class="text">
                           <h1>Spend your holiday</h1>
                           <p>Browse our rooms and other gallery!</p>
                           <div class="flex-contact">
-                              <a href="contact.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Check Now</a>
+                              <a href="rooms.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Book Now</a>
                           </div>
                           </div>
                       </div>
-                    <div class="carousel-item">
-                      <img src="image/room/banner/17.jpg" class="img-fluid d-block w-100" alt="...">
+                    <div class="carousel-item overlay-csoul">
+                        <img src="image/room/banner/28.jpg" class="overlay-img img-fluid d-block w-100" alt="...">
+                        <div class="text">
+                          <h1>Spend your holiday</h1>
+                          <p>Browse our rooms and other gallery!</p>
+                          <div class="flex-contact">
+                              <a href="rooms.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Book Now</a>
+                          </div>
+                          </div>
+                      </div>
+                    <div class="carousel-item overlay-csoul">
+                      <img src="image/room/banner/17.jpg" class="overlay-img img-fluid d-block w-100" alt="...">
                       <div class="text">
                         <h1>Spend your holiday</h1>
                         <p>Browse our rooms and other gallery!</p>
                         <div class="flex-contact">
-                            <a href="contact.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Check Now</a>
+                            <a href="rooms.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Book Now</a>
                         </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                      <img src="image/room/banner/3.jpg" class="img-fluid d-block w-100" alt="...">
-                      <div class="text">
-                        <h1 class="bg-dark opacity-75 p-3">Spend your holiday</h1>
-                        <p>Browse our rooms and other gallery!</p>
-                        <div class="flex-contact">
-                            <a href="contact.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Check Now</a>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img src="image/room/banner/11.jpg" class="img-fluid d-block w-100" alt="...">
+                    <div class="carousel-item overlay-csoul">
+                      <img src="image/room/banner/3.jpg" class="overlay-img img-fluid d-block w-100" alt="...">
                       <div class="text">
                         <h1>Spend your holiday</h1>
                         <p>Browse our rooms and other gallery!</p>
                         <div class="flex-contact">
-                            <a href="contact.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Check Now</a>
+                            <a href="rooms.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Book Now</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item overlay-csoul">
+                      <img src="image/room/banner/11.jpg" class="overlay-img img-fluid d-block w-100" alt="...">
+                      <div class="text">
+                        <h1>Spend your holiday</h1>
+                        <p>Browse our rooms and other gallery!</p>
+                        <div class="flex-contact">
+                            <a href="rooms.html" class="btn-carousel check-room"><small><i class="fa-solid fa-arrow-right"></i></small>&nbsp Book Now</a>
                         </div>
                         </div>
                     </div>
@@ -249,73 +370,44 @@
 
     </div>
     <!-- end banner -->
-    <!-- <h1 class="animate__animated animate__bounce">An animated element</h1> -->
 
-  <!-- book -->
-    <section class="bgColor2 pt-5">
-        <div class="container">
-            <div class="row g-3">
-                <div class="col-lg-2 col-md-6 input-box">
-                    <p>check in</p>
-                    <input type="date" class="input">
-                </div>
-                <div class="col-lg-2 col-md-6 input-box">
-                    <p>check out</p>
-                    <input type="date"  class="input">
-                </div>
-                <div class="col-lg-2 col-md-6 input-box">
-                    <p>adults</p>
-                    <select class="input" required>
-                        <option class="color" value="1">1 adult</option>
-                        <option class="color" value="2">2 adults</option>
-                        <option class="color" value="3">3 adults</option>
-                        <option class="color" value="1">4 adults</option>
-                        <option class="color" value="2">5 adults</option>
-                        <option class="color" value="3">6 adults</option>
-                    </select>
-                </div>
-                <div class="col-lg-2 col-md-6 input-box">
-                    <p>children</p>
-                    <select class="input" required>
-                        <option class="color" value="">0 children</option>
-                        <option class="color" value="1">1 children</option>
-                        <option class="color" value="2">2 childrens</option>
-                        <option class="color" value="3">3 childrens</option>
-                        <option class="color" value="1">4 childrens</option>
-                        <option class="color" value="2">5 childrens</option>
-                        <option class="color" value="3">6 childrens</option>
-                    </select>
-                </div>
-                <div class="col-lg-2 col-md-6 input-box">
-                    <p>infants</p>
-                    <select class="input" required>
-                        <option class="color" value="">0 infant</option>
-                        <option class="color" value="1">1 infant</option>
-                        <option class="color" value="2">2 infants</option>
-                    </select>
-                </div>
-                <div class="col-lg-2 col-md-6 input-box">
-                    <p>rooms</p>
-                    <select class="input" required>
-                        <option class="color" value="1">dueluxe room</option>
-                        <option class="color" value="2">king suite</option>
-                        <option class="color" value="3">twin room</option>
-                        <option class="color" value="1">family suite</option>
-                        <option class="color" value="2">single room</option>
-                    </select>
-                </div>
+
+    <!-- booking -->
+    <div class="container booking-area">
+        <form action="" class="row">
+            <div class="col-lg mb-3 mb-lg-0 mb-sm-0">
+                <label for="" class="form-label ps-3 m-0 bgColor1">Check in</label>
+                <input type="date" class="form-control mt-0" placeholder="Date">
             </div>
-            <div class="row g-3" >
-                <div class="col-12">
-                    <div class="col-12 input-box">
-                        <input type="button" value="Check avalibality" class="btn check-room text-white">
-                    </div>
-                </div>
+            <div class="col-lg mb-3 mb-lg-0 mb-sm-0">
+                <label for="" class="form-label ps-3 m-0 bgColor1">Check out</label>
+                <input type="date" class="form-control mt-0" placeholder="Date">
             </div>
-        </div>
-    </section>
-  <!-- end book -->
-  
+            <div class="col-lg mb-3 mb-lg-0 mb-sm-0">
+                <label for="" class="form-label ps-3 m-0 bgColor1">Adults</label>
+                <select class="form-select mt-0">
+                    <option selected >1</option>
+                    <option value="1">2</option>
+                    <option value="1">3</option>
+                    <option value="1">4</option>
+                    <option value="1">5</option>
+                </select>
+            </div>
+            <div class="col-lg mb-3 mb-lg-0 mb-sm-0">
+                <label for="" class="form-label ps-3 m-0 bgColor1">Children</label>
+                <select class="form-select mt-0">
+                    <option selected >0</option>
+                    <option value="1">0</option>
+                    <option value="1">1</option>
+                    <option value="1">2</option>
+                </select>
+            </div>
+            <div class="col-lg mb-3 mb-lg-0">
+                <button type="submit" class="btn btn-outline text-uppercase mt-3 main-btn rounded-2 px-lg-3 mt-4">Check now</button>
+            </div>
+        </form>
+    </div>
+    <!-- end booking -->
 
   
 
@@ -374,7 +466,7 @@
 
     <!-- slide small -->
     <div class="container slideimg">
-        <h2 style="font-family: design;">G  .  A  .  L .  L .  E  .R  .  Y </h2>
+        <h2 style="font-family: design;" class="bgColor1">G  .  A  .  L .  L .  E  .R  .  Y </h2>
          <section class="customer-logos slider">
             <div class="slide img-fluid">
                 <div class="img-hv">
@@ -449,7 +541,7 @@
                     <div class="img-hv">
                         <img src="image/slide/7.jpg" class="img-hv-img" >
                         <div class="lavel-slide img-hv-img">                     
-                            Special offer honeymoon
+                            For Honeymoon
                         </div>
                     </div>
                 </div>
@@ -499,7 +591,7 @@
                     <div class="img-hv">
                         <img src="image/slide/12.jpg" class="img-hv-img" >
                         <div class="lavel-slide img-hv-img">                     
-                            Let's Taste Burmese foods
+                            Pure Burmese foods
                         </div>
                     </div>
                 </div>
@@ -508,9 +600,9 @@
                 <div class="slide img-fluid">
                     <div class="img-hv">
                         <img src="image/slide/14.jpg" class="img-hv-img" >
-                        <div class="lavel-slide img-hv-img">                     
-                            Bagan's signature Burmese meals
-                        </div>
+                        <h1 class="lavel-slide img-hv-img m-auto">                     
+                            Bagan's signature meals
+                        </h1>
                     </div>
                 </div>
             </div>
@@ -521,55 +613,78 @@
 
 
     <!-- start service  -->
-    <div class="container my-5 pt-5">
+    
+    <!-- <div class="container my-5">
         <div class="row">
             <div class="col">
                 <div class="gallery">
-                    <p>S . E . R . V . I . C . E  .  S<p>
-
+                    <p>S . e . r . v . i . c . e<p>
                     <h5>
-                        <span class="gallery-menu switching1" >Our services</span>
+                        <span class="gallery-menu switching1">Our service</span>
                     </h5>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="container">
-        <div class="row g-3 justify-content-center">
-            <div class="col-lg-6">
-                <div class="row g-3">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-champagne-glasses"></i>
-                            <h5>Delious Food</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-person-biking"></i>
-                            <h5>Fitness</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-utensils"></i>
-                            <h5>Restaurant</h5>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                        <div class="service-icon">
-                            <i class="fa-solid fa-spa"></i>
-                            <h5>Beauty Spa</h5>
-                        </div>
-                    </div>
+    
+    <div class="container mt-5 service-bg">
+        <h2 style="font-family: design;" class="text-light">SERVICE   and  FACILITIES</h2>
+        <div class="row g-3 justify-content-center pb-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 sv-div">
+                <div class="card px2 py-3 sv-div" style="background-color: #0060563b;">
+                    <h1 class=" text-center pt-5 pb-2"><i class="fa-solid fa-person-biking"></i></h1>
+                    <h3 class="text-center  pb-5">Fitness</h3>
                 </div>
             </div>
-            <div class="col-lg-6 align-self-center" style="border: 1px solid rgb(9, 163, 115); padding: 7px;">
-                <img src="image/services.jpeg" class="img-fluid" alt="">
+            <div class="col-lg-3 col-md-6 col-sm-6 sv-div">
+                <div class="card px2 py-3" style="background-color: #0060563b;">
+                    <h1 class=" text-center pt-5 pb-2"><i class="fa-solid fa-spa"></i></h1>
+                    <h3 class="text-center  pb-5">Spa</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sv-div">
+                <div class="card px2 py-3 sv-div" style="background-color: #0060563b;">
+                    <h1 class=" text-center pt-5 pb-2"><i class="fa-solid fa-shield-halved"></i></h1>
+                    <h3 class="text-center  pb-5">24 Hours security</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sv-div">
+                <div class="card px2 py-3" style="background-color: #0060563b;">
+                    <h1 class=" text-center pt-5 pb-2"><i class="fa-solid fa-square-parking"></i></h1>
+                    <h3 class="text-center  pb-5">Car Parking</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3 ">
+            <div class="col-lg-3 col-md-6 col-sm-6 sv-div">
+                <div class="card px2 py-3" style="background-color: #0060563b;">
+                    <h1 class=" text-center pt-5 pb-2"><i class="fa-solid fa-computer"></i></h1>
+                    <h3 class="text-center  pb-5">Public computer</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sv-div">
+                <div class="card px2 py-3" style="background-color: #0060563b;">
+                    <h1 class=" text-center pt-5 pb-2"><i class="fa-solid fa-martini-glass-empty"></i></h1>
+                    <h3 class="text-center  pb-5">Pool side Bar</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sv-div">
+                <div class="card px2 py-3 sv-div" style="background-color: #0060563b;">
+                    <h1 class=" text-center pt-5 pb-2"><i class="fa-solid fa-person-swimming"></i></h1>
+                    <h3 class="text-center  pb-5">Swimming</h3>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 sv-div">
+                <div class="card px2 py-3" style="background-color: #0060563b;">
+                    <h1 class=" text-center pt-5 pb-2"><i class="fa-solid fa-sailboat"></i></h1>
+                    <h3 class="text-center  pb-5">Sunset Boat</h3>
+                </div>
             </div>
         </div>
     </div>
+
+   
     <!-- end service  -->
 
 
@@ -579,7 +694,7 @@
             <div class="row justify-content-center py-5">
                 <div class="text-light text-center col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12">
                     <i class="fa-solid fa-envelope-open display-3"></i>
-                    <p class="h3 mt-5">SIGN UP FOR NEW LETTER</p>
+                    <p class="h3 mt-5">SIGN UP FOR NEWS LETTER</p>
                     <div class="input-group newslr mb-3">
                         <input type="text" class="form-control input" style="border-radius:0;" placeholder="your email" >
                         <button class="btn  btn-outline-light btnborder" type="button" id="button-addon2">Subscribe</button>
@@ -677,8 +792,8 @@
             </div>
         </div>
         <div class="row justify-content-center my-5">
-            <div class="col-md-6 views-a">
-                <a href="https://www.tripadvisor.com.my/SmartDeals-g317112-zft9650-Bagan_Mandalay_Region-Hotel-Deals.html" class="btn px-3 py-2 " style="border-radius: 0;">1</a>
+            <div class="col-md-6"> <!--views-a class removed-->
+                 <a href="https://www.tripadvisor.com.my/SmartDeals-g317112-zft9650-Bagan_Mandalay_Region-Hotel-Deals.html" class="btn px-3 py-2 " style="border-radius: 0;">1</a>
                 <a href="https://www.tripadvisor.com.my/SmartDeals-g317112-zft9650-Bagan_Mandalay_Region-Hotel-Deals.html" class="btn px-3 py-2 " style="border-radius: 0; ">2</a>
                 <a href="https://www.tripadvisor.com.my/SmartDeals-g317112-zft9650-Bagan_Mandalay_Region-Hotel-Deals.html" class="btn px-3 py-2 " style="border-radius: 0; ">3</a>
                 <i class="fa-solid fa-ellipsis"></i>

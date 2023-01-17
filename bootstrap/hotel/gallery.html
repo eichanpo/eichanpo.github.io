@@ -96,7 +96,7 @@
 </head>
 <body>
         <!-- top nav -->
-        <section class="bgColor2 text-light">
+        <!-- <section class="bgColor2 text-light">
             <div class="container topnav">
                 <div class="row py-1">
                     <div class="col-6 align-self-center">
@@ -113,7 +113,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- end tov nav -->
 
         <!-- start main nav -->
@@ -158,7 +158,7 @@
                 <div class="gallery">
                     <p>G . A . L . L . E . R . Y<p>
                     <h5>
-                        <span class="gallery-menu switching1" >Room & Suites</span>
+                        <span class="gallery-menu switching1 " > Room & Suites</span>
                         <span class="gallery-menu switching2" >Dining & Bar </span>
                         <span class="gallery-menu-end switching3" >Health & Leisure</span>
                     </h5>
@@ -296,63 +296,63 @@
             <hr>
             <h1 class="text-center my-5 bgColor1" style="font-family: design;">Dinning  .  and .   Bar</h1>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow1 img-hv">
                     <img src="image/room/gallery/dinning/skyview8.jpg" class="img-fluid  img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
                     <p class="cap">cocktail, wine and other drinks</p>
                 </div>
             </div>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow1 img-hv">
                     <img src="image/room/gallery/dinning/skyview2.jpg" class="img-fluid  img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
                     <p class="cap">lunch(burmese traditional meals)</p>
                 </div>
             </div>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow1 img-hv">
                     <img src="image/room/gallery/dinning/sky-view1.jpg" class="img-fluid  img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
                     <p class="cap">lunch(burmese traditional meals)</p>
                 </div>
             </div>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow1 img-hv">
                     <img src="image/room/gallery/dinning/skyview9.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
                     <p class="cap">special shaking maker</p>
                 </div>
             </div>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow1 img-hv">
                     <img src="image/room/gallery/dinning/skyview6.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
                     <p class="cap">light drinks</p>
                 </div>
             </div>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow1 img-hv">
                     <img src="image/room/gallery/dinning/skyview5.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
                     <p class="cap">cafe and tea</p>
                 </div>
             </div>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow1 img-hv">
                     <img src="image/room/gallery/dinning/skyview7.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Sky view restaurant</p>
                     <p class="cap">breakfast</p>
                 </div>
             </div>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow2 img-hv">
                     <img src="image/room/gallery/dinning/heritae.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Heritage</p>
                     <p class="cap">Cafe & Bakery</p>
                 </div>
             </div>
             <div class="col-ml-4 col-lg-4 col-md-6 col-sm-6 p-2">
-                <div class="gShow img-hv">
+                <div class="gShow gshow2 img-hv">
                     <img src="image/room/gallery/dinning/heritage2.jpg" class="img-fluid shadow-sm img-hv-img" alt="">
                     <p class="h4 bgColor1 pt-3 mb-0">Heritage</p>
                     <p class="cap">Cake & Bakery</p>
@@ -534,31 +534,48 @@
     <script src="jquery/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#switch-1").show();
-            $("#switch-2").show();
-            $("#switch-3").show();
+            $(".switching1").css("color", "#0d5048");
+            $("#switch-1").hide();
+            $("#switch-2").hide();
+            $("#switch-3").hide();
 
             $(".switching1").click(function() {
+                $(".switching1").css("color", "#0d5048");
+                $(".switching3").css("color", "");
+                $(".switching2").css("color", "");
                 $("#switch-1").show();
                 $("#switch-2").hide();
                 $("#switch-3").hide();
+                
+                // $("p").css("background-color", "yellow");
             });
 
             $(".switching2").click(function() {
+                $(".switching2").css("color", "#0d5048");
+                $(".switching3").css("color", "");
+                $(".switching1").css("color", "");
                 $("#switch-2").show();
                 $("#switch-1").hide();
                 $("#switch-3").hide();
             });
 
             $(".switching3").click(function() {
+                $(".switching3").css("color", "#0d5048");
+                $(".switching1").css("color", "");
+                $(".switching2").css("color", "");
                 $("#switch-3").show();
                 $("#switch-1").hide();
                 $("#switch-2").hide();
             });
         });
-        $(".gShow").click(function() {
-            window.location.href = "rooms.html";
+        $(".gshow1").click(function() {
+            window.location.href = "https://beta.myanmarvoyages.com/restaurant/sky-view-restaurant-monywa/";
         });
+        
+        $(".gshow2").click(function() {
+            window.location.href = "https://www.booking.com/hotel/mm/heritage-bagan-bagan.html";
+        });
+        
     </script>
 </body>
 </html>

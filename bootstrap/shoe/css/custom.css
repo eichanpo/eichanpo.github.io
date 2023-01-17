@@ -398,7 +398,7 @@ p.new-item {
     padding-bottom: 20px;
     color: beige;
     background:linear-gradient(to right, #f4524d 0%, #0fb398 100%);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
 }
 @media(max-width:425px) {
